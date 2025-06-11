@@ -38,9 +38,8 @@ Model specifications looked at the estimation of individual and combinations of 
 	 	9. Estimate $CV_{young}$ and $CV_{old}$
 	
 	- Reproductive Biology
-	 	10. Use biological maturity ogive
-	 	11. Use functional maturity ogive
-	 	12. Fecundity proportional to weight
+	
+Sensitivity analyses were conducted to examine the impacts of including different reproductive biology data and parameterization in the assessment. We examined using proportional fecundity to weight (instead of an exponential relationship), functional maturity at age (instead of length), functional maturity at length for Blackspotted Rockfish (instead of all data available for the complex), functional maturity at length for Rougheye Rockfish (instead of all data available for the complex), and biological maturity at length for the complex (instead of functional maturity at length for the complex). Summaries of the model results for these sensitivities are presented in **Table X** and **Figure X**. Model output showed that the base model was most sensitive to using maturity at age instead of maturity at length, with a decrease in relative depletion from the 1970’s to 1990’s using maturity at age. For this long-lived species, age may be a more precise determination of maturity (because there is a wide range of lengths per age); however, age data is more limited. The base model was less sensitive to the other changes, with similar output between the base and alternative models.
 
 	- Recruitment estimation
 	 	13. No recruitment estimation

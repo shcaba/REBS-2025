@@ -320,3 +320,19 @@ SSplotComparisons(models_summary,
                   print = TRUE,
                   legendloc = "bottomright"
 )
+
+#############################################################
+#comparison table for all repro sensitivities
+
+models <- c(base_model_dir, here::here('models/repro_sensitivities/proportional_fecundity'), 
+            here::here('models/repro_sensitivities/maturity_a50'),
+            here::here('models/repro_sensitivities/blackspotted_l50'),
+            here::here('models/repro_sensitivities/rougheye_l50'),
+            here::here('models/repro_sensitivities/biological_l50'))
+models
+models_output <- SSgetoutput(dirvec = models)
+models_summary <- SSsummarize(models_output)
+SStableComparisons(models_summary,
+                   modelnames = c("2025 base model", "Proportional fecundity", "Functional maturity A50", "Blackspotted functional maturity L50", "Rougheye functional maturity L50", "Biological maturity L50"),
+                   csv = TRUE,
+                   csvdir = here::here("Rcode/SSplotComparisons_output/sensitivities/6_all_repro_bio"))

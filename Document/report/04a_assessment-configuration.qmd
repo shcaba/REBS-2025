@@ -1,6 +1,6 @@
-# Assessment
+# Model
 
-## History of Modeling Approaches
+## History of Modeling Approaches Used for this Stock
 
 Rougheye Rockfish (not including Blackspotted) on the U.S. Pacific Coast was fist evaluated in 2010 by @dick_estimates_2010 using depletion-based stock reduction analysis (DB-SRA), as Category 3 stock. That model estimated the population had greater than a 50% probability of exceeding the estimated proxy overfishing level in 2010 if the harvest remained at the observed levels.  DB-SRA estimated a proxy OFL for Rougheye Rockfish of 78.7 mt with a 95% confidence interval between 4.7-587 metric tons.
 
@@ -8,7 +8,7 @@ Then,`r Spp` was assessment in 2013 [@hicks_status_2013]. A 2013 benchmark stock
 
 This benchmark assessment represents the first assessment of `r Spp` since 2013 [@hicks_status_2013]. Within this assessment, we re-evaluated all the data sources available for `r Spp`, re-analysed previously used data with current statistical methods and best practices, and re-evaluated modelling assumptions. Detailed description of changes made since 2013 assessment is provided in @sec-model. 
 
-## Most Recent STAR Panel Recommendations
+## Response to Most Recent STAR Panel Recommendations
 
 There were several recommendations from the 2013 STAR panel, broken into two categories
 
@@ -30,25 +30,24 @@ There were several recommendations from the 2013 STAR panel, broken into two cat
 5. Age validation. *While no age validation study has been completed, the agers are confident what annuli represent a year's worth of growth. Multiple ages are available and ageing error is characterized in this stock assessment.*
 6. Understanding stock structure. *Discussed in the stock structure section of this document.*
 7. Connectivity of stocks across the species ranges. *This is also discussed in the stock structure section of the document.*
-  
 
-## Response to SSC Groundfish Subcommittee Recommendations
+## Bridging analysis, including description of new modeling approaches and other changes from the last assessment
 
-
-
-## Current Modelling Platform
-
-Stock Synthesis version 3.30.23.1 was used as the statistical catch-at-age modelling framework. This framework allows the integration of a variety of data types and model specifications. The Stock Assessment Continuum tool (https://github.com/shcaba/SS-DL-tool) was used also used to explore model efficiency, likelihood profiling, retrospective analyses, and plotting sensitivities. The companion R package r4ss (version 1.51.0) along with R version 4.4.3 were used to investigate and plot model fits.
-
-
-## Bridging the Assessment Model from Stock Synthesis 3.24 (2013) to 3.30 (2025)
+### Bridging the Assessment Model from Stock Synthesis 3.24 (2013) to 3.30 (2025)
 
 More than 10 years have passed from the last assessment and in that time, the model and the Stock Synthesis 3 (SS3) modelling framework has undergone many changes. While the specific changes in the model can be found in the model [change log](https://github.com/orgs/nmfs-ost/projects/11), here we simply update the model from the older 3.24O version to the newer 3.30.22.1 version. We want to ensure that any update to the newest SS3 model software is not a cause of any changes in model outputs when we hold all data and model specifications to be exactly the same as in 2013. We therefore transferred all the older data and model specifications to the newest version of SS3 and compared the outputs. The status (@fig-RSS_2013) and scale (@fig-SO_2013) of both models are exactly the same, as are the estimates of within model uncertainty. This allows us to conclude that we can move forward using the latest version of SS3 without concern of inheriting any model output differences due to the choice of the SS3 version. 
 
+## General model specifications
+
+### Modelling Platform
+
+Stock Synthesis version 3.30.23.1 was used as the statistical catch-at-age modelling framework. This framework allows the integration of a variety of data types and model specifications. The Stock Assessment Continuum tool (https://github.com/shcaba/SS-DL-tool) was used also used to explore model efficiency, likelihood profiling, retrospective analyses, and plotting sensitivities. The companion R package r4ss (version 1.51.0) along with R version 4.4.3 were used to investigate and plot model fits.
 
 ## Model Structure, Evaluation, and Specification {#sec-model}
 
-### Fleet and Survey Designations {#sec-fleet}
+### Area and Fleet Definitions {#sec-fleet}
+
+This is a coastwide, single area model for `r Spp`, two species that form one management complex.
 
 The model is structured to track six fleets and include data from four surveys. 
 
@@ -63,7 +62,7 @@ Defining fleets is largely based on differing fleet selectivity (i.e., how the f
 
 In 2013 assessment [@hicks_status_2013], fisheries removals were split among three fleets - trawl, hook-and-line and at-sea hake fishery bycatch.  For the first two fleets (trawl and hook-and-line), removals were divided between landings and discards, with selectivity and retention curves estimated within the model. 
 
-Historically, no discarding was observed for `r Spp` [@pikitch_evaluation_1988], see @sec-historical_discard for details. The 2013 assessment estimated zero historical discard for both trawl and fixed gear fleets, based on the available data. In this assessment, we treat discards in trawl and non-trawl fisheries as separate fleets from landings fleets, with WCGOP data informing removals in these fleets, observed since the introduction of trip limits for rockfish in early 2000. 
+In this assessment, we treat discards in trawl and non-trawl fisheries as separate fleets from landings fleets. 
 
 Treating discards as separates fleets from landings provides several advantages, including:
 
@@ -72,9 +71,9 @@ Treating discards as separates fleets from landings provides several advantages,
 * This approach allows to avoid hard to diagnose issues that come from estimating retention curves (especially with limited amount of data).
 * The biological data for landings and discards are collected independently (port sampling vs on-board observers), and using different sampling approaches. Treating landings and discards as separate fleets in the model allows us to weight those data sources separately as well, to balance the representation of samples.
 
-The change in treating discards as separate fleets does not impact model results (@fig-Discard_comp_SO and @fig-Discard_comp_RSS), regardless of the selectivity form being assumed for the discard fleets. 
+The change in treating discards as separate fleets does not impact model results (@fig-Discard_comp_SO and @fig-Discard_comp_RSS), regardless of the selectivity form being assumed for the discard fleets. Historically, no discarding was observed for `r Spp` [@pikitch_evaluation_1988], see @sec-historical_discard for details. The 2013 assessment estimated zero historical discard for both trawl and fixed gear fleets, based on the available data. In this assessment, therefore, we assume no discard until early 2000, when the first `r Spp` was observed after the introduction of trip limits for rockfish. 
 
-In this assessment, we also split trawl fishery data into bottom trawl and mid-water trawl fleets. Catch data indicates that contribution of mid-water trawl catches gradually grew over the past 20 years, and now mid-water trawl catches represent majority of the trawl removals (@fig-landings). Historical information on mid-water catches of `r Spp` comes from @pikitch_evaluation_1988, which has no records of mid-water trawl catches of `r Spp`, neither retained nor discarded. Also, Oregon historical catch reconstruction [@karnowski_historical_2014] has one record of only 0.0002 metric tons of `r Spp` taken in 1985, even though the mid-water trawl catches had their own market category in Oregon since the early-1980s [@karnowski_historical_2014], and multiple rockfish species are reported as caught by this gear. This information suggest that historically `r Spp` mid-water catches were negligible. In the model, the catches in the contemporary mid-water trawl fleet are informed by PacFIN.
+We also split trawl fishery data into bottom trawl and mid-water trawl fleets. Catch data indicates that contribution of mid-water trawl catches gradually grew over the past 20 years, and now they represent majority of the trawl removals (@fig-landings). Historical information on mid-water catches of `r Spp` comes from @pikitch_evaluation_1988, which has no records of `r Spp` mid-water trawl catches, neither retained nor discarded. Also, Oregon historical catch reconstruction [@karnowski_historical_2014] has only one record of 0.0002 metric tons of `r Spp` taken in 1985, even though the mid-water trawl catches had their own market category in Oregon since the early-1980s [@karnowski_historical_2014], and multiple rockfish species are reported as caught by this gear. This information suggest that historically `r Spp` mid-water catches were negligible.
 
 As reported in @sec-surveys, the following surveys are included in the model:
 

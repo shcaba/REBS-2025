@@ -10,7 +10,7 @@ The relative biomass and the ratio of the estimated SPR to the management target
 
 ## Management performance
 
-In the last ten years total dead catches of `r Spp_short` have been below the annual catch limit. The last ten years total dead catches for `r Spp_short` against he overfishing limits (OFLs), the acceptable biological catches (ABCs), the annual catch limits (ACLs) are shown in @tbl-man-management. 
+The last ten years total dead catches for `r Spp_short` against he overfishing limits (OFLs), the acceptable biological catches (ABCs), the annual catch limits (ACLs) are shown in @tbl-man-management. In the last ten years, total dead catches of `r Spp_short` have been below the annual catch limit for most years, with exception of 2018 and 2019, when catches exceeded ACLs by 41.6 and 23.9 metric tons, respectively. 
 
 ## Harvest Projections and Decision Table
 

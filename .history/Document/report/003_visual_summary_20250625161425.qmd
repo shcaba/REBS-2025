@@ -1,0 +1,41 @@
+# Visual Summary {-}
+
+## Data Changes
+
+## Model Output
+
+```{r} 
+#| label: fig-model-output-comp
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of the 2025 (current model) and 2013 (last benchmark assessment) Rougheye/Blackspotted Rockfishes stock assessments using relative stock status (points) and stock scale (color of the points). The gray envelope around the 2025 model are the 95% uncertainty intervals for stock status. The catch history (combined across fleets standardized to the largest value) is given to compare the stock trajectory to the catch history."
+#| fig-alt: "All values can be found in the Report file of each model."
+
+knitr::include_graphics(file.path(plot_dir,"Summary_plot_model_output.png"))
+
+```
+
+## Sources of Uncertainty
+
+```{r}
+#| label: tbl-uncertainty_summary_viz
+#| echo: false
+#| message: false
+#| warning: false
+#| results: "asis"
+#| tbl-cap: "Summary of uncertainty sources and how they influence stock scale and relative status in the Rougheye/Blackspotted reference model."
+
+uncertainty_sum <- read.csv(here::here("Document","report", "tables_4_doc", "Uncertainty_summary.csv"))
+
+uncertainty_sum |>
+  gt() |>
+  fmt_missing(everything(), missing_text = "") |>
+  fmt_number(decimals = 2) |>
+  tab_options(
+    table.font.size = 12,
+    latex.use_longtable = TRUE
+  ) |>
+  as_latex()
+
+```

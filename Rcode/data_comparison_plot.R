@@ -133,6 +133,6 @@ data_comparison_plot <- ggplot(both_models, aes(
 ggsave(
   filename = "data_comparison_2013_2025.png",           
   plot = data_comparison_plot,                              
-  path = here::here("Document", "report", "plots_4_doc")#,
-#  width = 8, height = 10, units = "in", dpi = 300 
+  path = here::here("Document", "report", "plots_4_doc"),
+  width = 6, height = 7, units = "in", dpi = 300 
 )

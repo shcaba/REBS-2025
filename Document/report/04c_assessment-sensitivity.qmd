@@ -75,14 +75,16 @@ None of the sensitivities were found to be outside of the reference model uncert
  	13. No recruitment estimation
  	14. Estimate from 1940 onward
 	15. Estimate from 1980 onward
-	
+
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in @tbl-sensitivities-sel-rec. Comparison plots for the results relative to the reference model are in @fig-sensi-SelRec and @fig-sensi-RE-SelRec. Few (starting in 1980) or no recruitment deviation estimation leads to larger stock scale required to make up for the catch history and lack of recruitment compensation. There is a drop in stocks status when starting recruitment deviations in 1940, but more similar to the reference model. Stock status is steady in these scenarios and all uncertainty is included in the reference model uncertainty (@fig-sensi-RE-SelRec).
+
 * Selectivity
 
 	16. Logistic selectivity for all fisheries and time blocks
 	17. Logistic selectivity for bottom trawl fishery
 	18. Logistic selectivity for non-trawl fishery
  
-Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in @tbl-sensitivities-sel-rec. Comparison plots for the results relative to the reference model are in @fig-sensi-SelRec and @fig-sensi-RE-SelRec. Few (starting in 1980) or no recruitment deviation estimation leads to larger stock scale required to make up for the catch history and lack of recruitment compensation. There is a drop in stocks status when starting recruitment deviations in 1940, but more similar to the referece model. Stock status is steady in these scenarios and all uncertainty is included in the reference model uncertainty (@fig-sensi-RE-SelRec).
+
 
 The model is much more sensitive to the assumption that fishery selectivity for the bottom trawl and/or non-trawl are logistic. These produce the most sensitive of all the explored alternative models scenarios in both scale (lower) and stock status. In all of these instances, the uncertainty is outside that of the reference model @fig-sensi-RE-SelRec. The reason these are less likely scenarios can be seen in the notably degraded fits to the bottom trawl and/or non-trawl length compositions (@fig-sensi-logsel_fits). This supports the choice for the change in the reference model from the previous stock assessment to consider dome-shaped selectivity for those two fisheries. Given the only scenarios to fall below the low uncertainty treat the bottom trawl as logistic selectivity, it is a good candidate for a lower state of nature (and not a risk neutral model).
 
@@ -101,13 +103,13 @@ The component likelihoods show a clear conflict in the length and age data, with
 
 The profile on the assumption of $h$ (defining productivity of the stock) demonstrates the data and current model specification do not demonstrate support for a particular steepness value (@fig-likeprof-h-parm). The change in scale and stock status is small and mostly flat through a large range of $h$ values. The lack of information on $h$ is seen across the data likelihood components  (@fig-likeprof-h-components). Given the strong signal of a health stock with little contrast in historical population trajectory, these are expected results. This strongly supports the pre-specifying of this value, but also demonstrates the low sensitivity to pre-specifying this value.
 
-#### Male natural mortality ($M$)
+#### Male Natural Mortality ($M$)
 
 The profile on the assumption of male $M$ (while still estimating female $M$) demonstrates the data and current model specification support a higher value of male $M$ than what is being used in the reference model (@fig-likeprof-M-parm). This uncertainty has a much larger expression in the scale than in the stock status, and one major reason the model estimated uncertainty in scale is so large. It is also a reason why only female $M$ was estimated. Comparing the sex-specific values of $M$, females are always higher than males (@fig-likeprof-M-sex). Regarding stock status, there were no explored $M$ values that caused the stock to go below the target reference point.
 
 The component likelihoods show a some conflict in the length and age data, with lengths (mostly the non-trawl lengths; most of the other length contain no information) pulling for higher $M$ values and ages for lower $M$ values (@fig-likeprof-M-components). As noted when building the reference model, ages are believed to contain more information on natural mortality than lengths. Consider that component likelihood profile, the reference model value for male $M$ is the lowest support by the age data, and was chosen to avoid the fast increasing scale estimates. The integrated assessment approach does not allow for ages only to define the estimation of $M$, and thus the choice to pre-specify one $M$ value and estimate the other in order to anchor to compensate for the incursion of the length data signal in the estimation of $M$.
 
-### Summary of Uncertainty source and states of nature
+### Summary of Sources of Uncertainty and States of Nature
 
 Over the many different sources of potential uncertainty, patterns in how these sources affect scale and status emerge (@tbl-uncertainty_summary). These sources highlight conflicts in data and selectivity assumptions, while also emphasizing key uncertainty in natural mortality. Specifically, there are many ways to make the reference model at a higher or lower scale and/or stock status (@tbl-uncertainty_summary). In building states of nature and around this risk neutral reference model, the two key axes of uncertainty are based around the treatment of natural mortality and selectivity. The high state takes the estimation of selectivity (allowing dome-shaped if chosen) and adding the estimation of $M$ for both sexes (Model specification sensitivity scenario #1). The low state of nature assume the reference value of male $M$ with an estimated female $M$ and constraining the selectivity of bottom trawl and non-trawl fisheries to logistic (Model specification sensitivity scenario #16). These produce a very wide set of uncertainties around both scale and stock status (@fig-states-of-nature). If these are treated as an ensemble, with high and low states of nature assuming a weight of 12.5% and the reference model the remaining 75%, the uncertainty range can be expressed as one model output (@fig-ensemble). 
 

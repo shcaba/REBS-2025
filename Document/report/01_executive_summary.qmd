@@ -372,7 +372,7 @@ Stock scale was also sensitive to assumptions about natural mortality. `r Spp_sh
 ## Scientific Uncertainty {-}
 The model estimated uncertainty ($\sigma$) around the 2025 spawning output is `r round(model_output$Pstar_sigma,2)`. The uncertainty around the OFL is `r round(model_output$OFL_sigma,2)`. These values underestimate the overall uncertainty as they do not incorporate the model structural uncertainty and do not account for any time-varying dynamics other than recruitment. The estimated uncertainty values are higher than the Category 1 default of 0.5, so all projections will use the estimated $\sigma$.
 
-## Harvest Projections and Decision Tables {-}
+## Harvest Projections and Decision Table {-}
 Projections of the overfishing limit, acceptable biological catch, and annual catch limit, all based on a $P^*$ of 0.45 and a log-space standard deviation of the overfishing limit ($\sigma$) of `r round(model_output$OFL_sigma,2)` (as estimated in this model) are included in @tbl-es-projections. Assumed catches for 2025 and 2026 for this projection were provided by the PFMC Groundfish Management Team, and catches from 2027 onward assume full attainment of the acceptable biological catch.
 
 No decision table is needed in draft assessments undergoing review.

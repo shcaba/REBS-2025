@@ -2,6 +2,17 @@
 
 ## Data Changes
 
+```{r} 
+#| label: fig-data-changes
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of time series of data sources used in the 2025 (current model, dark blue points) and the 2013 (last benchmark assessment, light blue points) Rougheye/Blackspotted rockfishes stock assessments."
+
+knitr::include_graphics(file.path(here::here("Document", "report", "plots_4_doc", "data_comparison_2013_2025.png")))
+
+```
+
 ## Model Output
 
 ```{r} 
@@ -9,12 +20,14 @@
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Comparison of the 2025 (current model) and 2013 (last benchmark assessment) Rougheye/Blackspotted Rockfishes stock assessments using relative stock status (points) and stock scale (color of the points). The gray envelope around the 2025 model are the 95% uncertainty intervals for stock status. The catch history (combined across fleets standardized to the largest value) is given to compare the stock trajectory to the catch history."
+#| fig-cap: "Comparison of the 2025 (current model) and the 2013 (last benchmark assessment) Rougheye/Blackspotted rockfishes stock assessments using relative stock status (points) and stock scale (color of the points). The gray envelope around the 2025 model are the 95% uncertainty intervals for stock status. The catch history (combined across fleets standardized to the largest value) is given to compare the stock trajectory to the catch history."
 #| fig-alt: "All values can be found in the Report file of each model."
 
 knitr::include_graphics(file.path(plot_dir,"Summary_plot_model_output.png"))
 
 ```
+
+\newpage
 
 ## Sources of Uncertainty
 
@@ -24,7 +37,7 @@ knitr::include_graphics(file.path(plot_dir,"Summary_plot_model_output.png"))
 #| message: false
 #| warning: false
 #| results: "asis"
-#| tbl-cap: "Summary of uncertainty sources and how they influence stock scale and relative status in the Rougheye/Blackspotted reference model."
+#| tbl-cap: "Summary of uncertainty sources and how they influence stock scale and relative status in the Rougheye/Blackspotted rockfishes reference model."
 
 uncertainty_sum <- read.csv(here::here("Document","report", "tables_4_doc", "Uncertainty_summary.csv"))
 
@@ -35,10 +48,6 @@ uncertainty_sum |>
   tab_options(
     table.font.size = 12,
     latex.use_longtable = TRUE
-  ) |>
-  tab_stub_indent(
-    rows =c(3,4,7,8),
-    indent=3
   ) |>
   as_latex()
 

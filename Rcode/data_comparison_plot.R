@@ -50,27 +50,32 @@ prev_model_df <- prev_model_df %>%
 prev_model_df <- prev_model_df %>%
   dplyr::filter(typename != "mnwgt")
 
-prev_model_df_bt_discard <- prev_model_df %>%
-  dplyr::filter(typename == "discard" & fleetnames == "BOTTOM_TRAWL")
+#prev_model_df_bt_discard <- prev_model_df %>%
+#  dplyr::filter(typename == "discard" & fleetnames == "BOTTOM_TRAWL")
 
 prev_model_df <- prev_model_df %>%
-  dplyr::filter(!(typename == "discard" & fleetnames == "BOTTOM_TRAWL"))
+  dplyr::filter(!(typename == "discard" & fleetnames %in% c("BOTTOM_TRAWL", "NON_TRAWL")))
 
-prev_model_df_bt_discard$typename <- "catch"
-prev_model_df_bt_discard$fleetnames <- "BOTTOM_TRAWL_DISCARD"
+prev_catch <- prev_replist$catch
+prev_catch$all_dis <- prev_catch$dead_bio - prev_catch$ret_bio
 
-prev_model_df <- rbind(prev_model_df, prev_model_df_bt_discard)
+prev_bt_nt_dis <- prev_catch %>%
+  filter(Fleet %in% c("1","2")) %>%
+  select(Yr, Fleet, Fleet_Name, all_dis)
 
-prev_model_df_nt_discard <- prev_model_df %>%
-  dplyr::filter(typename == "discard" & fleetnames == "NON_TRAWL")
+prev_bt_nt_dis$itype <- 6
+prev_bt_nt_dis$typename <- "catch"
 
-prev_model_df <- prev_model_df %>%
-  dplyr::filter(!(typename == "discard" & fleetnames == "NON_TRAWL"))
+prev_bt_nt_dis <- prev_bt_nt_dis %>%
+  select(Yr, Fleet, itype, typename, Fleet_Name, all_dis) %>%
+  mutate(Fleet_Name = recode(Fleet_Name,
+                             "TRAWL" = "BOTTOM_TRAWL_DISCARD",
+                             "FIXED" = "NON_TRAWL_DISCARD"
+  ))
 
-prev_model_df_nt_discard$typename <- "catch"
-prev_model_df_nt_discard$fleetnames <- "NON_TRAWL_DISCARD"
+colnames(prev_bt_nt_dis) <- c("yr","fleet","itype","typename","fleetnames","size")
 
-prev_model_df <- rbind(prev_model_df, prev_model_df_nt_discard)
+prev_model_df <- rbind(prev_model_df, prev_bt_nt_dis)
 
 
 both_models <- rbind(
@@ -89,6 +94,15 @@ both_models <- both_models %>%
     fleet_source = paste(fleetnames, source, sep = " - ")  # new y-axis
   )
 
+#if we want bubble size to scale for lengths and ages
+both_models <- both_models %>%
+  mutate(size_scaled = case_when(
+    typename == "catch" ~ size / max(size[typename == "catch"], na.rm = TRUE),
+    typename == "cpue" ~ 0.1,  # fixed bubble size
+    typename == "lendbase" ~ size / max(size[typename == "lendbase"], na.rm = TRUE),
+    typename == "condbase" ~ size / max(size[typename == "condbase"], na.rm = TRUE)
+  ))
+
 facet_labels <- c(
   catch = "Catch",
   cpue = "Indices",
@@ -100,11 +114,13 @@ labels_use <- both_models %>%
   distinct(fleet_source, fleetnames) %>%
   tibble::deframe()  
 
+################################################
+#use this for all bubbles same size
 data_comparison_plot <- ggplot(both_models, aes(
   x = yr,
   y = factor(fleet_source),
   color = source,
-#  size = size
+  #  size = size
 )) +
   geom_point(alpha = 0.7) +
   facet_grid(typename ~ ., scales = "free_y", space = "free_y", labeller = labeller(typename = facet_labels)) +
@@ -113,8 +129,8 @@ data_comparison_plot <- ggplot(both_models, aes(
     labels = c("ref" = "2025", "prev" = "2013"),
     name = "Assessment"
   ) +
-#  scale_size(range = c(1, 6)) +
-#  guides(size = "none") +
+  #  scale_size(range = c(1, 6)) +
+  #  guides(size = "none") +
   scale_y_discrete(labels = labels_use) +
   labs(
     x = "Year",
@@ -129,6 +145,38 @@ data_comparison_plot <- ggplot(both_models, aes(
     legend.position = "bottom",
     strip.text = element_text(face = "bold", size = 8)
   )
+######################################################
+#or use this for bubbles scaled for lengths and ages
+data_comparison_plot <- ggplot(both_models, aes(
+  x = yr,
+  y = factor(fleet_source),
+  color = source,
+  size = size_scaled
+)) +
+  geom_point(alpha = 0.7) +
+  facet_grid(typename ~ ., scales = "free_y", space = "free_y", labeller = labeller(typename = facet_labels)) +
+  scale_color_manual(
+    values = c("ref" = "blue", "prev" = "lightblue"),
+    labels = c("ref" = "2025", "prev" = "2013"),
+    name = "Assessment"
+  ) +
+  scale_size(range = c(1, 4.5)) +
+  guides(size = "none") +
+  scale_y_discrete(labels = labels_use) +
+  labs(
+    x = "Year",
+    y = "Fleet",
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.y = element_text(size = 6),
+    axis.text.x = element_text(size = 7),
+    legend.text = element_text(size = 7),
+    legend.title = element_text(size = 8),
+    legend.position = "bottom",
+    strip.text = element_text(face = "bold", size = 8)
+  )
+#################################################
 
 ggsave(
   filename = "data_comparison_2013_2025.png",           

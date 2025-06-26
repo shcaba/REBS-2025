@@ -868,8 +868,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Comparison of length compositions between non-trawl and non-trawl discard fleets, sexes combined."
-#| fig-alt: "Comparison of length compositions between non-trawl and non-trawl discard fleets, sexes combined."
+#| fig-cap: "Comparison of length compositions (lengths in cm) between non-trawl and non-trawl discard fleets, sexes combined."
+#| fig-alt: "Comparison of length compositions (lengths in cm) between non-trawl and non-trawl discard fleets, sexes combined."
 
 knitr::include_graphics(
   file.path(plot_dir, "NT_length_vs_discard.png")
@@ -881,8 +881,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Comparison of length compositions between trawl and trawl discard fleets, sexes combined."
-#| fig-alt: "Comparison of length compositions between trawl and trawl discard fleets, sexes combined."
+#| fig-cap: "Comparison of length compositions (lengths in cm) between trawl and trawl discard fleets, sexes combined."
+#| fig-alt: "Comparison of length compositions (lengths in cm) between trawl and trawl discard fleets, sexes combined."
 
 knitr::include_graphics(
   file.path(plot_dir, "Trawl_landings_discard_comparisons.png")
@@ -2061,7 +2061,7 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially."
+#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the five most recent years of data area removed sequentially."
 #| fig-alt: "Values are provided in the Report.sso file."
 #| fig-pos: H
 

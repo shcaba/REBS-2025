@@ -1,6 +1,6 @@
 # Visual Summary {-}
 
-## Data Changes
+## Data Updates
 
 ```{r} 
 #| label: fig-data-changes
@@ -29,7 +29,7 @@ knitr::include_graphics(file.path(plot_dir,"Summary_plot_model_output.png"))
 
 \newpage
 
-## Sources of Uncertainty
+## Sources of Sensitivity
 
 ```{r}
 #| label: tbl-uncertainty_summary_viz

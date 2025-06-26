@@ -59,7 +59,7 @@ Fits to the sex-specific conditional age at length data are examined based on th
 Marginal age compositions are not fit in the model, but they are included in order to see how well they fit the reference model without influencing the likelihood (@fig-marage_bt to @fig-marage_wcgbts). Marginal length and age composition cannot be used in the same model because of the overlap of fish in both samples. This is why ages conditioned on lengths are often used with the length compositions. But it still stands that age compositions, instead of lengths, could be used. So adding the marginal age compositions passively (i.e., not contributing to the overall likelihood of the model) can offer insight into how consistent they are with the current model fit. Overall the realized fits are good.  
 
 ## Model Results 
-As a supplement to the model results figures included in this report and described below, a full set of diagnostic plots created by the {r4ss} package is available at https://github.com/shcaba/REBS-2025 along with the Stock Synthesis input files.
+As a supplement to the model results figures included in this report and described below, a full set of diagnostic plots created by the {r4ss} package is available at https://github.com/shcaba/REBS-2025/tree/main/Document/report/ref_model along with the Stock Synthesis input files.
 
 ### Parameter Estimates
 

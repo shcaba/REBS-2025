@@ -2061,7 +2061,7 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially."
+#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the five most recent years of data area removed sequentially."
 #| fig-alt: "Values are provided in the Report.sso file."
 #| fig-pos: H
 

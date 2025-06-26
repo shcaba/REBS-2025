@@ -47,10 +47,6 @@ uncertainty_sum |>
     table.font.size = 12,
     latex.use_longtable = TRUE
   ) |>
-  tab_stub_indent(
-    rows =c(3,4,7,8),
-    indent=3
-  ) |>
   as_latex()
 
 ```

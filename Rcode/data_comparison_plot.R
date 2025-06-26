@@ -134,5 +134,5 @@ ggsave(
   filename = "data_comparison_2013_2025.png",           
   plot = data_comparison_plot,                              
   path = here::here("Document", "report", "plots_4_doc"),
-  width = 6, height = 7, units = "in", dpi = 300 
+  width = 5, height = 6, units = "in", dpi = 300 
 )

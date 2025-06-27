@@ -748,8 +748,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Proportion of mature fish by length for Rougheye/Blackspotted Rockfishes complex and by species."
-#| fig-alt: "Proportion of mature fish by length for Rougheye/Blackspotted Rockfishes complex and by species."
+#| fig-cap: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
 
 knitr::include_graphics(
   file.path(plot_dir, "l50_both_species.png")
@@ -762,8 +762,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Proportion of mature fish by age for Rougheye/Blackspotted Rockfishes complex and by species."
-#| fig-alt: "Proportion of mature fish by age for Rougheye/Blackspotted Rockfishes complex and by species."
+#| fig-cap: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
 
 knitr::include_graphics(
   file.path(plot_dir, "a50_both_species.png")

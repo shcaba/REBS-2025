@@ -2433,6 +2433,19 @@ knitr::include_graphics(
 )
 ```
 
+```{r}
+#| label: fig-ensemble-violin
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Ensemble terminal year relative stock status for the reference model and two states of nature."
+#
+knitr::include_graphics(
+    file.path(sens_dir,"statesofnature", "Ensemble_comp_plots_RSS.png")
+)
+```
+
+
 \newpage
 
 <!-- Reference Points and Forecasts -->

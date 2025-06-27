@@ -51,12 +51,21 @@ SS_plots(replist)
 
 #start sensitivity runs here
 
-model_directory <- here::here(
-  'models')
+## THIS IS WHAT WAS USED TO RUN THE SENSITVITIES
+#model_directory <- here::here(
+#  'models')
+#base_model_dir <- here::here(
+#  'models',
+#  'RB_ref_model_updated'
+#)
+
+####BUT THIS IS THE FILE PATH FOR THE BASE MODEL
 base_model_dir <- here::here(
-  'models',
-  'RB_ref_model_updated'
+  'Document',
+  'report',
+  'ref_model'
 )
+
 #exe_loc <- here::here('models/base_model')
 base_model <- SS_read(base_model_dir, ss_new = TRUE)
 base_out <- SS_output(base_model_dir)

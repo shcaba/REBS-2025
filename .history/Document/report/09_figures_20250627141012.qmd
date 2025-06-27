@@ -790,8 +790,6 @@ knitr::include_graphics(
 
 <!-- Model bridging -->
 
-## Model Bridging
-
 ```{r} 
 #| label: fig-RSS_2013
 #| echo: false 
@@ -898,8 +896,6 @@ knitr::include_graphics(
 
 <!-- Model diagnostics -->
 
-## Model Diagnostics
-
 ```{r} 
 #| label: fig-M-profile-explore
 #| echo: false 
@@ -931,8 +927,6 @@ knitr::include_graphics(
 
 
 <!-- Model convergence and fits to data -->
-
-## Model Convergence
 
 ```{r} 
 #| label: fig-pairs_plot_fast
@@ -978,11 +972,7 @@ knitr::include_graphics(
 
 <!-- Fits to data -->
 
-## Model Fits to Data
-
 <!-- Lengths -->
-
-### Lengths
 
 ```{r} 
 #| label: fig-agg-len-fit
@@ -1309,8 +1299,6 @@ knitr::include_graphics(
 \newpage
 
 <!-- Ages -->
-
-### Ages
 
 
 ```{r} 
@@ -1833,8 +1821,6 @@ knitr::include_graphics(
 
 <!-- Indices of abundance -->
 
-### Indices of Abundance
-
 ```{r} 
 #| label: fig-index-tri
 #| echo: false 
@@ -1892,8 +1878,6 @@ knitr::include_graphics(
 ```
 
 <!-- Parameter estimates -->
-
-## Parameter Estimates
 
 ```{r} 
 #| label: fig-vbgf
@@ -1982,8 +1966,6 @@ knitr::include_graphics(
 ```
 
 <!-- Model outputs -->
-
-## Model Derived Outputs
 
 ```{r} 
 #| label: fig-spawnout
@@ -2075,7 +2057,7 @@ knitr::include_graphics(
 
 \pagebreak
 
-## Retrospecitve Analysis
+
 
 ```{r} 
 #| label: fig-retro-so
@@ -2110,8 +2092,6 @@ knitr::include_graphics(
 \newpage
 
 <!-- Sensitivity Analyses and Retrospectives -->
-
-## Sensitivity Analyses
 
 ```{r}
 #| label: fig-sens_indices_spout
@@ -2346,8 +2326,6 @@ knitr::include_graphics(
 
 <!-- Likelihood Profiles -->
 
-## Likelihood Profiles
-
 ```{r}
 #| label: fig-likeprof-lnR0-parm
 #| echo: false
@@ -2432,8 +2410,6 @@ knitr::include_graphics(
 )
 ```
 
-## States of Nature
-
 ```{r}
 #| label: fig-states-of-nature
 #| echo: false
@@ -2481,7 +2457,6 @@ knitr::include_graphics(
 
 <!-- Management -->
 
-## Management 
 
 ```{r} 
 #| label: fig-management-depletion

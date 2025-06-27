@@ -168,12 +168,11 @@ landings |>
 
 \pagebreak
 
+## Data
 
 <!-- data-->
 
  {{< pagebreak >}} 
-
-## Data
 
 ```{r}
 #| label: tbl-BT_landings
@@ -731,8 +730,6 @@ cat("\n\\end{landscape}\n")
 
 <!-- sensitivities-->
 
-## Sensitivity Analyses
-
 ```{r}
 #| label: tbl-sensitivities-like-indices
 #| echo: false
@@ -1142,7 +1139,7 @@ cat("\n\\end{landscape}\n")
 ```
 
  {{< pagebreak >}}  
-
+ 
 ```{r}
 #| label: tbl-uncertainty_summary
 #| echo: false
@@ -1170,8 +1167,6 @@ uncertainty_sum |>
  <!-- projections -->
 
 <!-- management-->
-
-## Management Quantities
 
 ```{r, results = "asis"}
 #| label: tbl-man-management

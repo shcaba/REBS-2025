@@ -982,7 +982,7 @@ knitr::include_graphics(
 
 <!-- Lengths -->
 
-### Lengths
+### Lenghts
 
 ```{r} 
 #| label: fig-agg-len-fit
@@ -1833,7 +1833,7 @@ knitr::include_graphics(
 
 <!-- Indices of abundance -->
 
-### Indices of Abundance
+## Indices of Abundance
 
 ```{r} 
 #| label: fig-index-tri
@@ -2075,7 +2075,7 @@ knitr::include_graphics(
 
 \pagebreak
 
-## Retrospecitve Analysis
+
 
 ```{r} 
 #| label: fig-retro-so
@@ -2346,8 +2346,6 @@ knitr::include_graphics(
 
 <!-- Likelihood Profiles -->
 
-## Likelihood Profiles
-
 ```{r}
 #| label: fig-likeprof-lnR0-parm
 #| echo: false
@@ -2432,8 +2430,6 @@ knitr::include_graphics(
 )
 ```
 
-## States of Nature
-
 ```{r}
 #| label: fig-states-of-nature
 #| echo: false
@@ -2481,7 +2477,6 @@ knitr::include_graphics(
 
 <!-- Management -->
 
-## Management 
 
 ```{r} 
 #| label: fig-management-depletion

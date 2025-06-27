@@ -982,7 +982,7 @@ knitr::include_graphics(
 
 <!-- Lengths -->
 
-### Lengths
+### Lenghts
 
 ```{r} 
 #| label: fig-agg-len-fit
@@ -1833,8 +1833,6 @@ knitr::include_graphics(
 
 <!-- Indices of abundance -->
 
-### Indices of Abundance
-
 ```{r} 
 #| label: fig-index-tri
 #| echo: false 
@@ -1892,8 +1890,6 @@ knitr::include_graphics(
 ```
 
 <!-- Parameter estimates -->
-
-## Parameter Estimates
 
 ```{r} 
 #| label: fig-vbgf
@@ -1982,8 +1978,6 @@ knitr::include_graphics(
 ```
 
 <!-- Model outputs -->
-
-## Model Derived Outputs
 
 ```{r} 
 #| label: fig-spawnout
@@ -2075,7 +2069,7 @@ knitr::include_graphics(
 
 \pagebreak
 
-## Retrospecitve Analysis
+
 
 ```{r} 
 #| label: fig-retro-so
@@ -2110,8 +2104,6 @@ knitr::include_graphics(
 \newpage
 
 <!-- Sensitivity Analyses and Retrospectives -->
-
-## Sensitivity Analyses
 
 ```{r}
 #| label: fig-sens_indices_spout
@@ -2346,8 +2338,6 @@ knitr::include_graphics(
 
 <!-- Likelihood Profiles -->
 
-## Likelihood Profiles
-
 ```{r}
 #| label: fig-likeprof-lnR0-parm
 #| echo: false
@@ -2432,8 +2422,6 @@ knitr::include_graphics(
 )
 ```
 
-## States of Nature
-
 ```{r}
 #| label: fig-states-of-nature
 #| echo: false
@@ -2481,7 +2469,6 @@ knitr::include_graphics(
 
 <!-- Management -->
 
-## Management 
 
 ```{r} 
 #| label: fig-management-depletion

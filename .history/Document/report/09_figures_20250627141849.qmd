@@ -982,7 +982,7 @@ knitr::include_graphics(
 
 <!-- Lengths -->
 
-### Lengths
+### Lenghts
 
 ```{r} 
 #| label: fig-agg-len-fit

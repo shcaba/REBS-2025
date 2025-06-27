@@ -168,12 +168,11 @@ landings |>
 
 \pagebreak
 
+## Data
 
 <!-- data-->
 
  {{< pagebreak >}} 
-
-## Data
 
 ```{r}
 #| label: tbl-BT_landings

@@ -982,7 +982,7 @@ knitr::include_graphics(
 
 <!-- Lengths -->
 
-### Lengths
+### Lenghts
 
 ```{r} 
 #| label: fig-agg-len-fit
@@ -2075,7 +2075,7 @@ knitr::include_graphics(
 
 \pagebreak
 
-## Retrospecitve Analysis
+
 
 ```{r} 
 #| label: fig-retro-so

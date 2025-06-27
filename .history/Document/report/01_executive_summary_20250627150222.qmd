@@ -435,7 +435,7 @@ There are many areas of research that would benefit the understanding and assess
 ## Risk Table{-}
 To understand the impact of ecosystem and environmental conditions on `r Spp_short`, we evaluated recent trends in drivers of recruitment, predators, and prey, along with context from the climate vulnerability assessment (CVA) of @mcclure2023. We did not consider non-fisheries human activities during this evaluation.  In considering ecosystem and environmental conditions, we focus on recent trends over the last 5 years; we assume that long-term trends are implicitly represented in the stock assessment and do not represent notable changes that warrant inclusion in the risk table. 
 
-Overall we consider ecosystem and environmental conditions to be neutral (Level 2) with medium confidence based on high agreement among indicators and medium evidence, and no apparent concerns. The assessment data inputs are also considered to be neutral (Level 2). Details for these scores can be found in @tbl-risk, based on the framework outlined by the California Current Integrated Ecosystem Assessment (CCIEA) team [@Golden2024].
+Overall we consider ecosystem and environmental conditions to be neutral (Level 2) with medium confidence based on high agreement among indicators and medium evidence, and no apparent concerns. We use this, plus information related to the stock assessment, to fill out the risk table in @tbl-risk, based on the framework outlined by the California Current Integrated Ecosystem Assessment (CCIEA) team [@Golden2024].
 
 \newpage
 

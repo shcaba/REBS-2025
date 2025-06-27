@@ -41,6 +41,8 @@ knitr::include_graphics(file.path(plot_dir,"Summary_plot_model_output.png"))
 
 uncertainty_sum <- read.csv(here::here("Document","report", "tables_4_doc", "Uncertainty_summary.csv"))
 
+colnames(uncertainty_sum) <- c("Source", "Source Option", "Change", "Scale", "Status")
+
 uncertainty_sum |>
   gt() |>
   fmt_missing(everything(), missing_text = "") |>

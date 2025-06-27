@@ -45,6 +45,8 @@ Between mid-1960s and mid-1970s, foreign trawl fleets from the former Soviet Uni
 
 Annual amounts of `r Spp_short` bycatch (retained and discarded) in the Pacific Hake fishery were obtained from the North Pacific Database Program (NORPAC). That time series covers the period between 1977 and 2024 and include catches by foreign and domestic fisheries as well as removals during the time of Joint Ventures. `r Spp_short` catches within the at-sea hake fishery were treated in the model as a separate fleet (@tbl-BT_landings).
 
+\newpage
+
 ### Discards
 
 #### Historical Discards {#sec-historical_discard}
@@ -145,6 +147,8 @@ field [@thorson_geostatistical_2015]. Tweedie, delta-binomial, delta-gamma, and 
 Standardized indices for all four surveys overlaid are shown in @fig-All_indices, where each index is rescaled to have mean observation = 1.0.
 
 Description of each survey is provided below; details on methods used to process the data are also discussed. 
+
+\newpage
 
 ### NWFSC West Coast Groundfish Bottom Trawl Survey
 
@@ -274,7 +278,7 @@ Related to this issue of possible age truncation, applying a catch curve analysi
 
 One challenge to estimating natural mortality within the model is the interaction of estimating dome-shaped selectivity with estimating natural mortality. If all fleets assume some level of dome-shaped selectivity, it is difficult to determine if the unseen larger, older individuals are due to natural death or fishing mortality. Typically, at least one major fleet needs to achieve full selectivity for the larger, older individuals. The 2013 assessment suggested some dome-shaped selectivity in the two major fleets, thus any natural mortality estimates are evaluated depending on the forms of fleet selectivity.
 
-In this assessment, we estimate female natural mortality using the @hamel_development_2022 prior, but fix male natural mortality at the value of 0.036, the mean of the @hamel_development_2022 prior that corresponds to maximum age of 150 years. In runs with natural mortality estimated for both sexes, estimated values were substantially higher and did not align with observed maximum ages and available information on `r Spp_short` life history.
+In this assessment, we estimate female natural mortality using the @hamel_development_2022 prior, but fix male natural mortality at the value of 0.036, the median of the @hamel_development_2022 prior that corresponds to maximum age of 150 years. In runs with natural mortality estimated for both sexes, estimated values were substantially higher and did not align with observed maximum ages and available information on `r Spp_short` life history.
 
 ### Growth (Length-at-Age)
 Age and length data are used to estimate important growth parameters. @fig-AL_1 shows the available age and length data and externally estimated growth curves. Female and male sample sizes are very similar. The WCGBTS clearly and importantly samples the smallest, youngest individuals compared to the other two data sources. This allows for a better estimate of the age at size 0 (t~0~) and growth coefficient (k). The female asymptotic size (L~$\infty$~) is estimated notably higher from the PacFIN data, though male estimates of Linf are similar across the data sets. The overall externally derived estimates of female and male `r Spp_short` are

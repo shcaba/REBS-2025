@@ -7,7 +7,7 @@
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Comparison of time series of data sources used in the 2025 (current model, dark blue points) and the 2013 (last benchmark assessment, light blue points) Rougheye/Blackspotted rockfishes stock assessments."
+#| fig-cap: "Comparison of time series of data sources used in the 2025 (current model, dark blue points) and the 2013 (last benchmark assessment, light blue points) Rougheye/Blackspotted rockfishes stock assessments. Bubble sizes represent relative total catch standardized by the maximum total catch, relative sample size of length data standardized by the maximum sample size of length data, and relative sample size of age data standardized by the maximum sample size of age data."
 
 knitr::include_graphics(file.path(here::here("Document", "report", "plots_4_doc", "data_comparison_2013_2025.png")))
 

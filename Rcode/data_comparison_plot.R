@@ -1,5 +1,6 @@
 library(here)
 library(r4ss)
+library(dplyr)
 library(ggplot2)
 library(tibble)
 
@@ -160,7 +161,7 @@ data_comparison_plot <- ggplot(both_models, aes(
     labels = c("ref" = "2025", "prev" = "2013"),
     name = "Assessment"
   ) +
-  scale_size(range = c(1, 4.5)) +
+  scale_size(range = c(0.5, 4)) +
   guides(size = "none") +
   scale_y_discrete(labels = labels_use) +
   labs(
@@ -182,5 +183,5 @@ ggsave(
   filename = "data_comparison_2013_2025.png",           
   plot = data_comparison_plot,                              
   path = here::here("Document", "report", "plots_4_doc"),
-  width = 5, height = 6, units = "in", dpi = 300 
+  width = 4, height = 5, units = "in", dpi = 300 
 )

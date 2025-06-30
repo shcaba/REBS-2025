@@ -3,7 +3,7 @@
 #
 2025_rougheye_data.ss #_datfile
 2025_rougheye_control.ss #_ctlfile
-1 #_init_values_src
+0 #_init_values_src
 1 #_run_display_detail
 1 #_detailed_age_structure
 0 #_checkup

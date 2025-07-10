@@ -1,0 +1,340 @@
+# Data
+Data from a wide range of sources were evaluated within this assessment. Data sources included in the assessment model are summarized in @fig-data. Description of each data source used in the model is provided below.
+
+## Fishery-Dependent Data {#sec-fishery_data}
+`r Spp_short` are not targeted by a specific fishery, but are desirable and marketable, thus are typically retained when caught. They are often captured in bottom trawl, mid-water trawl, and longline fisheries. They are also commonly bycaught within the at-sea hake fishery. Small numbers have been observed in pot and shrimp trawl. Recreational catch is inconsequential and not accounted for in this assessment. 
+
+`r Spp_short` fishery-dependent data in this assessment are divided among six fleets, which include:
+
+* Fleet 1: Commercial bottom trawl fishery.
+* Fleet 2: Dead discard from bottom trawl fishery.
+* Fleet 3: Commercial non-trawl (mainly the long-line) fishery.
+* Fleet 4: Dead discard from non-trawl fishery.
+* Fleet 5: Contemporary mid-water trawl fishery.
+* Fleet 6: At-sea hake fishery bycatch.
+
+For the explanation for the chosen fleets and further details on fleet structure, please refer to @sec-fleet. 
+
+### Commercial Fishery Landings
+Recent and historical fisheries catches were compiled by state and then combined into the fishing fleets used in the assessment. Time series of catches by fleet are reported in @tbl-landings and shown in @fig-landings. The landings by state are given in @tbl-BT_landings for bottom trawl, @tbl-NT_landings for non-trawl, and @tbl-MDT_landings for mid-water trawl fleets.
+
+#### Recent landings
+Recent commercial landings of `r Spp_short` (2000-2024 for Washington, 1987–2024 for Oregon and 1981–2024 for California,) were obtained from [\gls{pacfin}](www.pacfin.psmfc.org), a regional fisheries database that manages fishery-dependent information in cooperation with West Coast state agencies and National Marine Fisheries Service (NMFS). Catch data were extracted from PacFIN on April 24, 2025. 
+
+#### Historical Landings
+Historical landings of `r Spp_short` were reconstructed by state. 
+
+The Washington historical landings (1889–2000) of `r Spp_short` were provided by Washington Department of Fish and Wildlife (WDFW), who recently conducted historical catch reconstruction for rockfish species, including `r Spp_short` [@tsou_reconstruction_in_prep]. The three main sources used in this reconstruction  included the US Fish Commission Report (UFSC), Washington Bound Volumes, and Washington Statistical Bulletin. The historical species composition was based on the various historical reports and interviews of fishermen and dockside samplers. The landings between 1981 and 2000 were also provided by WDFW (rather than obtained from PacFIN), since WDFW developed and used a improved method for apportioning unidentified rockfish (URCK) category in fish tickets to the individual species landings. This improved approach relaxed the borrowing rules for missing data used in the WDFW species allocation algorithm that feeds into PacFIN [@tsou_historical_2015]. New Washington historical landings represent an improvement to the assessment. 
+
+The Oregon historical landings (1896–1986) were obtained from Oregon historical catch reconstruction, conducted by Oregon Department of Fish and Wildlife (ODFW) in collaboration with NWFSC [@karnowski_historical_2014]. The Oregon landings for the period between 1987 and 1999 were also provided by the ODFW. For that period, Oregon PacFIN landings were supplemented with the additional estimates of `r Spp_short` landings reported within unspecified rockfish market categories (i.e., URCK and POP1; [@ODFW_URCK_POP_recon]). 
+
+The California historical landings were informed by several sources. Landings from the most recent “historical” period (between 1969 and 1980) were obtained from the California Cooperative Survey (CalCOM) database. Earlier landing records (between 1931 and 1968) were informed by the rockfish historical catch reconstruction conducted by the Southwest Fisheries Science Center [@ralston_documentation_2010]. 
+
+Comparison of `r Spp_short` historical landings by state and fleet between this and the 2013 assessment is provided in @fig-Ct_All. 
+The largest differences in this assessment from the 2013 model are in Washington landings (@fig-Ct_WA), with newly estimated landings being generally lower than those used in the previous assessment.  The new WDFW catch reconstruction completed by WDFW is considered an improvement.  
+
+Historical California and Oregon landings did not change substantially (@fig-Ct_CA and @fig-Ct_OR), with the exception of a few years. Discrepancies in California and Oregon non-trawl landings between the 2013 and 2025 assessments are caused by the fact that the non-trawl fleet in the 2013 assessment was limited to only fixed gear, when in 2025 assessment non-trawl fleet includes all non-trawl gear groups.  Slight discrepancies in Oregon trawl landings between 1987 and 1999 are from adding previously non-reported landings of `r Spp_short` in the unspecified rockfish market categories (see details above). 
+
+The update in historical changes shows only minor differences in model outputs (@fig-Ct_compsSO; @fig-Ct_compsRSS).
+
+#### Bycatch in the Foreign POP Fishery
+Between mid-1960s and mid-1970s, foreign trawl fleets from the former Soviet Union, Japan, Poland, Bulgaria and East Germany targeted aggregations of Pacific ocean perch in the Northeast Pacific Ocean, in the waters off the U.S. West Coast [@love_rockfishes_2002]. @rogers_species_2003 estimated removals of rockfish species caught within this foreign POP fishery, including removals of `r Spp_short`. In the assessment, `r Spp_short` bycatch in the foreign POP fishery between 1966 and 1976 as estimated by @rogers_species_2003 were added to commercial bottom trawl fleet (@tbl-BT_landings).
+
+#### At-Sea Hake Catches
+`r Spp_short` has long been bycaught in the fishery for the coastal population of Pacific Hake, which is almost exclusively conducted with mid-water trawls. The Pacific Hake fishery is currently 100% observed by the at-sea hake observer program (A-SHOP) and data on bycatch species, including `r Spp_short`, is being routinely collected. 
+
+Annual amounts of `r Spp_short` bycatch (retained and discarded) in the Pacific Hake fishery were obtained from the North Pacific Database Program (NORPAC). That time series covers the period between 1977 and 2024 and include catches by foreign and domestic fisheries as well as removals during the time of Joint Ventures. `r Spp_short` catches within the at-sea hake fishery were treated in the model as a separate fleet (@tbl-BT_landings).
+
+\newpage
+
+### Discards
+
+#### Historical Discards {#sec-historical_discard}
+Historically, little to no discarding was observed for `r Spp_short`. 
+
+The historical discard information comes from @pikitch_evaluation_1988, often referred to as the Pikitch study. The Pikitch study was conducted between 1985 and 1987 between 48°42’ and 42°60’ N. latitude [@pikitch_evaluation_1988]. Participation in the study was voluntary and included vessels using bottom, mid-water and shrimp trawl gears. Observers of normal fishing operations on commercial vessels collected the data, estimated the total weight of the catch by tow, and recorded the weight of species retained and discarded in the sample. 
+
+There are no mid-water trawl records of `r Spp_short`in the @pikitch_evaluation_1988, and only few fish records of bottom trawl catches, based on which  discard rate (discard weight over total weight) for bottom trawl was just 0.09%. Therefore, no historical discard was assumed in the model.
+
+#### Recent Discards {#sec-recent_discard}
+With the introduction of trip limits for rockfish in early 2000, limited discard has been observed for `r Spp_short`in bottom trawl and non-trawl fisheries. 
+
+In 2002, the West Coast Groundfish Observer Program (WCGOP) was implemented on the West Coast of the United States, which began with gathering bycatch and discard information for the limited entry trawl and fixed gear fleets. Observer coverage has expanded to include the California halibut trawl, the nearshore fixed gear and pink shrimp trawl fisheries. Since 2011, trawl fisheries have been managed with catch shares under a system of annual individual fishing quotas (IFQs) for the shoreside sector (i.e., vessels delivering to shoreside processors) and harvest cooperatives for the at-sea hake sectors (catcher-processors who catch and process hake at sea; and motherships, factory processors that take delivery of hake from catcher vessels at sea). Constant monitoring of catch using observers or electronic monitoring (EM) is required to participate in the trawl catch share fishery. 
+
+The discard amounts of `r Spp_short` for the period between 2002 and 2023 were obtained from WCGOP by year and fleet (bottom trawl, mid-water trawl and non-trawl), for both the catch share and the non-catch share sector. The discarding amounts of `r Spp_short` within bottom trawl and non-trawl fleets were included in the model as separate fleets. 
+
+Mid-water trawl discard was not present in the non-catch share sector and was extremely minimal (virtually non-existing) in the catch-share sector, with discard amounts averaging to 10 kg per year. Therefore, in the model, no discard was assumed for mid-water trawl fleet. 
+
+##### Bottom Trawl Discards
+Bottom trawl discard amounts by year are provided in @tbl-landings and shown in @fig-landings. Prior to 2011, before the start of the IFQ program, the discard of `r Spp_short` ranged between 1 metric ton and 60 metric tons, averaging at 23 metric tons a year. After 2011, the discard has been very low, not exceeding 0.5 metric ton a year. No discard data were available for 2024, and we used the average discard amount for 2019 - 2023 period to approximate 2024 discards for bottom trawl discard fleet.
+
+##### Non-Trawl Discard
+Non-trawl discard amounts by year are provided in are provided in @tbl-landings and shown in @fig-landings. Non-trawl discard of `r Spp_short` were made in both catch share and non-catch share sectors. Discard amounts in these sectors were combined by year to represent total discard within the fleet. The discards within this fleet ranged between 0.5 metric ton and 35 metric tons, with 10 metric tons as average per year. No discard data were available for 2024, and the 2023 discard amount was assumed for 2024 for non-trawl discard fleet.
+
+### Fishery Length and Age Data
+Length bins from 10 to 80 cm in 2 cm increments were used to summarize the length frequency of the catches in each year. The first length bin includes all observations less than 10 cm and the last bin includes all fish 80 cm and longer. Age distributions included bins from age 1 to age 100, with the first bin including all fish ages 0 and 1 and the last bin including all fish age 100 and above.
+
+#### Commercial Landings Length and Ages
+The fishery length and age data for bottom trawl, non-trawl and mid-water trawl fleets, based on samples collected by port samplers, were obtained from the PacFIN Biological Data System (BDS) database and extracted on April 24, 2025. The number of trips and fish sampled for lengths and ages by state and year are summarized in @tbl-BT_lengths_sample_sizes through @tbl-Fishery_age_sample_sizes, by fishing fleet. 
+
+Commercial length-frequency distributions were developed for each fleet and year, for which observations were available
+
+Females and males distributions were treated separately, to track sex-specific differences. For each fleet, the raw observations were expanded to the trip level, to account for differences in samples sizes relative catch weights among trips (first stage expansion). The expanded length observations were then further expanded to state level, to account for differences in sampling intensity of `r Spp_short` landings among states combined into a single fleet (second stage expansion). The expansion algorithm can be illustrated with the following equation:
+
+\begin{centering}
+
+$N_{b,j,y} = \displaystyle\sum_{s=1}^{s=k}\displaystyle\sum_{t=1}^{t=n}L_{b,j,t} \cdot
+\left(\frac{LC_t}{SC_t}\right) \cdot \left(\frac{LC_{s,y}}{SC_{s,y}}\right)$
+
+\end{centering}
+
+Where $N_{b,j,y}$ is the number of lengths in each length bin ($b$) by sex ($j$) and year ($y$) within each fleet. $L_{b,j,t}$ represents an individual length sample by bin ($b$) and sex ($j$) within an individual fishing trip ($t$). In the first stage expansion, $L_{b,j,t}$ was multiplied by the ratio of landed catch ($LC_t$) within that trip ($t$) to a portion of catch sampled for lengths ($SC_t$) within the same trip ($t$). In the second stage expansion, the individual length sample ($L_{b,j,t}$) was multiplied by the ratio of landed catch ($LC_{s,y}$) within individual state ($s$) and year ($y$) to catch weights sampled for lengths ($SC_{s,y}$) within the same state ($s$) and year ($y$). As the final step, the expanded length samples from the same size bin and sex were summed across all trips and states (combined into a single fleet) within a single year, to obtain the total number of lengths in each length bin by sex, year and fleet ($N_{b,j,y}$). The same calculations were repeated for each length bin, to develop sex specific length frequencies for each fishing fleet by year. 
+
+Age distributions were included in the model as conditional-ages-at-length (CAAL) observations. The marginal age compositions were also included, but only for evaluating the implied fits, while the CAAL data were used in the likelihood. The CAAL data were not expanded and were binned according to length, age, sex, and year.
+
+The filtering and processing of the PacFIN length and age composition data were conducted using the pacfintools package in R. The filtering steps included removing samples with missing vital information. 
+
+@fig-length_flt1_1 through @fig-length_flt5 show length frequencies for bottom trawl, non-trawl and mid-water fleets by year, and @fig-caal_flt1_1 through @fig-caal_flt5 show the commercial CAAL distributions by year for the same fleets. 
+
+The initial input values for length compositions in this assessment were calculated as a function of the number of trips and number of fish via the Stewart Method (pers.comm. I. Stewart, International Pacific Halibut Commission (IPHC)). The method is based on analysis of the input and model derived effective sample sizes from West Coast groundfish stock assessments. A piece-wise linear regression was used to estimate the increase in effective sample size per sample based on fish-per-sample and the maximum effective sample size for large numbers of individual fish. The resulting equations are:
+
+\begin{centering}
+
+Input N = $N_{\text{trips}} + 0.138 \cdot \ N_{\text{fish}}$ if $N_{\text{fish}}/N_{\text{trips}}$ is $<$ 44
+
+Input N = $7.06 \cdot \ N_{\text{trips}}$ if $N_{\text{fish}}/N_{\text{trips}}$ is $\geq$ 44
+
+
+\end{centering}
+
+The input sample size of CAAL data was set at the number of fish at each length by sex and by year. 
+
+##### Commercial Discard Lengths
+Discard length composition data for both bottom trawl and non-trawl discard fleets were available from WCGOP. The number of trips, hauls and fish sampled for lengths by year are summarized in @tbl-discard_sample_sizes, by discard fleet. 
+
+Discard length composition data were not sex-specific. Discard raw length observations were expanded to the haul level, to account for differences in catch among hauls (@fig-length_flt2 and @fig-length_flt4). 
+
+The initial input values for length compositions were calculated via the Stewart Method (see above). 
+
+No age data were available for discarded fish.
+
+##### At-Sea Hake Fishery Length and Age Compositions
+The sex-specific length and age data for at-sea hake fleet were collected by the At-Sea Hake Observer Program (ASHOP) and available through NORPAC database (@fig-length_flt2 and @fig-length_flt4). Age distributions were included in the model as CAAL observations, binned according to length, age, sex, and year (@fig-caal_flt6_1 through @fig-caal_flt6_2). 
+
+The number of hauls and fish sampled by year and used to create length frequency and CAAL distributions are summarized in @tbl-ashop_sample_sizes. 
+
+Input sample sizes for length compositions were based on the number of hauls sampled by year. The input sample size of CAAL data was set at the number of fish at each length by sex and by year. 
+
+The marginal age compositions were constructed, but only used in the model for evaluating the implied fits, while the CAAL data were used in the likelihood.
+
+## Fishery-independent data {#sec-surveys}
+Data from four fishery-independent surveys were used in this assessment: 
+
+* Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS; 20023-2024).
+* Survey 2: Triennial (every three years) Survey (1980-2004).
+* Survey 3: Alaska Fisheries Science Center (AFSC) Slope Survey (1997, 1999-2001).
+* Survey 4: Northwest Fisheries Science Center (NWFSC) Slope Survey (1999-2002).
+
+The surveys temporal and spatial coverage is summarized in @tbl-survey_coverage. 
+
+Information produced by these surveys included indices of relative abundance (all four surveys), length-frequency distributions (WCGBTS and Triennial survey), and age frequency distributions (WCGBTS). 
+
+Only the WCGBTS has new data for this assessment, but new methods were applied to all surveys to develop indices of abundance. 
+
+In this assessment, geostatistical models of biomass density were fit to survey data using the R package \gls{sdmtmb} [@Anderson:2022:SRP]. These models can account for latent spatial factors with a constant spatial Gaussian random field and spatiotemporal deviations to evolve as a random walk Guassian random
+field [@thorson_geostatistical_2015]. Tweedie, delta-binomial, delta-gamma, and mixture distributions, which allow for extreme catch events, were investigated. Results are only shown for the distribution that led to the best model diagnostics, e.g., similar distributions of theoretical normal quantiles and model quantiles, high precision, lack of extreme predictions that are incompatible with the life history, and low \gls{aic}. Estimates of biomass from this best model were predicted using a grid based on available survey locations. The {indexwc} R package [@johnson_indexwc_2025] was used to conduct the analysis and code to reproduce the analysis is available at https://pfmc-assessments.github.io/indexwc/.
+
+Standardized indices for all four surveys overlaid are shown in @fig-All_indices, where each index is rescaled to have mean observation = 1.0.
+
+Description of each survey is provided below; details on methods used to process the data are also discussed. 
+
+\newpage
+
+### NWFSC West Coast Groundfish Bottom Trawl Survey
+
+#### Survey Description
+The \gls{s-wcgbt} is conducted annually since 2003 @tbl-survey_coverage. The survey’s design and sampling methods are most recently described in detail in @keller2017. The survey is based on a random-grid design, covering the coastal waters from a depth of 100 to 700 fm (183-1280 m). This design generally uses four industry-chartered vessels per year assigned to a roughly equal number of randomly selected grid cells and divided into two 'passes' of the coast. Two vessels fish from north to south during each pass between late May to early October. This design therefore incorporates both vessel-to-vessel differences in catchability, as well as variance associated with selecting a relatively small number (approximately 700) of possible cells from a very large set of possible cells spread from the Mexican to the Canadian borders.
+
+#### Abundance Index
+The data were truncated to depths less than 875 m prior to modeling given that there were zero positive encounters in depths deeper than 875 m. The prediction grid was also truncated to only include available survey locations in depths between 55--875 m to limit extrapolating beyond the data and edge effects. 
+
+The chosen model used a delta model with a lognormal distribution for the catch-rate component. A logit-link was used for encounter probability and a log-link for positive catch rates. The response variable was catch (mt) with an offset of area (km^2^) to account for differences in effort. Fixed effects were estimated for each year. The following additional covariates were included: pass. Vessel-year effects, which were historically used for index standardization of this survey, were not included because the estimated variance for the random effect was close to zero. Vessel-year effects were more prominent when models did not include spatial effects and instead vessel-year terms accounted for the random selection of commercial vessels used during sampling [@helser_generalized_2004; @thorson_accounting_2014].
+
+Spatial variation, but not spatiotemporal variation, was included in either the encounter probability nor the positive catch rate model. Spatial variation was approximated using 200 knots, where more knots led to non-estimable standard errors because the positive encounters are too sparse to support the dense spatial structure.
+
+The biomass estimates produced for this assessment using \gls{sdmtmb} are comparable to the biomass estimates produced in the previous benchmark assessment (@fig-WCGBTS_comparison). The index is relatively flat with high variation (@fig-WCGBTS_index).
+
+#### Length and Age Compositions
+@tbl-survey_length_samples shows the number of lengths and @tbl-survey_age_samples shows the number of ages taken by the survey. 
+
+Length compositions were separated into males and females. These length compositions were expanded to account for difference in catch among tows, with further expansion based upon the stratification by depth and latitude using the {nwfscSurvey} package in R [@nwfscSurvey_package_2025]. The stratification for length data expansions are provided in @tbl-survey_strata.
+
+Age distributions were included in the model as CAAL observations. The marginal age compositions were only used for comparing the implied fits, while the CAAL data were used in the likelihood. The CAAL data were not expanded and were binned according to length, age, sex, and year.
+
+@fig-length_flt10 shows WCGBTS length frequencies by year, and @fig-caal_flt10_1 through @fig-caal_flt10_3 show the WCGBTS length and CAAL distributions by year. 
+
+The input sample sizes for length composition data were calculated based on @stewart_bootstrapping_2014 as $\text{Input N}_{y} = 2.43\cdot \ N_{tow}$ where the 2.43 value was estimated for a group of shelf and slope rockfish species.
+
+The input sample size of CAAL data was set at the number of fish at each length by sex and by year. 
+
+### AFSC/NWFSC West Coast Triennial Shelf Survey
+#### Survey Description
+The Triennial Survey was first conducted by the AFSC in 1977 and continued until
+2004. The survey’s design and sampling methods are most recently described in @weinberg_estimation_2002. Its basic design was a series of equally-spaced transects from which searches for tows in a specific depth range were initiated. 
+
+The survey spatial coverage and timing has changed over the period of survey duration @tbl-survey_coverage. 
+
+Haul depths ranged from 91–457 m during the 1977 survey with no hauls shallower than 91 m. The surveys in 1980, 1983, and 1986 covered the West Coast south to 36.8°N latitude and a depth range of 55–366 meters. The surveys in 1989 and 1992 covered the same depth range but extended the southern range to 34.5°N (near Point Conception). From 1995 through 2004, the surveys covered the consistent depth range
+55–500 meters and surveyed south to 34.5°N. In the final year of the triennial series (2004), the NWFSC conducted the survey and followed very similar protocols as the AFSC, which conducted surveys in all previous years.
+
+All of the surveys were conducted in the mid-summer through early fall: the 1977
+survey was conducted from early July through late September; the surveys from 1980 through 1989 ran from mid-July to late September; the 1992 survey spanned from mid-July through early October; the 1995 survey was conducted from early June to late August; the 1998 survey ran from early June through early August; and the 2001 and 2004 surveys were conducted in May-July.
+
+Water hauls [@zimmermann2001] and tows located in Canadian waters were also excluded from the analysis of this survey. Given the different depths surveyed during 1977, the data from that year were not included in this assessment.  
+
+#### Abundance Index
+The Triennial Survey was analyzed as an early series (1980–1992) and a late series (1995–2004) to account for change in spatial coverage and survey timing, as `r Spp_short` exhibit ontogenetic movements when individuals gradually shift their distribution toward deeper waters as the grow and mature. Separate catchability parameters were estimated for pre-1995 period and from 1995 forward. Separate selectivity curves were estimated for early and late survey periods as well. 
+
+The data for the early series were truncated to depths less than 350 m, and for late series to depths less than 500 m prior to modeling given that there were zero positive encounters in depths deeper than 500 m. The prediction grid was also truncated to only include available survey locations in depths between 55--500 m to limit extrapolating beyond the data and edge effects. 
+
+The chosen model used a delta model with a lognormal distribution for the catch-rate component. A logit-link was used for encounter probability and a log-link for positive catch rates. The response variable was catch (mt) with an offset of area (km^2^) to account for differences in effort. Fixed effects were estimated for each year. No other covariates were modeled. Vessel-year effects, which were historically used for index standardization of this survey, were not included because the estimated variance for the random effect was close to zero. Vessel-year effects were more prominent when models did not include spatial effects and instead vessel-year terms accounted for the random selection of commercial vessels used during sampling [@helser_generalized_2004; @thorson_accounting_2014].
+
+Spatial and spatiotemporal variation were included in the encounter probability but not the positive catch rate model. Spatial variation was approximated using 100 knots, where more knots led to non-estimable standard errors because the positive encounters are too sparse to support the dense spatiotemporal structure.
+
+The estimated index is shown in @fig-Triennial_index. The index exhibits an increase in biomass from 1995 forward, that corresponds to a change in Triennial Survey depth coverage, when the survey extended to the deeper area @tbl-survey_coverage.
+
+#### Length Compositions
+ @tbl-survey_length_samples shows the number of lengths taken by the survey. 
+
+Length compositions were separated into males and females. These length compositions were expanded to account for difference in catch among tows, with further expansion based upon the stratification by depth and latitude using the {nwfscSurvey} package in R [@nwfscSurvey_package_2025]. The stratification for length data expansions are provided in @tbl-survey_strata. @fig-length_flt7 shows Triennial Survey length frequencies by year,
+
+The input sample sizes for length composition data for all fishery-independent surveys were calculated based on @stewart_bootstrapping_2014 as $\text{Input N}_{y} = 2.43\cdot \ N_{tow}$ where the 2.43 value was estimated for a group of shelf and slope rockfish species.
+
+There are no `r Spp_short` age data from the Triennial Survey.
+
+### AFSC Slope Survey
+
+#### Survey Description
+The AFSC slope survey was initiated in 1984. The survey methods are described in Lauth (2000). Prior to 1997, the survey was conducted in different latitudinal ranges each year. In this assessment, only data from 1997, 1999, 2000 and 2001 were used – these years were consistent in latitudinal range (from 34°30’ N. latitude to the U.S.-Canada border) and depth coverage (183-1280 m; 100-700 fm).
+
+#### Abundance Index
+The prediction grid was truncated to only include available survey locations in depths deeper than 183 to limit extrapolating beyond the data and edge effects. 
+
+The chosen model used a delta model with a lognormal distribution for the catch-rate component. A logit-link was used for encounter probability and a log-link for positive catch rates. The response variable was catch (mt) with an offset of area (km^2^) to account for differences in effort. Fixed effects were estimated for each year. No other covariates were modeled. Vessel-year effects, which were historically used for index standardization of this survey, were not included becausethe estimated variance for the random effect was close to zero. Vessel-year effects were more prominent when models did not include spatial effects and instead vessel-year terms accounted for the random selection of commercial vessels used during sampling [@helser_generalized_2004; @thorson_accounting_2014].
+
+Spatial and spatiotemporal variation were not included in either the encounter probability nor the positive catch rate model. Spatial variation was approximated using 100 knots, where more knots led to non-estimable standard errors because the positive encounters are too sparse to support the dense spatiotemporal structure.
+
+The AFSC Slope Survey index is shown in @fig-AFSC_Slope_index. The index is short, and does not exhibits significant change over the four year period. 
+
+#### Length Compositions
+@tbl-survey_length_samples shows the number of lengths taken by the survey. 
+
+Length compositions were separated into males and females. These length compositions were expanded to account for difference in catch among tows, with further expansion based upon the stratification by depth and latitude using the {nwfscSurvey} package in R [@nwfscSurvey_package_2025]. The stratification for length data expansions are provided in @tbl-survey_strata. @fig-length_flt8 shows AFSC Slope Survey length frequencies by year.
+
+The input sample sizes for length composition data for all fishery-independent surveys were calculated based on @stewart_bootstrapping_2014 as $\text{Input N}_{y} = 2.43\cdot \ N_{tow}$ where the 2.43 value was estimated for a group of shelf and slope rockfish species.
+
+There are no `r Spp_short` age data from the AFSC Slope Survey.
+
+### NWFSC Slope Survey
+
+#### Survey Description
+The NWFSC slope survey was conducted annually from 1999 to 2002. The survey’s design and sampling methods are described in Keller et al.(2007). The surveyed area ranged between 34°50’ and 48°07’ N. latitude, encompassing the U.S. Vancouver, Columbia, Eureka, Monterey INPFC areas, and a portion of the Conception area, and consistently covered depths from 100 to 700 fm (183-1280 m) (@tbl-survey_strata).
+
+#### Abundance Index
+The prediction grid was truncated to only include available survey locations in depths deeper than 183 to limit extrapolating beyond the data and edge effects. 
+
+The chosen model used a delta model with a lognormal distribution for the catch-rate component. A logit-link was used for encounter probability and a log-link for positive catch rates. The response variable was catch (mt) with an offset of area (km^2^) to account for differences in effort. Fixed effects were estimated for each year. No other covariates were modeled. Vessel-year effects, which were historically used for index standardization of this survey, were not included because the estimated variance for the random effect was close to zero. Vessel-year effects were more prominent when models did not include spatial effects and instead vessel-year terms accounted for the random selection of commercial vessels used during sampling [@helser_generalized_2004; @thorson_accounting_2014].
+
+Spatial and spatiotemporal variation were not included in either the encounter probability nor the positive catch rate model.
+Spatial variation was approximated using 100 knots, where more knots led to non-estimable standard errors because the positive encounters are too sparse to support the dense spatiotemporal structure.
+
+The NWFSC Slope Survey index is shown in @fig-NWFSC_Slope_index. The index is short, and, as in case of AFSC SLope Survey, does not exhibits significant change over the four year period. 
+
+There are no `r Spp_short` length and age data from the NWFSC Slope Survey. Given that spatial coverage of NWFSC Slope Survey is the same of AFSC Slope Survey, selectivity of the NWFSC SLope Survey was assumed the same as selectivity of AFSC Slope Survey (mirrored in the model).   
+
+## Biological Parameters
+The major biological inputs to the models are natural mortality, age and growth parameters, weight-length, maturity and stock-recruitment parameters. The following sections outline the treatment of each section. One change from the previous assessment is moving to a two sex from the one-sex specification from 2013. The 2013 stock assessment one-sex specification was based on the observation that the biology of females and males was very similar, thus justifying the simplifying assumption of one sex. The following sections below demonstrates that females and males do generally have similar growth, though there are differences, but may have different natural mortality values. The current assessment will use a two sex configuration that allows for flexibility to set female and male parameters either equal (i.e., functionally equivalent to a one sex model) and or sex-specific. @fig-Sex1vs2_SO and @fig-Sex1vs2_Bratio show that using a two sex configuration with the same life history parameters for females and males is equivalent to the one sex model. Note that the one sex model sums up both female and male biomass, thus why it is twice the size as the two sex female-only spawning output (@fig-Sex1vs2_Bratio).
+
+### Natural Mortality
+Natural mortality is a highly influential parameter in age-structured stock assessments. It defines the rate of natural death by age, and thus establishes a stable age-structure and expectation of longevity, and interacts with growth and reproduction to determine stock productivity. It is a very difficult parameter to directly measure, thus empirical relationships based on life history parameters are often used to indirectly determine its value or build prior distributions in belief of what it is in the event we do attempt to estimate it in the model [@cope_upgrading_2022; @hamel_development_2022; @maunder_review_2023]. If length and age data are available, it may be possible to estimate it in the model.
+
+An estimate of maximum age tends to be the most reliable life history parameter related to natural mortality to inform its estimation. @cope_upgrading_2022 ([The Natural Mortality Tool](https://connect.fisheries.noaa.gov/natural-mortality-tool/)) provide the most up-to-date examination of the relationship between maximum age and natural mortality
+
+\begin{centering}
+
+$M=\frac{5.4}{A_{\text{max}}}$
+
+\end{centering}
+
+\vspace{0.5cm}
+
+where $M$ is natural mortality and ${A_{\text{max}}}$ is the assumed maximum age. The prior is defined as a lognormal distribution with mean $ln(5.4/A_{\text{max}})$ and standard error = 0.31. This is the equation typically used to estimate a natural mortality point estimate, but is underpinned by the choice of the value of ${A_{\text{max}}}$. This equation assumes that the proportion of the stable population at this maximum age is 0.4517%. If we take humans as an example, the longest lived human is 122 years. This is not the maximum age, but the oldest ever recorded age. The maximum age that corresponds to 0.4517% of the population is around 100 years. For Rougheye/Blackspotted, the oldest ever aged individual is 205 years with unknown ageing error. We did not consider this as a realistic maximum age.
+
+The 2013 U.S. West Coast stock assessment was based on a single sex model and used a prior built around a mean of 0.034 (corresponding to a maximum age of 163), but estimated natural mortality at 0.042 for sexes combined (maximum age between 128-129 years; @fig-Mcurves). The 2023 Gulf of Alaska assessment built a prior conditional on a estimate of natural mortality from their 5 oldest aged individuals that ranged from 126-135 years. This resulted in a mean value of 0.042, similar to the 2013 U.S. West Coast stock assessment. The 2023 Bering Sea/Aleutian Islands assessment used M = 0.05 (assumed longevity of 108), and the recent Canadian assessments considered a range of M values from 0.03 to 0.055 (assumed maximum ages of 180 to 98 years; @fig-Mcurves). 
+
+Examining the available age data, the oldest 10 individuals range from 139 to 165 and were all males. For females, the 10 oldest individuals range from 130 to 121 years. If those oldest ages were used in the @hamel_development_2022 longevity estimator, these ages would correspond to a range of natural mortality values of 0.033 to 0.039 for males, which include the mean of the prior used in the 2013 assessment. For females, it corresponds to natural mortality values of 0.039 to 0.045. All these assume that the sampled population has enough of an age structure still available for sampling, as opposed to having some level of age truncation from the theoretical unfished stable age distribution.  
+
+Related to this issue of possible age truncation, applying a catch curve analysis (taking the log of the abundance of numbers of samples in available age classes) on the aggregated ages across all age sources by sex, the total mortality (Natural + Fishing mortality= Total mortality) is 0.046 for females and 0.035 for males, which may indicate the natural mortality could be lower than that estimated in the 2013 assessment, but within the range of values considered in other areas (@fig-CC_Z). This also indicates the possibility of estimating sex-specific natural mortality, as natural mortality may differ by sex. The two sex model allows for this type of model specification exploration. Further exploration was done by truncating the upper ages considered, with the assumption that the older ages may also not be sampled fully (i.e., dome-shaped selectivity). We considered both 100 (@fig-CC_Z_100) and 80 (@fig-CC_Z_80) as upper age cut-offs. The less older individuals included, the higher the estimate of total mortality, and thus a higher natural mortality. But we can see a general overestimate of how many older individuals are expected using these higher Z values, thus dome-shapeness does not seem to explain the sampling of these older individuals.
+
+One challenge to estimating natural mortality within the model is the interaction of estimating dome-shaped selectivity with estimating natural mortality. If all fleets assume some level of dome-shaped selectivity, it is difficult to determine if the unseen larger, older individuals are due to natural death or fishing mortality. Typically, at least one major fleet needs to achieve full selectivity for the larger, older individuals. The 2013 assessment suggested some dome-shaped selectivity in the two major fleets, thus any natural mortality estimates are evaluated depending on the forms of fleet selectivity.
+
+In this assessment, we estimate female natural mortality using the @hamel_development_2022 prior, but fix male natural mortality at the value of 0.036, the median of the @hamel_development_2022 prior that corresponds to maximum age of 150 years. In runs with natural mortality estimated for both sexes, estimated values were substantially higher and did not align with observed maximum ages and available information on `r Spp_short` life history.
+
+### Growth (Length-at-Age)
+Age and length data are used to estimate important growth parameters. @fig-AL_1 shows the available age and length data and externally estimated growth curves. Female and male sample sizes are very similar. The WCGBTS clearly and importantly samples the smallest, youngest individuals compared to the other two data sources. This allows for a better estimate of the age at size 0 (t~0~) and growth coefficient (k). The female asymptotic size (L~$\infty$~) is estimated notably higher from the PacFIN data, though male estimates of Linf are similar across the data sets. The overall externally derived estimates of female and male `r Spp_short` are
+
+\begin{centering}
+
+Females $L_{\infty}$ = 59.03 cm; $k$ = 0.07; $t_0$ = -2.45
+
+Males $L_{\infty}$ = 56.69 cm; $k$ = 0.08; $t_0$ = -2.03
+
+\end{centering}
+
+The coefficient of variation (CV) of length by age and sex are shown in @fig-AL_2. This is a measure of the variation in length for a given age class. Sample sizes are highest from the youngest ages up to around 70 (females) to 80 (males) years. The smoothed line shows the average response, and indicates similar CVs values for females and males, with the highest at the youngest ages, but generally 0.1. The amount and range of age samples, along with repeated length samples within an age class, allows growth parameters (L~$\infty$~, k, t~0~, and CVs at age) to be estimated in the model. Ages are conditioned on lengths in the model in order to estimate growth within the model. We also explore sensitivity in growth values by pre-specifying growth to different values.
+
+We note that the growth values being estimated in our data are notably different than those used in Alaska. For instance, the growth parameters for the BSAI stock is L~$\infty$~ = 51.43, k = 0.06 and t~0~ = -3.30 and L~$\infty$~ = 54.2 cm, k = 0.07, t~0~= -1.5 for the GOA population (both sexes combined). These growth parameters shows a larger size and faster growth of the West Coast stock complex versus those in Alaska, though the West Coast stock complex is more similar to the GOA complex.
+
+### Ageing Bias and Precision
+Counting ages from ageing structures in long-lived, temperate fishes is challenging. Ages derived from these structures can be hard to reproduce within and between readers (i.e., imprecision), and may not contain the true age (i.e., bias). Stock assessment outputs can be affected by bias and imprecision in ageing, thus it is important to quantify and integrate this source of variability when fitting age data in assessments. In Stock Synthesis, this is done by including ageing error matrices that include the mean age (row 1) and standard deviation in age (row 2). Ageing bias is implemented when the inputted mean age deviates from the expected middle age for any given age bin (e.g., 1.75 inputted versus 1.5 being the true age for the age 1 bin); ageing imprecision is given as the standard deviation for each age bin.
+
+There are eight primary readers that provided the available ages, two of which often split the ageing duties. @fig-AE_matrices shows which reader assignments are given to each year of ages by data source. Reader 7 is the mix of two readers that shared reading duties within years.  
+
+Estimation of ageing error matrices used the approach of @punt_quantifying_2008. The original package was developed using AD Model Builder (\href{https://github.com/pfmc-assessments/nwfscAgeingError}{nwfscAgeingError} [@thorson_nwfscageingerror:_2012]), and was later adapted to Template Model Builder framework (\href{https://pfmc-assessments.github.io/AgeingError/articles/getting_started.html}{TMB}).
+
+The ageing error matrix offers a way to calculate both bias and imprecision in age reads. One of the readers (selected based on readers' experience in age determination of the species) is always considered unbiased, but may be imprecise. Bias relative to the primary reader is given for the second reader. There were three age readers that were assumed to be unbiased. In those cases, 12 model configurations based on different assumptions of imprecision (constant CV, curvilinear standard deviation, or curvilinear CV, along with an option to either share or independently estimate imprecision between readers) were considered. For the other four age readers that could be biased and/or imprecise, thirty-six total model configurations were explored that included the above imprecision models as well as an exploration of the functional form of bias (e.g., no bias, constant coefficient of variation, or non-linear bias) in the second reader. 
+
+Model selection criteria included AIC corrected for small sample size (AICc), which converges to AIC when sample sizes are large, and Bayesian Information Criterion (BIC). Both ADMB and TMB were run using an (\href{https://github.com/shcaba/Ageing_Error_app}{ageing error shiny app}). Model selection was then compared between ADMB and TMB, which did not always agree, so model selection criteria was added across the two modeling approaches to get an overall model selection criteria. Ageing error matrices were also inspected for behavior in the best supported models to make sure outrageously large precision or bias was not chosen (effectively rendering the ages worthless, which is not an assumption of the quality of the ages). @fig-AE_bias and @fig-AE_SD show the bias and imprecision assumptions applied for each ageing error (AE) matrix.
+
+
+### Length-Weight Relationship
+Female and male length-weight relationships were determined using data from the PacFIN database, West Coast Groundfish Bottom Trawl Survey, and ASHOP samples. Samples size by sex were: female (N=13839), males (13625), and unknown sex (53). Each of the data sources estimated very similar length-weight relationships (@fig-LW1).
+
+The resultant sex-specific length-weight relationships are given in @fig-LW2, with the following individual values: 
+
+* Females: W = 0.00000878L^3.15^
+* Males: W = 0.000012L^3.07^
+
+These values are very similar to the previous assessment that used a combine sex value of a=0.0000096 and b=3.12 (@fig-LW2).
+
+### Maturity {#sec-maturity}
+
+Maturity for the Rougheye/Blackspotted Rockfish complex was estimated using 473 maturity samples collected from 2015 to 2024 on \gls{odfw} and \gls{wdfw} surveys and the \gls{s-wcgbt} in California, Oregon, and Washington waters (M. Head, pers. comm.). The samples included 194 samples genetically assigned as Rougheye Rockfish, 71 samples genetically assigned as Blackspotted Rockfish, and 208 samples with no genetic assignment. The maturity schedule was assumed to be length-based, as in the 2013 benchmark assessment. This assessment used the functional classification of maturity to describe the maturity schedule, which not only identifies the individuals that are physiologically capable of producing yolk (those that are biologically mature), but also accounts for the occurrence of abortive maturation and skipped spawning, so the functional maturity classification is a more accurate representation of the individuals that may actually spawn in a given year. This is a difference from the 2013 benchmark assessment, which did not explicitly estimate functional maturity, and instead assumed the biological classification of maturity.
+
+Biological maturity and functional maturity observations were fitted in separate models. Biological maturity and functional maturity status observations (0 = immature and 1 = mature) were fitted in a logistic regression model (glm R function, family = binomial, link = “logit”). The estimated model parameters were used to calculate length at 50% maturity (L50%; @tbl-maturity_estimates) and maturity ogives (@fig-maturity_bio_fxn). The delta method was used to calculate 95% confidence intervals of L50% estimates. The estimated L50% (functional maturity; L50%fxn) was 46.53 cm and the estimated slope of the maturity oogive was 0.25. Sensitivities were run using the estimate of biological maturity and the maturity estimate used in the 2013 benchmark assessment. There was little evidence of skipped spawning, so we did not explore fitting the data with a spline model.
+
+Because there are known life history differences between Rougheye Rockfish and Blackspotted Rockfish, maturity was also estimated for each species, using the samples that were genetically assigned to each species, respectively, using the same methods as above (@tbl-maturity_estimates and @fig-maturity_length_both). Two sensitivities were run using the functional maturity L50% (and slope) estimated for 1) Rougheye Rockfish and 2) Blackspotted Rockfish (which mature at larger sizes on average than Rougheye Rockfish).
+
+Sensitivities were run using functional age at 50% maturity estimate for the species complex (n = 372) and for each species separately. Age at 50% maturity was estimated using the same methods as for length at 50% maturity (@tbl-maturity_estimates and @fig-maturity_age_both).
+
+### Fecundity
+The 2013 U.S. West Coast stock assessment assumed that fecundity was proportional to weight. @dick_meta-analysis_2017 provided a study on rockfishes showing that rockfishes routinely have a non-proportional relationship of fecundity to weight, with larger individuals producing more eggs than expected only by weight. Neither Rougheye or Blackspotted rockfishes have a species- of subfamily-specific estimate for this relationship, so this stock assessment uses the unobserved Genus Sebastes values of $a$ = 6.538e-06 and $b$ = 4.043 using the $F = aL^b$ relationship. In order to adapt the $a$ parameter for SS3, the equation (a*10^b)/1000000 was used to scale the $a$ parameter to trillions of eggs. This results in $a$ = 7.21847e-11.
+
+### Stock-Recruitment Function and Compensation
+The Beverton-Holt stock recruit relationship is assumed, as it was in the 2013 assessment, to describe the relationship between spawning biomass and recruitment. The steepness parameter may be considered for estimation, but it is notoriously difficult to estimate in assessment models. The 2013 stock assessment used the previous rockfish steepness mean value of 0.77, but this has subsequently been updated to 0.72, to a value that represents a stock with somewhat lower recruitment compensation. Natural variation in recruitment (i.e., not deterministically taken from the stock-recruit curve) is apparent in the length and age data (as notable length or age classes growing/ageing over time), so deviations in recruitment are estimated.
+
+### Sex Ratio
+No information on the sex ratio at birth was available so it was assumed to be 1:1. 
+
+## Environmental and Ecosystem Data
+This stock assessment does not explicitly incorporate trophic interactions, habitat factors or environmental factors into the assessment model. More predation, diet and habitat work, and mechanistic linkages to environmental conditions would be needed to incorporate these elements into the stock assessment and should remain a priority. @mcclure2023 report the climate vulnerability for several West Coast groundfishes, including `r Spp_short`. `r Spp_short` demonstrated both high biological sensitivity and high climate exposure risk, to give it an overall high vulnerability score to climate change. This result should also be considered with the fact that, like many rockfishes, periods of low productivity is not unusual to `r Spp_short` and their extended longevity (though admittedly this seems shorter than previously believed and should be reconsidered) has historically allowed them to wait for advantageous productivity periods. Stressors such as habitat degradation and climate change could bring significant challenges to population sustainability. Regardless, no environmental or ecosystem data are directly incorporated into the stock assessment model.

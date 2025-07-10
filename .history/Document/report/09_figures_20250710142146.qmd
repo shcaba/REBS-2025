@@ -1,0 +1,2564 @@
+# Figures 
+ 
+```{r} 
+#| label: 'set-rda-dir-figs'
+#| echo: false 
+#| warning: false 
+#| eval: true 
+rda_dir <- here::here('rda_files')
+``` 
+
+
+<!-- 02_Introduction -->
+
+```{r} 
+#| label: fig-map
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Map of the assessment area."
+#| fig-alt: "Map of the U.S. West Coast with a line indicating that this assessment covers the full U.S. West Coast."
+#| fig-width: 7
+#| fig-height: 8
+
+mod.names <- c("Management  Range", "Assessment Range")
+mod.cols  <- c("blue", "yellow")
+
+map('worldHires', regions=c("Canada","Mexico"),
+    xlim=c(-130, -114), ylim=c(31, 51),
+    col='grey', fill=TRUE, interior=TRUE, , lwd=1)
+
+# map with US states
+map('state', regions=c("Wash","Oreg","Calif","Idaho", "Montana","Nevada","Arizona","Utah"),
+    add = TRUE,
+    col = 'grey', fill = TRUE, interior = TRUE, lwd = 1)
+axis(2, at = seq(32, 50, 2), lab = paste0(seq(32, 50, 2), "°N"), las=1)
+axis(1, at = seq(-130, -114, 4), lab = paste0(abs(seq(-130, -114, 4)), "°W"))
+
+## add vertical lines indicating range for each stock
+
+latrange <- c(32.5, 48.5) + c(.2, -.2)
+lines(rep(-128, 2), latrange, lwd = 10, col=mod.cols[1])
+text(-128-.8, mean(latrange), mod.names[1], srt=90)
+
+# Assessment area
+latrange <- c(32.5, 48.5) + c(.2, -.2)
+lines(rep(-126,2), latrange, lwd=10, col=mod.cols[2])
+text(-126-.8, mean(latrange), mod.names[2], srt=90)
+
+text(-120, 50, "Canada")
+text(-120, 47, "Washington")
+text(-121, 44, "Oregon")
+text(-119.5, 37, "California")
+text(-115.5, 32.1, "Mexico")
+``` 
+
+
+```{r} 
+#| label: fig-cpue-map
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Rougheye/Blackspotted Rockfishes 2003-2024 WCGBTS CPUE map."
+#| fig-alt: "Rougheye/Blackspotted Rockfishes 2003-2024 WCGBTS CPUE map."
+
+knitr::include_graphics(
+  file.path(plot_dir, "cpue_map.png")
+)
+``` 
+
+```{r} 
+#| label: fig-SO_comp
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimates of biomass for the Rougheye/Blackspotted rockfish complex from the two most recent Alaska (Bering Sea/Aleutian Islands (BSAI) and Gulf of Alaska (GOA)) and the 2013 U.S. West Coast stock assessment."
+#| fig-alt: "Comparing absolute biomass from current Alaska assessments with the 2013 West Coast assessment."
+
+knitr::include_graphics(
+  file.path(plot_dir, "SB_comps.png")
+)
+``` 
+
+```{r} 
+#| label: fig-RSS_comp
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimates of fraction unfished relative to 1977 (the common year in all stock assessments compared) for the Rougheye/Blackspotted rockfish complex from the two most recent Alaska (Bering Sea/Aleutian Islands (BSAI) and Gulf of Alaska (GOA)) and the 2013 U.S. West Coast stock assessment."
+#| fig-alt: "Comparing relative spawning biomass from current Alaska assessments with the 2013 West Coast assessment."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Status_comp.png")
+)
+``` 
+
+\newpage
+
+
+<!-- 03_Data -->
+
+## Data
+
+```{r} 
+#| label: fig-data
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Data sources by year used in the assessment."
+#| fig-alt: "Data sources by year used in the assessment."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "data_plot.png")
+)
+``` 
+
+```{r} 
+#| label: fig-landings
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Time series of catches by fleet."
+#| fig-alt: "Time series of catches by fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "catch2_landings_stacked.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Ct_All
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Landings (metric tons) across all states for non-trawl and trawl fisheries compared between the 2013 assessment and updated landings for the 2025 stock assessment model."
+#| fig-alt: "Landings (metrci tons) comparisons between landings used in 2013 to updated landings."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_comp_all.png")
+)
+```
+
+```{r} 
+#| label: fig-Ct_CA
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "California state landings (metric tons) for non-trawl and trawl fisheries compared between the 2013 assessment and updated landings for the 2025 stock assessment model."
+#| fig-alt: "Landings comparisons for California between landings (metric tons) used in 2013 to updated landings."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_comp_CA.png")
+)
+```
+
+```{r} 
+#| label: fig-Ct_OR
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Oregon state landings (metric tons) for non-trawl and trawl fisheries compared between the 2013 assessment and updated landings for the 2025 stock assessment model."
+#| fig-alt: "Landings comparisons for Oregon between landings (metric tons) used in 2013 to updated landings."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_comp_OR.png")
+)
+```
+
+```{r} 
+#| label: fig-Ct_WA
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Washington state landings (metric tons) for non-trawl and trawl fisheries compared between the 2013 assessment and updated landings for the 2025 stock assessment model."
+#| fig-alt: "Landings comparisons for Washington between landings (metric tons) used in 2013 to updated landings."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_comp_WA.png")
+)
+```
+
+```{r} 
+#| label: fig-length_flt1_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for bottom trawl fleet."
+#| fig-alt: "Length composition data for bottom trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt1mkt0_page1.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt1_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for bottom trawl fleet, continued."
+#| fig-alt: "Length composition data for bottom trawl fleet, continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt1mkt0_page2.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for bottom trawl discard fleet."
+#| fig-alt: "Length composition data for bottom trawl discard fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt2mkt0.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt3_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for non-trawl fleet."
+#| fig-alt: "Length composition data for non-trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt3mkt0_page1.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt3_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for non-trawl fleet, continued."
+#| fig-alt: "Length composition data for non-trawl fleet, continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt3mkt0_page2.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt4
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for non-trawl discard fleet."
+#| fig-alt: "Length composition data for non-trawl discard fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt4mkt0.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt5
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for mid-water trawl fleet."
+#| fig-alt: "Length composition data for mid-water trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt5mkt0.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt6
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for at-sea hake fleet."
+#| fig-alt: "Length composition data for at-sea hake fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt6mkt0.png")
+)
+``` 
+```{r} 
+#| label: fig-length_flt10
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS)."
+#| fig-alt: "Length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS)."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt10mkt0.png")
+)
+``` 
+
+```{r} 
+#| label: fig-length_flt7
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for Triennial Survey."
+#| fig-alt: "Length composition data for Triennial Survey."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt7mkt0.png")
+)
+``` 
+```{r} 
+#| label: fig-length_flt8
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for AFSC Slope Survey."
+#| fig-alt: "Length composition data for AFSC Slope Survey."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lendat_flt8mkt0.png")
+)
+``` 
+
+
+```{r} 
+#| label: fig-caal_flt1_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for bottom trawl fleet."
+#| fig-alt: "Length composition data for bottom trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt1mkt0_page1.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt1_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length composition data for bottom trawl fleet, continued."
+#| fig-alt: "Length composition data for bottom trawl fleet, continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt1mkt0_page2.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt3_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for non-trawl fleet."
+#| fig-alt: "Conditional ages-at-length composition data for non-trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt3mkt0_page1.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt3_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for non-trawl fleet, continued."
+#| fig-alt: "Conditional ages-at-length composition data for non-trawl fleet, continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt3mkt0_page2.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt5
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for Midwater trawl fleet."
+#| fig-alt: "Conditional ages-at-length composition data for Midwater trawl fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt5mkt0.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt6_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for at-sea hake fleet."
+#| fig-alt: "Conditional ages-at-length composition data for at-sea hake fleet."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt6mkt0_page1.png")
+)
+``` 
+
+```{r} 
+#| label: fig-caal_flt6_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for at-sea hake fleet, continued."
+#| fig-alt: "Conditional ages-at-length composition data for at-sea hake fleet, continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt6mkt0_page2.png")
+)
+```
+```{r} 
+#| label: fig-caal_flt10_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS)."
+#| fig-alt: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS)."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt10mkt0_page1.png")
+)
+```
+```{r} 
+#| label: fig-caal_flt10_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS), continued."
+#| fig-alt: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS), continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt10mkt0_page2.png")
+)
+```
+```{r} 
+#| label: fig-caal_flt10_3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS), continued."
+#| fig-alt: "Conditional ages-at-length composition data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS), continued."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt10mkt0_page3.png")
+)
+```
+```{r} 
+#| label: fig-All_indices
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Standardized survey indices used in the assessment."
+#| fig-alt: "Standardized survey indices used in the assessment."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index9_standcpueall.png")
+)
+```
+
+```{r} 
+#| label: fig-WCGBTS_comparison
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of the West Coast Groundfish Bottom Trawl Survey (WCGBTS) index from the previous assessment (GLMM) and the WCGBTS index of abundance used in this assessment (sdmTMB, lognormal distribution)."
+#| fig-alt: "Comparison of the West Coast Groundfish Bottom Trawl Survey (WCGBTS) index from the previous assessment (GLMM) and the WCGBTS index of abundance used in this assessment (sdmTMB, lognormal distribution)."
+
+knitr::include_graphics(
+  file.path(plot_dir, "WCGBTS_comps.png")
+)
+``` 
+
+```{r} 
+#| label: fig-WCGBTS_index
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "West Coast Groundfish Bottom Trawl Survey (WCGBTS) index."
+#| fig-alt: "West Coast Groundfish Bottom Trawl Survey (WCGBTS) index."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index1_cpuedata_WCGBTS.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Triennial_index
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Triennial Survey index."
+#| fig-alt: "Triennial Survey index."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index1_cpuedata_TRIENNIAL.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AFSC_Slope_index
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "AFSC Slope Survey index."
+#| fig-alt: "AFSC Slope Survey index."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index1_cpuedata_AK_SLOPE.png")
+)
+``` 
+
+```{r} 
+#| label: fig-NWFSC_Slope_index
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "NWFSC Slope Survey index."
+#| fig-alt: "NWFSC Slope Survey index."
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index1_cpuedata_NW_SLOPE.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Ct_compsSO
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of spawning biomass between 2013 Rougheye/Blackspotted Rockfishes assessment model and model with updated/extended catches used in 2025 assessment."
+#| fig-alt: "Spawning biomass comparison using different historical catches."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare1_spawnbio_updatedCt.png")
+)
+```
+
+```{r} 
+#| label: fig-Ct_compsRSS
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of fraction unfished between 2013 Rougheye/Blackspotted Rockfishes assessment model and model with updated/extended catches used in 2025 assessment."
+#| fig-alt: "Relative stock status comparison using different historical catches."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare3_Bratio_updatedCt.png")
+)
+```
+
+
+\newpage
+
+
+<!-- Biology -->
+
+## Biology
+
+```{r} 
+#| label: fig-Sex1vs2_SO
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of spawning biomass using the 1 sex and 2 sexes set to equal values models based on the 2013 Rougheye/Blackspotted Rockfishes assessment data. The 1 sex model has double the biomass because it includes both females and males."
+#| fig-alt: "Comparing spawning output with 1 and 2 sex model specifications."
+
+knitr::include_graphics(
+  file.path(plot_dir, "1v2sex_spawnbio.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Sex1vs2_Bratio
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of fraction unfished using the 1 sex and 2 sexes set to equal values models based on the 2013 Rougheye/Blackspotted Rockfishes assessment data."
+#| fig-alt: "Comparing relative stock status with 1 and 2 sex model specifications."
+
+knitr::include_graphics(
+  file.path(plot_dir, "1v2sex_Bratio_uncertainty.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Mcurves
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Natural mortality curves by age in years for values of natural mortality used in various Rougheye/Blackspotted Rockfish stock assessments. Dots indicate the range of assumed maximum ages using the equation from Hamel and Cope 2022."
+#| fig-alt: "Natural mortality curves by age for different values of natural mortality."
+
+knitr::include_graphics(
+  file.path(plot_dir, "M_values.png")
+)
+``` 
+
+```{r} 
+#| label: fig-CC_Z
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Catch curve (log abundance by age) analysis on aggregated ages over all age sources by sex (black points). The peak selected age was 21 for both sexes, so the linear model was run from age 21 until the oldest age (red points). The slope of the linear model is equal to the estimate of an aggregate total mortality (Z)."
+#| fig-alt: "Catch curve analysis for ages 21 to oldest age in data set."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_curve_plot_FM.png")
+)
+``` 
+
+```{r} 
+#| label: fig-CC_Z_100
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Catch curve (log abundance by age) analysis on aggregated ages over all age sources by sex (black points). The peak selected age was 21 for both sexes with a max age of 100, so the linear model was run from age 21 until age 100 (red points). The slope of the linear model is equal to the estimate of an aggregate total mortality (Z)."
+#| fig-alt: "Catch curve analysis for ages 21 to 100."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_curve_plot_FM_21_100.png")
+)
+``` 
+
+```{r} 
+#| label: fig-CC_Z_80
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Catch curve (log abundance by age) analysis on aggregated ages over all age sources by sex (black points). The peak selected age was 21 for both sexes with a max age of 80, so the linear model was run from age 21 until age 80 (red points). The slope of the linear model is equal to the estimate of an aggregate total mortality (Z)."
+#| fig-alt: "Catch curve analysis for ages 21 to 80."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Catch_curve_plot_FM_21_80.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AL_1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Age and length data, with fitted von Bertalanffy growth curves, by sex and data source for the Rougheye/Blackspotted rockfish complex. Sample sizes (N) are also provided."
+#| fig-alt: "Age and length data by sex and data source."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Age_length_plot.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AL_2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Coefficient of variation by age and sex for all sources of Rougheye/Blackspotted rockfishes ages. Sample sizes (N) are also indicated by size of the point. The line is a smoothed loess (polynomial) line that gives a moving average of CV by age and sex."
+#| fig-alt: "Coefficient of variation by age, sex and data source."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Lt_age_CV_FM.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AE_matrices
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Ageing error matrix assignments by year and data source. The number indicates which ageing error matrix was used for conditional ages within those years and data sources. 'Commercial' is a combination of all commercial fleets."
+#| fig-alt: "The x-axis is year and the y-axis is the data source, for example 'Commercial'. The numbers going along the rows in the figure indicate which ageing error matrix is used in which year of that data sources. There is a total of 7 different ageing error matrices."
+
+knitr::include_graphics(
+  file.path(plot_dir, "AE_matrix_plot.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AE_bias
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated bias used for each of the seven ageing error matrices."
+#| fig-alt: "Age bias of the ageing error matrices."
+
+knitr::include_graphics(
+  file.path(plot_dir, "AE_Bias.png")
+)
+``` 
+
+```{r} 
+#| label: fig-AE_SD
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated imprecision (as a standard deviation) used for each of the seven ageing error matrices."
+#| fig-alt: "Imprecision of ageing as used in each ageing error matrix."
+
+knitr::include_graphics(
+  file.path(plot_dir, "AE_SD.png")
+)
+``` 
+
+\newpage
+
+```{r} 
+#| label: fig-LW1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length and weight samples by sex and data source. Lines are the power function fits by data source."
+#| fig-alt: "Length and weight samples by sex and data source."
+
+knitr::include_graphics(
+  file.path(plot_dir, "L_W_plots.png")
+)
+``` 
+
+
+```{r} 
+#| label: fig-LW2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized length and weight relationships for female and male Rougheye/Blackspotted Rockfishes."
+#| fig-alt: "Realized length and weight for females and males."
+
+knitr::include_graphics(
+  file.path(plot_dir, "F_M_ltwt_plot.png")
+)
+``` 
+\newpage
+
+
+```{r} 
+#| label: fig-maturity_bio_fxn
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Proportion of mature fish by length when using biological versus functional maturity criteria."
+#| fig-alt: "Proportion of mature fish by length when using biological versus functional maturity criteria."
+
+knitr::include_graphics(
+  file.path(plot_dir, "bio_fxn_maturity.png")
+)
+``` 
+
+
+```{r} 
+#| label: fig-maturity_length_both
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
+
+knitr::include_graphics(
+  file.path(plot_dir, "l50_both_species.png")
+)
+``` 
+
+
+```{r} 
+#| label: fig-maturity_age_both
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
+
+knitr::include_graphics(
+  file.path(plot_dir, "a50_both_species.png")
+)
+``` 
+
+\newpage
+
+```{r} 
+#| label: fig-bimodal-lengths
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Length distribution of Rougheye Rockfish and Blackspotted Rockfish identified to species using genetics (pers. comm. P. Frey, NWFSC)."
+#| fig-alt: "Length distribution of Rougheye Rockfish and Blackspotted Rockfish identified to species using genetics (pers. comm. P. Frey, NWFSC)."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Bimodal_lengths_Peter_Frey.png")
+)
+``` 
+
+<!-- Model bridging -->
+
+## Model Bridging
+
+```{r} 
+#| label: fig-RSS_2013
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimates of relative stock size (current spawning output/unfished spawning output) for the Rougheye/Blackspotted rockfish complex in U.S. west coast waters from the 2013 assessment, and compared to the using the same data in the newest version of SS3 (3.30.22.2)."
+#| fig-alt: "Comparing relative spawning biomass in the 2013 version of SS3 with the newest SS3 version."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare4_Bratio_uncertainty.png")
+)
+```
+```{r} 
+#| label: fig-SO_2013
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimates of spawning biomass for the Rougheye/Blackspotted rockfish complex in U.S. west coast waters from the 2013 assessment, and compared to the same data in the newest version of SS3 (3.30.22.2). Shading denotes 95% confidence intervals. Shading denotes 95% confidence intervals."
+#| fig-alt: "Comparing spawning biomass in the 2013 version of SS3 with the newest SS3 version."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare2_spawnbio_uncertainty.png")
+)
+``` 
+```{r} 
+#| label: fig-Discard_comp_SO
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of spawning biomass using retention curves or discard fleets using the 2013 Rougheye/Blackspotted Rockfishes assessment."
+#| fig-alt: "Comparing spawning biomass in the 2013 assessment using retention curves vs. separate discard fleets."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare1_spawnbio__discard_fleets.png")
+)
+``` 
+```{r} 
+#| label: fig-Discard_comp_RSS
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of fraction unfished (relative spawning biomass) using retention curves or discard fleets using the 2013 Rougheye/Blackspotted Rockfishes assessment."
+#| fig-alt: "Comparing relative stock size in the 2013 assessment using retention curves vs. separate discard fleets."
+
+knitr::include_graphics(
+  file.path(plot_dir, "compare3_Bratio_discard_fleets.png")
+)
+```
+ 
+```{r} 
+#| label: fig-SO_Bridging
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Time series of estimated spawning output (trillions of eggs) for bridging analysis."
+#| fig-alt: "Time series of estimated spawning output (trillions of eggs) for bridging analysis."
+
+knitr::include_graphics(
+  file.path(plot_dir, "bridging_compare2_spawnbio_uncertainty.png")
+)
+``` 
+
+```{r} 
+#| label: fig-Bratio_Bridging
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Time series of fraction of unfished spawning output for bridging analysis."
+#| fig-alt: "Time series of fraction of unfished spawning output for bridging analysis."
+
+knitr::include_graphics(
+  file.path(plot_dir, "bridging_compare4_Bratio_uncertainty.png")
+)
+``` 
+
+
+```{r} 
+#| label: fig-NT-lengths-for-blocks
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of length compositions (lengths in cm) between non-trawl and non-trawl discard fleets, sexes combined."
+#| fig-alt: "Comparison of length compositions (lengths in cm) between non-trawl and non-trawl discard fleets, sexes combined."
+
+knitr::include_graphics(
+  file.path(plot_dir, "NT_length_vs_discard.png")
+)
+``` 
+
+```{r} 
+#| label: fig-BT-lengths-for-blocks
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Comparison of length compositions (lengths in cm) between trawl and trawl discard fleets, sexes combined."
+#| fig-alt: "Comparison of length compositions (lengths in cm) between trawl and trawl discard fleets, sexes combined."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Trawl_landings_discard_comparisons.png")
+)
+``` 
+
+\newpage
+
+<!-- Model diagnostics -->
+
+## Model Diagnostics
+
+```{r} 
+#| label: fig-M-profile-explore
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Likelihood profile and component likelihoods used to establish a fixed value for male natural mortality. "
+#| fig-alt: "This is a four panel figure. Each panel from top left clockwise around to bottom left: Total likelihood with components; the length components; the survey components; the age components. The total likelihood is composed of conflicting information, as lengths push for larger natural mortality values, and ages push for lower values. The surve components have little information natural mortality."
+
+knitr::include_graphics(
+  file.path(plot_dir, "piner_panel_NatM_uniform_Mal_GP_1.png")
+)
+``` 
+
+\newpage
+
+```{r} 
+#| label: fig-LAO-mod-comps
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in length and/or age only scenarios for relative stock status. Box indicates 95 percent confidence interval of the reference model."
+
+knitr::include_graphics(
+  file.path(plot_dir, "Sensi_logREplot_status_LAO.png")
+)
+``` 
+
+\newpage
+
+
+<!-- Model convergence and fits to data -->
+
+## Model Convergence
+
+```{r} 
+#| label: fig-pairs_plot_fast
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pairs plots of the fastest mixing parameters from running 2000 posterior draws (keeping every draw) using the random walk Metropolis algorithm. Parameters that show little to no movement are recommended to be fixed to improve model speed and efficiency."
+#| fig-alt: "The model output that produce these plots are available upon request"
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(plot_dir, "pairs_plot_fast.png")
+)
+```
+
+```{r} 
+#| label: fig-jitter001
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Jitter runs (using a value of 0.01) for the reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found."
+#| fig-alt: "These model files are available in the stock assessment archive"
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "Jitter Results_0.01", "jitterplot.png")
+)
+```
+
+```{r} 
+#| label: fig-jitter005
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Jitter runs (using a value of 0.05) for the reference model, with jitter run number on the x-axis and -log likelihood value on the y-axis. Blue dot are models that match the likelihood value of the reference model, while red dots deviate from the reference model. All red dots are above the blue dots, indicating no better fit to the reference model was found."
+#| fig-alt: "These model files are available in the stock assessment archive"
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "Jitter Results_0.05", "jitterplot.png")
+)
+```
+
+\newpage
+
+
+## Retrospecitve Analysis
+
+```{r} 
+#| label: fig-retro-so
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the five most recent years of data area removed sequentially."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(retro_dir, "compare2_spawnbio_uncertainty.png")
+)
+
+```
+
+```{r} 
+#| label: fig-retro-status
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of relative stock status (fraction unfished) when the five most recent years of data area removed sequentially."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(retro_dir, "compare4_Bratio_uncertainty.png")
+)
+
+```
+
+```{r} 
+#| label: fig-retro-minus3-scale
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Initial recruitment ($lnR_0$) likelihood profile (change in the negative log-likelihood across a range of $lnR0$ values) and derived quantities for the retrospective -3 years model. Red line in the top left figure indicates the significance level in likelihood difference. Blue dot is the reference model value."
+#| fig-alt: "Values are provided in the likelihood profile folder on the GitHub repository."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(like_dir, "Retro3_like_diff.png")
+)
+
+```
+
+\newpage
+
+
+<!-- Fits to data -->
+
+## Model Fits to Data
+
+<!-- Lengths -->
+
+### Lengths
+
+```{r} 
+#| label: fig-agg-len-fit
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Model fit to aggregated length (cm) compositions over all years."
+#| fig-alt: "Each panel shows the expected and observed aggregate lengths for each fishery and survey. The expectations mostly follow the expected distributions for all length composition sources."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit__aggregated_across_time.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-bt-1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the bottom trawl fishery in years available between 1995-2018.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt1mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-bt-2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the bottom trawl fishery in years available between 2019-2024.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt1mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-btdis
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines) length compositions by year for the bottom trawl discard fishery in years available between 2004-2023.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt2mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-nt-1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the non-trawl fishery in years available between 1996-2020.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt3mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-nt-2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the non-trawl fishery in years available between 2021-2024.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt3mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-ntdis
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines) length compositions by year for the midwater trawl fishery in years available between 2004-2024.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt4mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-midt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the non-trawl discard fishery in years available between 2000-2023.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt5mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-ashop
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the at-sea-hake fishery in years available between 2003-2024.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt6mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-tri
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the Triennial Bottom Trawl Survey in years available between 1980-2004.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt7mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-akslope
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the Alaskan Slope Bottom Trawl Survey in years available between 1997-2001.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt8mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-len-fit-wcgbts
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Observed (gray density plot) and expected (density lines by sex) length compositions by year for the West Coast Groundfish Bottom Trawl Survey in years available between 1980-2004.'N adj.' is the input sample size after data-weighting adjustment. N eff. is the calculated effective sample size used in the McAllister-Ianelli tuning method."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_flt10mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-fishery
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of length fits for each fishing fleet. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit__page1_multi-fleet_comparison.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-survey
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of length fits for each survey. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit__page2_multi-fleet_comparison.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-bt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the bottom trawl fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-btdis
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the bottom trawl discard fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL_DISCARD.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-nt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the non-trawl fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_NON_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-ntdis
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the non-trawl discard fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_NON_TRAWL_DISCARD.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-midt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the midwater trawl fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_MIDWATER_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-ashop
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the at-sea-hake fishery with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_AT_SEA_HAKE.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-tri
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the Triennial survey with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_TRIENNIAL.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-akslope
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the Alaskan slope survey with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_AK_SLOPE.png")
+)
+```
+
+```{r} 
+#| label: fig-meanlt-wcgbts
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean length (cm) index from the West Coast Groundfish Bottom Trawl survey with 95 percent confidence intervals based on sample sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_lenfit_data_weighting_TA1-8_WCGBTS.png")
+)
+```
+
+\newpage
+
+<!-- Ages -->
+
+### Ages
+
+
+```{r} 
+#| label: fig-peasrson-resids-age-bt1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the bottom trawl fishery in the years 2008-2021. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt1mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-bt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the bottom trawl fishery in the years 2022-2024. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALdat_bubflt1mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-nt1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the non-trawl fishery in the years 2008-2021. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt3mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-nt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the non-trawl fishery in the years 2022-2024. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt3mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-midt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the midwater trawl fishery. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt5mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-ashop1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the at-sea-hake fishery in the years 2008-2022. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt6mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-ashop2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the at-sea-hake fishery in the years 2023-2024. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt6mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-wcgbts1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the West Coast Groundfish Bottom Trawl survey in the years 2003-2010. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt10mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-wcgbts2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the West Coast Groundfish Bottom Trawl survey in the years 2011-2018. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt10mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-peasrson-resids-age-wcgbts3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Pearson residuals of conditional age at length fits for the West Coast Groundfish Bottom Trawl survey in the years 2019-2024. Closed bubble are positive residuals (observed > expected) and open bubbles are negative residuals (observed < expected)."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_residsflt10mkt0_page3.png")
+)
+```
+
+```{r} 
+#| label: fig-trawl-mean-caal
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean age from conditional age-at-length data for the trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_data_weighting_TA1-8_condAgeBOTTOM_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-nontrawl-mean-caal
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean age from conditional age-at-length data for the non-trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_data_weighting_TA1-8_condAgeNON_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-midwater-mean-caal
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean age from conditional age-at-length data for the midwater trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_data_weighting_TA1-8_condAgeMIDWATER_TRAWL.png")
+)
+```
+
+```{r} 
+#| label: fig-ashop-mean-caal
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean age from conditional age-at-length data for the at-sea-hake fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_data_weighting_TA1-8_condAgeAT_SEA_HAKE.png")
+)
+```
+
+```{r} 
+#| label: fig-wcgbts-mean-caal
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Mean age from conditional age-at-length data for the West Coast Groundfish Bottom Trawl survey with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_data_weighting_TA1-8_condAgeWCGBTS.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-bt1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the bottom trawl fishery in years 2008-2011. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt1mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-bt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the bottom trawl fishery in years 2012-2021. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt1mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-bt3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the bottom trawl fishery in years 2022-2024. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt1mkt0_page3.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-nt1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the non-trawl fishery in years 2008-2011. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt3mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-nt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the non-trawl fishery in years 2012-2021. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt3mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-nt3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the non-trawl fishery in years 2022-2024. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt3mkt0_page3.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-midt1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the midwater trawl fishery in years 2011-2022. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt5mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-midt2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the non-trawl fishery in years 2023-2024. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt5mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-ashop1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the at-sea-hake fishery in years 2008-2016. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt6mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-ashop2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the at-sea-hake fishery in years 2019-2022. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt6mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-ashop3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the at-sea-hake fishery in years 2023-2024. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt6mkt0_page3.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts1
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in years 2003-2006. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page1.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts2
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in years 2007-2010. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page2.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts3
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in years 2011-2014. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page3.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts4
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in years 2015-2018. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page4.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts5
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in years 2019-2023. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page5.png")
+)
+```
+
+```{r} 
+#| label: fig-call-plot-wcgbts6
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Conditional age at length plot showing mean age (left panels) and standard deviation (right panels) for the West Coast Groundfish Bottom Trawl survey in 2024. The CIs are 90% based on adding 1.64 SE of mean to the data for the left panels and the standard error of mean age at length (obs. and exp.) with 90% CIs based on the chi-square distribution."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_condAALfit_Andre_plotsflt10mkt0_page6.png")
+)
+```
+
+```{r} 
+#| label: fig-marage_bt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized fits (lines) to the marginal age composition data (density) for the bottom trawl fishery."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_gstagefit_flt1mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-marage_nt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized fits (lines) to the marginal age composition data (density) for the non-trawl fishery."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_gstagefit_flt3mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-marage_midt
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized fits (lines) to the marginal age composition data (density) for the midwater trawl fishery."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_gstagefit_flt5mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-marage_ashop
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized fits (lines) to the marginal age composition data (density) for the at-sea-hake fishery."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_gstagefit_flt6mkt0.png")
+)
+```
+
+```{r} 
+#| label: fig-marage_wcgbts
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Realized fits (lines) to the marginal age composition data (density) for the West Coast Groundfish Bottom Trawl survey."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "comp_gstagefit_flt10mkt0.png")
+)
+```
+
+<!-- Indices of abundance -->
+
+### Indices of Abundance
+
+```{r} 
+#| label: fig-index-tri
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Fit to index data for Triennial survey. Lines indicate 95% uncertainty interval around index values based on the assumption of lognormal error."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index2_cpuefit_TRIENNIAL.png")
+)
+```
+
+```{r} 
+#| label: fig-index-akslope
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Fit to index data for the Alaska Slope survey. Lines indicate 95% uncertainty interval around index values based on the assumption of lognormal error."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index2_cpuefit_AK_SLOPE.png")
+)
+```
+
+```{r} 
+#| label: fig-index-nwslope
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Fit to index data for Northwest Fisheries Science Center Slope survey. Lines indicate 95% uncertainty interval around index values based on the assumption of lognormal error."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index2_cpuefit_NW_SLOPE.png")
+)
+```
+
+```{r} 
+#| label: fig-index-wcgbts
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Fit to index data for West Coast Groundfish Bottom Trawl survey. Lines indicate 95% uncertainty interval around index values based on the assumption of lognormal error."
+#| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "index2_cpuefit_WCGBTS.png")
+)
+```
+
+<!-- Parameter estimates -->
+
+## Parameter Estimates
+
+```{r} 
+#| label: fig-vbgf
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated age and growth relatioship in the reference model. Shaded area indicates 95% distribution of length at age around estimated growth curve. Black curve is the estimated growth curve from the 2013 model."
+#| fig-alt: "Values for the growth curve are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(plot_dir, "Growth_curve_comparison.png")
+)
+```
+
+```{r} 
+#| label: fig-sel-all
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Ending selectivity at length for each fishery and survey."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "sel01_multiple_fleets_length1.png")
+)
+```
+
+
+```{r} 
+#| label: fig-sel-tv-fisheries
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Time-varying selectivity for fishery fleets with time blocks."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(plot_dir, "selectivityPlot_fisheries.png")
+)
+```
+
+```{r} 
+#| label: fig-sel-tv-surveys
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Time-varying selectivity for surveys with time blocks."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(plot_dir, "selectivityPlot_surveys.png")
+)
+```
+
+
+```{r} 
+#| label: fig-sel-all-age
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Ending selectivity at age derived from lengths for each fishery and survey."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "sel02_multiple_fleets_age2.png")
+)
+```
+
+```{r} 
+#| label: fig-lnR0
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated unfished recruitment (lnR0) for several assessed shelf and slope rockfishes."
+#| fig-alt: "This lollipop plot goes from top to bottom the smallest to largest estimated log R0 from stock assessments."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(plot_dir, "lnR0.png")
+)
+```
+
+<!-- Model outputs -->
+
+## Model Derived Outputs
+
+```{r} 
+#| label: fig-spawnout
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of spawning output (in millions of eggs) for the reference model."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "ts7_Spawning_output_with_95_intervals.png")
+)
+```
+
+```{r} 
+#| label: fig-depl
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of fraction of unfished spawning output for the reference model."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "ts9_Relative_spawning_output_intervals.png")
+)
+```
+
+```{r} 
+#| label: fig-recdevs
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of recruitment deviations for the reference model."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "recdevs2_withbars.png")
+)
+
+```
+
+```{r} 
+#| label: fig-biasramp
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Bias adjustment applied to the recruitment deviations (red line). Points are transformed variances relative to the assumed variance of recruitment."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "recruit_fit_bias_adjust.png")
+)
+
+```
+
+```{r} 
+#| label: fig-recruits
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of age-0 recruits for the reference model."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png")
+)
+
+```
+
+```{r} 
+#| label: fig-SR
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Stock-recruit curve with labels on first, last, and years with (log) deviations > 0.5. Point colors indicate year, with warmer colors indicating earlier years and cooler colors in showing later years."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "SR_curve2.png")
+)
+
+```
+
+\pagebreak
+
+
+<!-- Sensitivity Analyses and Retrospectives -->
+
+## Sensitivity Analyses
+
+```{r}
+#| label: fig-sens_indices_spout
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (indices)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","indicescompare2_spawnbio_uncertainty.png")
+)
+```
+
+
+```{r}
+#| label: fig-sens_indices_relsp
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (indices)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","indicescompare4_Bratio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_lens1_spout
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (length compositions by fleet)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","length_comps_fleetcompare2_spawnbio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_lens1_relsp
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (length compositions by fleet)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","length_comps_fleetcompare4_Bratio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_lens2_spout
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (length compositions by source)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","length_comps_allcompare2_spawnbio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_lens2_relsp
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (length compositions by source)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","length_comps_allcompare4_Bratio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_age_spout
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (age compositions by fleet)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","age_compscompare2_spawnbio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_age_relsp
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (age compositions by fleet)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","age_compscompare4_Bratio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sens_sum_data
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Relative change in management quantities across models conducted as sensitivities (removal of data sources)."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "output","sens_summary.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-data-wt
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different data weighting scenarios. The reference model uses the Francis method."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "data_sensitivities","Data weighting.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-RE-data-wt
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data weighting treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "data_sensitivities","Sensi_logREplot_SB_Dep_F_Yield_DataWt.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-ageing-error
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different ageing error scenarios. The reference model uses ageing error matrices for all age sources."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "data_sensitivities","Ageing error_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-RE-ageing-error
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in ageing error scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "data_sensitivities","Sensi_logREplot_SB_Dep_F_Yield_AE.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-LH
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different natural mortality, growth and reproductive biology scenarios."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","M_Gr_Reproduction.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-RE-LH
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in natural mortality, growth and reproductive biology scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","Sensi_logREplot_SB_Dep_F_Yield_MGrRep.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-LH-so
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","compare2_spawnbio_uncertainty.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-SelRec
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different recruitment and selectivity scenarios."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","Sel_Rec.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-RE-SelRec
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in recruitment and selectivity scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","Sensi_logREplot_SB_Dep_F_Yield_Sel_Rec.png")
+)
+```
+
+```{r}
+#| label: fig-sensi-logsel_fits
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Aggregate fit to length compositions for the scenario that assume logistic selectivity for all fisheries and time blocks."
+#
+knitr::include_graphics(
+    file.path(sens_dir, "model_specs","comp_lenfit__aggregated_across_time_logsel.png")
+)
+```
+
+\newpage
+
+<!-- Likelihood Profiles -->
+
+## Likelihood Profiles
+
+```{r}
+#| label: fig-likeprof-lnR0-parm
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Initial recruitment ($lnR_0$) likelihood profile (change in the negative log-likelihood across a range of $ln(R0)$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#
+knitr::include_graphics(
+    file.path(like_dir,"lnR0", "parameter_panel_SR_LN(R0).png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-lnR0-components
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Initial recruitment ($ln(R0)$) likelihood profile for each of the likelihood components."
+#
+knitr::include_graphics(
+    file.path(like_dir,"lnR0", "piner_panel_SR_LN(R0).png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-h-parm
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Steepness ($h$) likelihood profile (change in the negative log-likelihood across a range of $h$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#
+knitr::include_graphics(
+    file.path(like_dir,"Steepness", "parameter_panel_SR_BH_steep.png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-h-components
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Steepness ($h$) likelihood profile for each of the likelihood components."
+#
+knitr::include_graphics(
+    file.path(like_dir,"Steepness", "piner_panel_SR_BH_steep.png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-M-parm
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Male natural mortality ($M$) likelihood profile (change in the negative log-likelihood across a range of male $M$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#
+knitr::include_graphics(
+    file.path(like_dir,"Male_M", "parameter_panel_NatM_uniform_Mal_GP_1.png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-M-sex
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Likelihood differences by natural mortality ($M$) by sex."
+#
+knitr::include_graphics(
+    file.path(like_dir,"Male_M", "M_sex.png")
+)
+```
+
+```{r}
+#| label: fig-likeprof-M-components
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Male natural mortality ($M$) likelihood profile for each of the likelihood components."
+#
+knitr::include_graphics(
+    file.path(like_dir,"Male_M", "piner_panel_NatM_uniform_Mal_GP_1.png")
+)
+```
+
+## States of Nature
+
+```{r}
+#| label: fig-states-of-nature
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for the reference model and high and low states of nature."
+#
+knitr::include_graphics(
+    file.path(sens_dir,"statesofnature", "StatesofNature.png")
+)
+```
+
+\newpage
+
+```{r}
+#| label: fig-ensemble
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Ensemble relative stock status for the reference model and two states of nature."
+#
+knitr::include_graphics(
+    file.path(sens_dir,"statesofnature", "Ensemble_Bratio.png")
+)
+```
+
+```{r}
+#| label: fig-ensemble-violin
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Ensemble terminal year relative stock status for the reference model and two states of nature."
+#
+knitr::include_graphics(
+    file.path(sens_dir,"statesofnature", "Ensemble_comp_plots_RSS.png")
+)
+```
+
+
+\newpage
+
+<!-- Reference Points and Forecasts -->
+
+\newpage
+
+<!-- Management -->
+
+## Management 
+
+```{r} 
+#| label: fig-management-depletion
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of fraction of unfished spawning output for the reference model."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "ts9_Relative_spawning_output_intervals.png")
+)
+
+```
+
+
+```{r} 
+#| label: fig-one-minus-spr
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Estimated time series of the fishing intensity (1 - SPR), where SPR is the spawning potential ratio, with approximate 95% asymptotic intervals. The horizontal line at 0.5 corresponds to SPR = 0.5, the management reference point. The horizontal line at 1.0 corresponds to SPR = 0 (all spawning fish removed from the population)."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "SPR3_ratiointerval.png")
+)
+
+```
+
+
+```{r} 
+#| label: fig-management-yield
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Equilibrium yield curve for the reference model. Values are based on the most recent fishery selectivities and retention curves and with steepness fixed at 0.72."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "yield2_yield_curve_with_refpoints.png")
+)
+
+```
+
+
+```{r} 
+#| label: fig-management-phase
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Phase plot of fishing intensity versus fraction unfished. Each point represents the biomass ratio at the start of the year and the relative fishing intensity in that same year. Cooler colors (purple) represent early years and warmer colors (yellow) represent recent years. Lines through the final point show 95% intervals based on the asymptotic uncertainty for each dimension. The shaded ellipse is a 95% region which accounts for the estimated correlation between the two quantities."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(model_dir, "plots", "SPR4_phase.png")
+)
+
+```
+

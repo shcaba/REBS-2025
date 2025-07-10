@@ -259,7 +259,7 @@
 U.S. West Coast in 2025}
 \author{Jason M. Cope \and Vladlena Gertseva \and R. Claire
 Rosemond \and Alison D. Whitman \and Fabio P. Caltabellotta}
-\date{2025-07-02}
+\date{2025-07-10}
 
 \begin{document}
   \begin{titlepage}
@@ -2693,7 +2693,7 @@ relationship, so this stock assessment uses the unobserved Genus
 Sebastes values of \(a\) = 6.538e-06 and \(b\) = 4.043 using the
 \(F = aL^b\) relationship. In order to adapt the \(a\) parameter for
 SS3, the equation (a*10\^{}b)/1000000 was used to scale the \(a\)
-parameter to millions of eggs. This results in \(a\) = 7.21847e-11.
+parameter to trillions of eggs. This results in \(a\) = 7.21847e-11.
 
 \subsubsection{Stock-Recruitment Function and
 Compensation}\label{stock-recruitment-function-and-compensation}
@@ -3466,11 +3466,16 @@ data time series, all 4 sources of age data, which have different
 selectivities, but all of which to some degree include bigger and older
 individuals, show the consistent pattern of decreasing mean age from
 2022 to 2023, and an increase in 2024. These changes, except for the
-large increase in scale for the -4 and -5, are within the uncertainty of
-the reference model. The Mohn's rho evaluation of the degree of
+large increase in scale for the -3 to -5 scenarios, are within the
+uncertainty of the reference model (Figure~\ref{fig-retro-scale-12}).
+For those peels producing extreme estimates of \(lnR_0\), there is no
+statistical difference in values of \(lnR_0\) from the base model to the
+high values (Figure~\ref{fig-retro-minus3-scale}). Given model
+information content on \(lnR_0\), there is actually no retrospective
+pattern in scale. The Mohn's rho evaluation of the degree of
 retrospective pattern show the data peels are below significant levels
-for stock status, and above only for the -4 and -5 year peels that show
-extremely high spawning output values.
+for stock status. Given the lack of information on stock status, Mohn's
+rho is not a useful measure of the retrospective pattern for scale.
 
 \subsubsection{Fits to the Data}\label{fits-to-the-data}
 
@@ -8606,6 +8611,71 @@ better fit to the reference model was found.}
 
 \end{figure}%
 
+\newpage
+
+\subsection{Retrospecitve Analysis}\label{retrospecitve-analysis}
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{Retros/compare2_spawnbio_uncertainty.png}
+
+}
+
+\caption{\label{fig-retro-so}Change in the estimate of spawning output
+(quadrillions of eggs) when the five most recent years of data area
+removed sequentially.}
+
+\end{figure}%
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{Retros/compare4_Bratio_uncertainty.png}
+
+}
+
+\caption{\label{fig-retro-status}Change in the estimate of relative
+stock status (fraction unfished) when the five most recent years of data
+area removed sequentially.}
+
+\end{figure}%
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{Like_profiles/ref_model_retro_2_yr_peel/compare2_spawnbio_uncertainty.png}
+
+}
+
+\caption{\label{fig-retro-scale-12}Change in the estimate of spawning
+output (quadrillions of eggs) when the two most recent years of data
+area removed sequentially. Uncertainty envelopes are also provided for
+the reference model.}
+
+\end{figure}%
+
+\begin{figure}[H]
+
+\centering{
+
+\includegraphics{Like_profiles/Retro3_like_diff.png}
+
+}
+
+\caption{\label{fig-retro-minus3-scale}Initial recruitment (\(lnR_0\))
+likelihood profile (change in the negative log-likelihood across a range
+of \(lnR0\) values) and derived quantities for the retrospective -3
+years model. Red line in the top left figure indicates the significance
+level in likelihood difference. Blue dot is the reference model value.}
+
+\end{figure}%
+
+\newpage
+
 \subsection{Model Fits to Data}\label{model-fits-to-data}
 
 \subsubsection{Lengths}\label{lengths-1}
@@ -9779,38 +9849,6 @@ colors in showing later years.}
 \end{figure}%
 
 \pagebreak
-
-\subsection{Retrospecitve Analysis}\label{retrospecitve-analysis}
-
-\begin{figure}[H]
-
-\centering{
-
-\includegraphics{Retros/compare2_spawnbio_uncertainty.png}
-
-}
-
-\caption{\label{fig-retro-so}Change in the estimate of spawning output
-(quadrillions of eggs) when the five most recent years of data area
-removed sequentially.}
-
-\end{figure}%
-
-\begin{figure}[H]
-
-\centering{
-
-\includegraphics{Retros/compare4_Bratio_uncertainty.png}
-
-}
-
-\caption{\label{fig-retro-status}Change in the estimate of relative
-stock status (fraction unfished) when the five most recent years of data
-area removed sequentially.}
-
-\end{figure}%
-
-\newpage
 
 \subsection{Sensitivity Analyses}\label{sensitivity-analyses-1}
 

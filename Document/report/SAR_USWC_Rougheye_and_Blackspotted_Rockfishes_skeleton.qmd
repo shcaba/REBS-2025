@@ -51,7 +51,7 @@ format:
     include-in-header:
       - 'support_files/in-header.tex'
       - 'support_files/pfmc.tex'
-    toc: true
+    toc: false
     lof: false
     lot: false
     titlepage-geometry: 
@@ -227,6 +227,13 @@ cat(a, sep = '\n')
 ```
 
  {{< pagebreak >}} 
+
+
+\hypersetup{linkcolor=.}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+{{< pagebreak >}}
  
 \pagenumbering{roman}
 \setcounter{page}{1}

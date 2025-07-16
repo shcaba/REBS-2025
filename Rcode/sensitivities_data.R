@@ -1,10 +1,12 @@
 ### RUN SENSITIVITIES FOR REBS 2025 UPDATE ASSESSMENT
 # CODE ADAPTED BY A. WHITMAN (ODFW) & E. PERL (NMFS OST) FROM K. OKEN (NWFSC)
 
-# LAST UPDATE: 06/09/2025
+# LAST UPDATE: 07/15/2025
 
 # output directory was corrected, so output available now
 # running models individually to ID ones with major issues
+
+# running some items during the STAR 
 
 library(here)
 library(r4ss)
@@ -22,7 +24,7 @@ model_directory <- here::here(
 )
 base_model_name <- here::here(
   'models',
-  'base_model'
+  'ref_model'
 )
 exe_loc <- here::here('Document/report/Sensis/ss3')
 base_model <- SS_read(base_model_name, ss_new = T)
@@ -74,13 +76,13 @@ SS_write(
   overwrite = TRUE
 )
 
-# testing a run manually 
+# run manually at STAR with updated base model
 
-# setwd("C:/Github/REBS-2025/Document/report/Sensis/data_sensitivities/01_no_Triennial")
-# shell("ss3 -nohess",wait = T) # no hessian
-# mydir<-getwd()
-# replist<-SS_output(mydir)
-# SS_plots(replist) # creates the plots
+setwd("C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
+shell("ss3 -nohess",wait = T) # no hessian
+#mydir<-getwd()
+#replist<-SS_output(mydir)
+#SS_plots(replist) # creates the plots
 
 
 ## 2) remove AK slope survey
@@ -214,15 +216,60 @@ SS_write(
 # SS_plots(replist) # creates the plots
 
 
+## 4a) remove WCGBTS survey - run during STAR
+
+sensi_mod <- base_model
+
+sensi_mod$start$init_values_src<-0
+
+sensi_mod$dat$CPUE <- sensi_mod$dat$CPUE %>%
+  filter(index != 10)
+
+sensi_mod$ctl$Q_options <- sensi_mod$ctl$Q_options[
+  -grep('WCGBTS', rownames(sensi_mod$ctl$Q_options)),
+]
+sensi_mod$ctl$Q_parms <- sensi_mod$ctl$Q_parms[
+  -grep('WCGBTS', rownames(sensi_mod$ctl$Q_parms)),
+]
+
+# Need to remove length data, age data, and selectivities. 
+# If no catch or index, you can't have length or age data
+
+# running without index and length comps (so still includes age data)
+sensi_mod$dat$lencomp <- sensi_mod$dat$lencomp |>
+  filter(fleet != 10)
+# sensi_mod$dat$agecomp <- sensi_mod$dat$agecomp |>
+#   filter(fleet != 10)
+
+## DON"T NEED TO REMOVE SIZE SELEX
+
+SS_write(
+  sensi_mod,
+  file.path(
+    model_directory,
+    'data_sensitivities',
+    '04a_no_WCGBTS_ageonly_hess'
+  ),
+  overwrite = TRUE
+)
+
+setwd("C:/Github/REBS-2025/models/data_sensitivities/04a_no_WCGBTS_ageonly_hess")
+shell("ss3",wait = T) # includes hessian
+mydir<-getwd()
+replist<-SS_output(mydir)
+SS_plots(replist) # creates the plots
+
+
+
 ## 5) remove all indices
 
 sensi_mod <- base_model
 
 sensi_mod$start$init_values_src<-0
 
-sensi_mod$dat$CPUE$year <- -1 * sensi_mod$dat$CPUE$year
-sensi_mod$ctl$Q_options <- sensi_mod$ctl$Q_parms <- NULL
-sensi_mod$ctl$Q_parms_tv <- NULL
+#sensi_mod$dat$CPUE$year <- -1 * sensi_mod$dat$CPUE$year
+#sensi_mod$ctl$Q_options <- sensi_mod$ctl$Q_parms <- NULL
+#sensi_mod$ctl$Q_parms_tv <- NULL
 
 # Need to remove length data, age data, and selectivities. 
 # If no catch or index, you can't have length or age data
@@ -250,6 +297,76 @@ SS_write(
 # mydir<-getwd()
 # replist<-SS_output(mydir)
 # SS_plots(replist) # creates the plots
+
+
+## 5a) remove all indices except WCGBTS 
+
+sensi_mod <- base_model
+
+sensi_mod$start$init_values_src<-0
+
+sensi_mod$dat$CPUE <- sensi_mod$dat$CPUE %>%
+  filter(!index %in% c(7:9))
+
+no_index_names<-c("TRIENNIAL","NW_SLOPE","AK_SLOPE")
+
+sensi_mod$ctl$Q_options <- sensi_mod$ctl$Q_options[
+  -grep(paste(no_index_names, collapse = "|"), rownames(sensi_mod$ctl$Q_options)),
+]
+sensi_mod$ctl$Q_parms <- sensi_mod$ctl$Q_parms[
+  -grep(paste(no_index_names, collapse = "|"), rownames(sensi_mod$ctl$Q_parms)),
+]
+
+# Need to remove length and age data
+indices_no_catches <- c(7, 8, 9)
+indices_und <- paste0(indices_no_catches, "_")
+indices_chr <- paste0("(", indices_no_catches, ")")
+
+sensi_mod$dat$lencomp <- sensi_mod$dat$lencomp %>%
+  filter(!fleet %in% indices_no_catches)
+sensi_mod$dat$agecomp <- sensi_mod$dat$agecomp %>%
+  filter(!fleet %in% indices_no_catches)
+
+SS_write(
+  sensi_mod,
+  file.path(
+    model_directory,
+    'data_sensitivities',
+    '05a_no_indices_except_WCGBTS'
+  ),
+  overwrite = TRUE
+)
+
+setwd("C:/Github/REBS-2025/models/data_sensitivities/05a_no_indices_except_WCGBTS")
+shell("ss3",wait = T) # hessian on
+mydir<-getwd()
+replist<-SS_output(mydir)
+SS_plots(replist) # creates the plots
+
+# run comparisons with base model
+
+# single folder for comparisons
+setwd("C:/Github/REBS-2025/Document/report/Sensis/output/STAR_Request_4")
+mydir<-getwd()
+
+# assign the outputs from each model 
+base<-base_out
+no_indices_ex_WCGBTS<-replist # already did it above
+Minus_tri<-SS_output(dir="C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
+
+#create comparisons
+mymodels <- list(base,no_indices_ex_WCGBTS,Minus_tri)
+mysummary <- SSsummarize(mymodels)
+modelnames <- c("Base","No indices except WCGBTS","- Triennial")
+
+#add plots to a folder created in the directory you're working in
+# the folder needs to be created before this will run 
+SSplotComparisons(mysummary, legendlabels=modelnames,
+                  plotdir=mydir,
+                  print=TRUE,endyr=2024,new=F,densitynames = c("SPB_Virgin","R0"))
+dev.off()
+
+
 
 # Remove length comps -----------------------------------------------------
 

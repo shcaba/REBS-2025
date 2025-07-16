@@ -67,7 +67,8 @@ r4ss::SS_write(historical_catch_model, dir = historical_catch_model_dir, overwri
 
 r4ss::get_ss3_exe(dir = historical_catch_model_dir)
 
-r4ss::run(dir = historical_catch_model_dir, show_in_console = TRUE, extras = "-nohess")
+#r4ss::run(dir = historical_catch_model_dir, show_in_console = TRUE, extras = "-nohess")
+r4ss::run(dir = historical_catch_model_dir, show_in_console = TRUE)
 
 replist <- SS_output(dir = historical_catch_model_dir)
 SS_plots(replist)

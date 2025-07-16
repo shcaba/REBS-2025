@@ -1,18 +1,18 @@
 1 -logL: 7333.55 SSB(Vir_Start_End): 5.3561 5.3561 4.50895
 1 Files: 2025_rougheye_data.ss 2025_rougheye_control.ss
-1 N_iter: 268 runtime(sec): 503 starttime: Tue Jul 15 15:41:14 2025
+1 N_iter: 1122 runtime(sec): 3934 starttime: Tue Jul 15 22:02:16 2025
 1#V3.30.23.2;_safe;_compile_date:_Apr 17 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 1 F_Method: 3 Retro_YR: 2024 Forecast_Type: 1 MSY_Type: 2
 1 Comment S_1 #C file created using an r4ss function
-1 Comment S_2 #C file write time: 2025-07-15  15:39:56
+1 Comment S_2 #C file write time: 2025-07-15  22:02:10
 1 Comment D_1 #C 2025 Rougheye assessment
 1 Comment D_2 #C file created using an r4ss function
-1 Comment D_3 #C file write time: 2025-07-15  15:39:56
+1 Comment D_3 #C file write time: 2025-07-15  22:02:10
 1 Comment C_1 #Control File
 1 Comment C_2 #C file created using an r4ss function
-1 Comment C_3 #C file write time: 2025-07-15  15:39:59
+1 Comment C_3 #C file write time: 2025-07-15  22:02:12
 1 Comment F_1 #C file created using an r4ss function
-1 Comment F_2 #C file write time: 2025-07-15  15:39:59
+1 Comment F_2 #C file write time: 2025-07-15  22:02:12
 1 Like_Emph Total 1 
 1 Like_Value Total 7333.55
 1 Like_Emph Indices All  0 0 0 0 0 0 1 1 1 1

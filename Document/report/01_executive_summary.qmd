@@ -420,6 +420,22 @@ cat("\n\\end{landscape}\n")
 
 ```
 
+
+\clearpage
+
+```{r, results = "asis"}
+#| label: tbl-es-decision-1
+#| warning: false
+#| echo: false
+#| tbl-cap: "Decision table with 12-year projections. The alternative states of nature ('Low', 'Base', and 'High' as discussed in the text) are provided in the columns, with Spawning Output ('Spawn', in trillions of eggs) and Fraction of unfished spawning output ('Frac') provided for each state."
+#| tbl-pos: H
+ table_decision(
+   list(mod_low_A, mod_base_A, mod_high_A)
+ )
+
+```
+
+
 ## Research and Data Needs {-}
 There are many areas of research that would benefit the understanding and assessment of `r Spp_short`.  Below, we identify several of them that we consider particularly important.
 

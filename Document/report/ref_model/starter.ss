@@ -1,9 +1,9 @@
 #C file created using an r4ss function
-#C file write time: 2025-06-24  14:18:18
+#C file write time: 2025-07-17  06:22:15
 #
 2025_rougheye_data.ss #_datfile
 2025_rougheye_control.ss #_ctlfile
-0 #_init_values_src
+1 #_init_values_src
 1 #_run_display_detail
 1 #_detailed_age_structure
 0 #_checkup

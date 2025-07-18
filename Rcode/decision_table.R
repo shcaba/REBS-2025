@@ -50,7 +50,7 @@ table_decision <- function(
   results <- purrr::modify_depth(
     mods,
     .depth = 2,
-    .f = SS_decision_table_stuff,
+    .f = r4ss::SS_decision_table_stuff,
     yrs = years,
     digits = digits
   ) |>

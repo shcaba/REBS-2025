@@ -1208,7 +1208,6 @@ recent_management_table_es
 
  {{< pagebreak >}} 
  
- <!-- states of nature -->
 ```{r, results = "asis"}
 #| label: tbl-es-decision-2
 #| warning: false
@@ -1218,7 +1217,6 @@ recent_management_table_es
  table_decision(
    list(mod_low_A, mod_base_A, mod_high_A)
  )
-
 ```
 
  {{< pagebreak >}} 

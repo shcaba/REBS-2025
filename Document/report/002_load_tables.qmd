@@ -98,3 +98,23 @@ if (file.exists(table_dir)) {
     round(time_series_table[, (ncol(time_series_table) -1):ncol(time_series_table)], 3)
 
 ```
+
+
+
+<!-- Read in models for decision table as well as caption -->
+```{r}
+#| eval: true
+#| warning: false
+#| echo: false
+#| message: false
+
+mod_low_A <- r4ss::SS_output(here::here("Document/report/Decision Table/Low"),    
+  SpawnOutputLabel = "Spawning output (trillions of eggs)", printstats = FALSE, verbose = FALSE)
+
+mod_base_A <- r4ss::SS_output(here::here("Document/report/Decision Table/Reference"),    
+  SpawnOutputLabel = "Spawning output (trillions of eggs)", printstats = FALSE, verbose = FALSE)
+
+mod_high_A <- r4ss::SS_output(here::here("Document/report/Decision Table/High"),    
+  SpawnOutputLabel = "Spawning output (trillions of eggs)", printstats = FALSE, verbose = FALSE)
+
+```

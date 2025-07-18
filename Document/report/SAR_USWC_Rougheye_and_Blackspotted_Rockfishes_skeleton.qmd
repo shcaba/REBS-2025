@@ -106,6 +106,9 @@ table_dir <- file.path(model_dir, "tables")
 
 model_output <- r4ss::SS_output(model_dir,verbose=FALSE,printstats=FALSE)
 
+#decision table
+source(here::here('Rcode/decision_table.R'))
+
 # load converted output from asar::convert_output() 
 #output <- utils::read.csv('C:/Users/Jason.Cope/Documents/Github/REBS-2025/Document/update/reye_blkspt_convert_#output.csv') 
 # Call reference points and quantities below 

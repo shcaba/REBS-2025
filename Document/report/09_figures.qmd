@@ -1042,6 +1042,19 @@ knitr::include_graphics(
 
 ```
 
+```{r} 
+#| label: fig-No_block_retro
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the run when the recent non-trawl selelctivity block extended to start in 2011. In the base mode, this block starts in 2020."
+#| fig-alt: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the run when the recent non-trawl selelctivity block extended to start in 2011. In the base mode, this block starts in 2020."
+
+knitr::include_graphics(
+  file.path(plot_dir, "No_block_retro_compare1_spawnbio.png")
+)
+``` 
+
 \newpage
 
 
@@ -1527,7 +1540,7 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Mean age from conditional age-at-length data for the trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-cap: "Mean age from conditional age-at-length data for the bottom trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
 #| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
 #| fig-pos: H
 

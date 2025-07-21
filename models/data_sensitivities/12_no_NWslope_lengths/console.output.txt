@@ -1,6 +1,6 @@
 ###
 console output
-2025-06-10 14:23:15.297928
+2025-07-18 12:34:17.217383
 ###
  
  reading from starter.ss
@@ -14,29 +14,26 @@ Begin setting up parameters ...  read parm file: ss3.par
  found ss3.par
  end of parameter section 
 Evaluating biology calculations once ... done
-Starting optimization of 'ss3' in phase 1 of 5 at Tue Jun 10 14:20:54 2025
-1 1 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 1 | nvar=136 | iter=  0 | nll=7.33e+03 | mag=4.19e-04 | par[136]=Q_parm[5]
-1 2 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-2 3 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 2 | nvar=146 | iter=  0 | nll=7.33e+03 | mag=1.52e-03 | par[  2]=MGparm[2]
-2 4 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-3 5 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 3 | nvar=176 | iter=  0 | nll=7.33e+03 | mag=1.52e-03 | par[  2]=MGparm[2]
-3 6 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-4 7 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 4 | nvar=200 | iter=  0 | nll=7.33e+03 | mag=1.52e-03 | par[  2]=MGparm[2]
-4 8 -log(L): 7334.42  Spbio: 5.62783e+06 4.89495e+06
-4 9 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 4 | nvar=200 | iter=  1 | nll=7.33e+03 | mag=8.61e-04 | par[  4]=MGparm[4]
-4 10 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-5 11 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-phase= 5 | nvar=213 | iter=  0 | nll=7.33e+03 | mag=8.61e-04 | par[  4]=MGparm[4]
-Optimization completed after 1 m 42 s with final statistics:
-  nll=7333.961600 | mag=8.61121e-04 | par[  4]=MGparm[4]
+Starting optimization of 'ss3' in phase 1 of 5 at Fri Jul 18 12:32:21 2025
+1 1 -log(L): 7333.94  Spbio: 5.57322 4.84496
+phase= 1 | nvar=136 | iter=  0 | nll=7.33e+03 | mag=8.94e-04 | par[107]=recdev2[105]
+1 2 -log(L): 7333.94  Spbio: 5.57322 4.84496
+2 3 -log(L): 7333.94  Spbio: 5.57322 4.84496
+phase= 2 | nvar=146 | iter=  0 | nll=7.33e+03 | mag=8.94e-04 | par[117]=recdev2[105]
+2 4 -log(L): 7333.94  Spbio: 5.57322 4.84496
+3 5 -log(L): 7333.94  Spbio: 5.57322 4.84496
+phase= 3 | nvar=176 | iter=  0 | nll=7.33e+03 | mag=8.94e-04 | par[117]=recdev2[105]
+3 6 -log(L): 7333.94  Spbio: 5.57322 4.84496
+4 7 -log(L): 7333.94  Spbio: 5.57322 4.84496
+phase= 4 | nvar=200 | iter=  0 | nll=7.33e+03 | mag=8.94e-04 | par[117]=recdev2[105]
+4 8 -log(L): 7333.94  Spbio: 5.57322 4.84496
+5 9 -log(L): 7333.94  Spbio: 5.57322 4.84496
+phase= 5 | nvar=213 | iter=  0 | nll=7.33e+03 | mag=8.94e-04 | par[117]=recdev2[105]
+Optimization completed after 1 m 3.5 s with final statistics:
+  nll=7333.935048 | mag=8.93977e-04 | par[117]=recdev2[105]
 
-5 12 -log(L): 7333.96  Spbio: 5.64766e+06 4.91382e+06
-Iterations: 12
+5 10 -log(L): 7333.94  Spbio: 5.57322 4.84496
+Iterations: 10
 Finished calculating benchmarks
 Finished forecast
 Writing wtatage.ss_new
@@ -48,4 +45,4 @@ Begin writing *.ss_new output files ... Finished writing *.ss_new output files
 !!  Run has completed  !! 
 !!  See warning.sso for 3 warnings  and 1 note 
 
-Finished running model 'ss3' after 2 m 20 s.
+Finished running model 'ss3' after 1 m 55 s.

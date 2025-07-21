@@ -1,6 +1,6 @@
 #C 2025 Rougheye assessment
 #C file created using an r4ss function
-#C file write time: 2025-06-10  14:20:12
+#C file write time: 2025-07-18  11:46:55
 #
 1892 #_styr
 2024 #_endyr

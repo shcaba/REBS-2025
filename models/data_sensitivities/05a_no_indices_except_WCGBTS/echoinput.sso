@@ -3468,14 +3468,11 @@ Finished agecomp obj_fun  462.169 0 332.152 0 181.664 3863 0 0 0 1985.08
  catch -log(L)  2.22051e-11 1.25362e-10 3.57258e-11 3.35594e-12 2.46438e-12 3.63836e-12 0 0 0 0
 Finished recruitdev obj_fun -10.8228 15.614 0.5
  OK with obj_func 7305.71
-Wrote first version of output files (before hessian, benchmark, and forecast)
-Start benchmark and forecast, if requested
+Iterations: 389
 Calculated Fspr 0.0284643 0.5
 Calculated Btgt: 0.0330238 0.4
 Calculated Fmsy 0.0514445 490.506
-Finished benchmark, forecast, and sdreporting
-Iterations: 1235
- finished COVAR.SSO
+Finished calculating benchmarks
 Finished forecast
 Writing wtatage.ss_new
 Finished StdDev quantities

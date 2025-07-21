@@ -1,12 +1,14 @@
 ### RUN SENSITIVITIES FOR REBS 2025 UPDATE ASSESSMENT
 # CODE ADAPTED BY A. WHITMAN (ODFW) & E. PERL (NMFS OST) FROM K. OKEN (NWFSC)
 
-# LAST UPDATE: 07/15/2025
+# LAST UPDATE: 07/18/2025
 
 # output directory was corrected, so output available now
 # running models individually to ID ones with major issues
 
 # running some items during the STAR 
+
+# 7/18 - updating with new reference model post-STAR
 
 library(here)
 library(r4ss)
@@ -76,13 +78,13 @@ SS_write(
   overwrite = TRUE
 )
 
-# run manually at STAR with updated base model
-
-setwd("C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
-shell("ss3 -nohess",wait = T) # no hessian
-#mydir<-getwd()
-#replist<-SS_output(mydir)
-#SS_plots(replist) # creates the plots
+# # run manually at STAR with updated base model
+# 
+# setwd("C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
+# shell("ss3 -nohess",wait = T) # no hessian
+# #mydir<-getwd()
+# #replist<-SS_output(mydir)
+# #SS_plots(replist) # creates the plots
 
 
 ## 2) remove AK slope survey
@@ -253,13 +255,12 @@ SS_write(
   overwrite = TRUE
 )
 
-setwd("C:/Github/REBS-2025/models/data_sensitivities/04a_no_WCGBTS_ageonly_hess")
-shell("ss3",wait = T) # includes hessian
-mydir<-getwd()
-replist<-SS_output(mydir)
-SS_plots(replist) # creates the plots
-
-
+# setwd("C:/Github/REBS-2025/models/data_sensitivities/04a_no_WCGBTS_ageonly_hess")
+# shell("ss3",wait = T) # includes hessian
+# mydir<-getwd()
+# replist<-SS_output(mydir)
+# SS_plots(replist) # creates the plots
+# 
 
 ## 5) remove all indices
 
@@ -336,36 +337,35 @@ SS_write(
   ),
   overwrite = TRUE
 )
-
-setwd("C:/Github/REBS-2025/models/data_sensitivities/05a_no_indices_except_WCGBTS")
-shell("ss3",wait = T) # hessian on
-mydir<-getwd()
-replist<-SS_output(mydir)
-SS_plots(replist) # creates the plots
+ 
+# setwd("C:/Github/REBS-2025/models/data_sensitivities/05a_no_indices_except_WCGBTS")
+# shell("ss3",wait = T) # hessian on
+# mydir<-getwd()
+# replist<-SS_output(mydir)
+# SS_plots(replist) # creates the plots
 
 # run comparisons with base model
-
-# single folder for comparisons
-setwd("C:/Github/REBS-2025/Document/report/Sensis/output/STAR_Request_4")
-mydir<-getwd()
+# 
+# # single folder for comparisons
+# setwd("C:/Github/REBS-2025/Document/report/Sensis/output/STAR_Request_4")
+# mydir<-getwd()
 
 # assign the outputs from each model 
-base<-base_out
-no_indices_ex_WCGBTS<-replist # already did it above
-Minus_tri<-SS_output(dir="C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
-
-#create comparisons
-mymodels <- list(base,no_indices_ex_WCGBTS,Minus_tri)
-mysummary <- SSsummarize(mymodels)
-modelnames <- c("Base","No indices except WCGBTS","- Triennial")
+# base<-base_out
+# no_indices_ex_WCGBTS<-replist # already did it above
+# Minus_tri<-SS_output(dir="C:/Github/REBS-2025/models/data_sensitivities/01_no_Triennial")
+# 
+# #create comparisons
+# mymodels <- list(base,no_indices_ex_WCGBTS,Minus_tri)
+# mysummary <- SSsummarize(mymodels)
+# modelnames <- c("Base","No indices except WCGBTS","- Triennial")
 
 #add plots to a folder created in the directory you're working in
 # the folder needs to be created before this will run 
-SSplotComparisons(mysummary, legendlabels=modelnames,
-                  plotdir=mydir,
-                  print=TRUE,endyr=2024,new=F,densitynames = c("SPB_Virgin","R0"))
-dev.off()
-
+# SSplotComparisons(mysummary, legendlabels=modelnames,
+#                   plotdir=mydir,
+#                   print=TRUE,endyr=2024,new=F,densitynames = c("SPB_Virgin","R0"))
+# dev.off()
 
 
 # Remove length comps -----------------------------------------------------
@@ -1043,7 +1043,7 @@ results <- future_map(
     dir = .x,
     exe = exe_loc,
     extras = '-nohess',
-    skipfinished = TRUE
+    skipfinished = FALSE
   )
 )
 

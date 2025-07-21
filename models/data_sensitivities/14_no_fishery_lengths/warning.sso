@@ -1,6 +1,6 @@
 Note 1 Information: Max data length bin: 80  < max pop len bins: 84; so will accumulate larger pop len bins
 Warning 1 : First_Mature_Age read as:  0, which is unusual. Check logic of spawn_month and settlement time & age
-Warning 2 : Minimum pop size bin:_4; is > L at Amin for sex: 1; Gpat: 1; L= -3.0974
-Warning 3 : Minimum pop size bin:_4; is > L at Amin for sex: 2; Gpat: 1; L= -2.67562
-Warning 4 : Final gradient: 0.0368509 is larger than final_conv: 0.001
+Warning 2 : Minimum pop size bin:_4; is > L at Amin for sex: 1; Gpat: 1; L= -3.09593
+Warning 3 : Minimum pop size bin:_4; is > L at Amin for sex: 2; Gpat: 1; L= -2.67269
+Warning 4 : Final gradient: 0.0735391 is larger than final_conv: 0.001
  4 warnings  and 1 note 

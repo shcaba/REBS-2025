@@ -1,5 +1,5 @@
 #C file created using an r4ss function
-#C file write time: 2025-06-10  14:20:27
+#C file write time: 2025-07-18  11:47:11
 #
 1 #_benchmarks
 2 #_MSY
@@ -31,16 +31,16 @@
  #_year fraction
    2025    1.000
    2026    1.000
-   2027    0.935
-   2028    0.930
-   2029    0.926
-   2030    0.922
-   2031    0.917
-   2032    0.913
-   2033    0.909
-   2034    0.904
-   2035    0.900
-   2036    0.896
+   2027    0.913
+   2028    0.908
+   2029    0.902
+   2030    0.896
+   2031    0.890
+   2032    0.885
+   2033    0.879
+   2034    0.874
+   2035    0.868
+   2036    0.863
 -9999 0
 3 #_N_forecast_loops
 3 #_First_forecast_loop_with_stochastic_recruitment
@@ -62,6 +62,19 @@
 # enter list of fleet number and allocation group assignment, if any; terminate with fleet=-9999
 -9999 -1
 2 #_InputBasis
+ #_year seas fleet catch_or_F
+   2025    1     1       33.0
+   2026    1     1       33.0
+   2025    1     2        0.1
+   2026    1     2        0.1
+   2025    1     3       51.8
+   2026    1     3       51.8
+   2025    1     4        3.1
+   2026    1     4        3.1
+   2025    1     5       24.2
+   2026    1     5       24.2
+   2025    1     6       42.9
+   2026    1     6       74.5
 -9999 0 0 0
 #
 999 # verify end of input 

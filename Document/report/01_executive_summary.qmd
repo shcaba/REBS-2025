@@ -450,7 +450,7 @@ There are many areas of research that would benefit the understanding and assess
 
 * Historical landings and discards, including investigation of fisheries selectivity:  Substantial progress has been made in reconstructing historical landings of rockfishes on the U.S. West Coast, including those for `r Spp_short`. This assessment highlighted the importance of understanding fishery selectivity assumptions associated with removals and how fishery selectivity changes throughout the years. Further understanding and discussion on likely selectivity forms over time would help reduce uncertainty in the estimated scale of the stock.
 
-* Otolith structure may prove to be a distinguishing feature to determine Rougheye from Blackspotted rockfishes. Otolith structure has proven useful in other rockfish, and there is evidence that it may distinguish Rougheye and Blackspotted rockfish in certain instances. We encourage more research into this, so as to assist achieving species-specific identification into the future, and potentially into the past.
+* Otolith structure may prove to be a distinguishing feature to determine Rougheye from Blackspotted rockfishes. Otolith structure has proven useful in other rockfish, and there is evidence that it may distinguish Rougheye and Blackspotted rockfish in certain instances. We encourage more research into this, to assist achieving species-specific identification into the future, and potentially into the past.
 
 \newpage
 

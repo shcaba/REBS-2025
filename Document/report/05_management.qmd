@@ -104,4 +104,4 @@ There are many areas of research that could be improved to benefit the understan
 * Otolith structure may prove to be a distinguishing feature to determine Rougheye from Blackspotted 
 rockfishes. Otolith structure has proven useful in other rockfish, and there is evidence that it may 
 distinguish Rougheye and Blackspotted rockfish in certain instances. We encourage more research into this,
-so as to assist achieving species-specific identification into the future, and potentially into the past.
+to assist achieving species-specific identification into the future, and potentially into the past.

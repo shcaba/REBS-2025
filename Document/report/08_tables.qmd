@@ -1113,7 +1113,7 @@ sel_rec_sens <- read.csv(here::here("Document","report", "Sensis", "model_specs"
 
 sel_rec_sens <- sel_rec_sens[, -1]
 
-colnames(sel_rec_sens) <- c("Label", "Type", "Reference", "No recdevs", "1940 recdevs", "1980 recdevs", "Logistic fisheries", "Logistic btrawl", "Logistic nontrawl")
+colnames(sel_rec_sens) <- c("Label", "Type", "Reference", "No recdevs", "1920 recdevs", "1930 recdevs", "1940 recdevs", "1950 recdevs", "1960 recdevs", "1970 recdevs", "1980 recdevs", "Logistic fisheries", "Logistic btrawl", "Logistic nontrawl")
 
 sel_rec_sens <- sel_rec_sens |>
   dplyr::mutate(Label = stringr::str_replace_all(Label, "_", " ")) 

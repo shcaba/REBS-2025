@@ -750,14 +750,15 @@ names(indices) <- c("Label","Base","- Triennial","- AK Slope","-NW slope","- WCG
 
 df <- indices
 
-spawning <- df |>
-  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
-  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
+#  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
+#df_not_spawning <- df |>
+# dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 table_sens(df)
 
@@ -783,14 +784,15 @@ names(lens1) <- c("Label","Base","- bottom trawl","- non-trawl","- mid-water tra
 
 df <- lens1
 
-spawning <- df |>
-  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
-  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
+#  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
+#df_not_spawning <- df |>
+# dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 table_sens(df)
 
@@ -817,14 +819,15 @@ names(lens2) <- c("Label","Base","- fishery","- survey","no lengths")
 
 df <- lens2
 
-spawning <- df |>
-  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
-  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
+#  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
+#df_not_spawning <- df |>
+# dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 table_sens(df)
 
@@ -851,14 +854,15 @@ names(ages) <- c("Label","Base","- bottom trawl","- non-trawl","- mid-water traw
 
 df <- ages
 
-spawning <- df |>
-  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
-  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Label == c("SSB_Virgin", "SSB_2025")) |>
+#  dplyr::mutate(across(2:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
+#df_not_spawning <- df |>
+# dplyr::filter(Label != c("SSB_Virgin", "SSB_2025"))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 table_sens(df)
 
@@ -889,14 +893,15 @@ data_weighting_sens <- data_weighting_sens |>
 
 df <- data_weighting_sens
 
-spawning <- df |>
-  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
-  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
+#  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
+#df_not_spawning <- df |>
+# dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 df |>
   gt() |>
@@ -943,14 +948,15 @@ age_error_sens <- age_error_sens |>
 
 df <- age_error_sens
 
-spawning <- df |>
-  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
-  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
+#  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
+#df_not_spawning <- df |>
+# dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 df |>
   gt() |>
@@ -998,14 +1004,15 @@ life_history_sens <- life_history_sens |>
 
 df <- life_history_sens
 
-spawning <- df |>
-  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
-  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
+#  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Type != c("SB0", "SSB_2025")| is.na(Type))
+#df_not_spawning <- df |>
+# dplyr::filter(Type != c("SB0", "SSB_2025")| is.na(Type))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 # ---- TABLE 1 ----
 table_1 <- df |> dplyr::select(1:7)
@@ -1055,14 +1062,15 @@ life_history_sens <- life_history_sens |>
 
 df <- life_history_sens
 
-spawning <- df |>
-  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
-  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df |>
+#  dplyr::filter(Type == c("SB0", "SSB_2025")) |>
+#  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df |>
- dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
+#df_not_spawning <- df |>
+# dplyr::filter(Type != c("SB0", "SSB_2025") | is.na(Type))
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 # ---- TABLE 2 ----
 table_2 <- df |> dplyr::select(1:3, 8:12)
@@ -1112,12 +1120,13 @@ sel_rec_sens <- sel_rec_sens |>
 
 df <- sel_rec_sens
 
-spawning <- df[c(136,137),] |> #i don't know why i have to do it this way here
-  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
+#these lines were used to divide the ssb to make it trillions, now it is, so we don't need this code anymore
+#spawning <- df[c(136,137),] |> #i don't know why i have to do it this way here
+#  dplyr::mutate(across(3:ncol(df), ~ .x / 1000000))
 
-df_not_spawning <- df[-c(136,137),] #i don't know why i have to do it this way here
+#df_not_spawning <- df[-c(136,137),] #i don't know why i have to do it this way here
 
-df <- rbind(df_not_spawning, spawning)
+#df <- rbind(df_not_spawning, spawning)
 
 df |>
   gt() |>

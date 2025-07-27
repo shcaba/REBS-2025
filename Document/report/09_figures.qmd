@@ -2335,10 +2335,10 @@ knitr::include_graphics(
 #| echo: false
 #| warning: false
 #| eval: true
-#| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high."
+#| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high, and the weight proportional to fecundity scenario, as it is on a different scale than the other models."
 #
 knitr::include_graphics(
-    file.path(sens_dir, "model_specs","compare2_spawnbio_uncertainty.png")
+    file.path(sens_dir, "model_specs","compare1_spawnbio.png")
 )
 ```
 

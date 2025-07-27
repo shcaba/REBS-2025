@@ -98,6 +98,8 @@ knitr::include_graphics(
 
 <!-- 03_Data -->
 
+## Data
+
 ```{r} 
 #| label: fig-data
 #| echo: false 
@@ -554,6 +556,7 @@ knitr::include_graphics(
 
 <!-- Biology -->
 
+## Biology
 
 ```{r} 
 #| label: fig-Sex1vs2_SO
@@ -748,8 +751,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Proportion of mature fish by length for Rougheye/Blackspotted Rockfishes complex and by species."
-#| fig-alt: "Proportion of mature fish by length for Rougheye/Blackspotted Rockfishes complex and by species."
+#| fig-cap: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by length for the Rougheye/Blackspotted rockfishes complex and by species."
 
 knitr::include_graphics(
   file.path(plot_dir, "l50_both_species.png")
@@ -762,8 +765,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Proportion of mature fish by age for Rougheye/Blackspotted Rockfishes complex and by species."
-#| fig-alt: "Proportion of mature fish by age for Rougheye/Blackspotted Rockfishes complex and by species."
+#| fig-cap: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
+#| fig-alt: "Proportion of mature fish by age for the Rougheye/Blackspotted rockfishes complex and by species."
 
 knitr::include_graphics(
   file.path(plot_dir, "a50_both_species.png")
@@ -786,6 +789,8 @@ knitr::include_graphics(
 ``` 
 
 <!-- Model bridging -->
+
+## Model Bridging
 
 ```{r} 
 #| label: fig-RSS_2013
@@ -893,6 +898,8 @@ knitr::include_graphics(
 
 <!-- Model diagnostics -->
 
+## Model Diagnostics
+
 ```{r} 
 #| label: fig-M-profile-explore
 #| echo: false 
@@ -924,6 +931,8 @@ knitr::include_graphics(
 
 
 <!-- Model convergence and fits to data -->
+
+## Model Convergence
 
 ```{r} 
 #| label: fig-pairs_plot_fast
@@ -967,9 +976,82 @@ knitr::include_graphics(
 )
 ```
 
+\newpage
+
+
+## Retrospecitve Analysis
+
+```{r} 
+#| label: fig-retro-so
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the five most recent years of data area removed sequentially."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(retro_dir, "compare2_spawnbio_uncertainty.png")
+)
+
+```
+
+```{r} 
+#| label: fig-retro-status
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of relative stock status (fraction unfished) when the five most recent years of data area removed sequentially."
+#| fig-alt: "Values are provided in the Report.sso file."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(retro_dir, "compare4_Bratio_uncertainty.png")
+)
+
+```
+
+```{r} 
+#| label: fig-retro-scale-12
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the two most recent years of data area removed sequentially. Uncertainty envelopes are also provided for the reference model."
+#| fig-alt: "Values are provided in the likelihood profile folder on the GitHub repository."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(like_dir, "ref_model_retro_2_yr_peel/compare2_spawnbio_uncertainty.png")
+)
+
+```
+
+
+```{r} 
+#| label: fig-retro-minus3-scale
+#| echo: false 
+#| warning: false 
+#| eval: true 
+#| fig-cap: "Initial recruitment ($lnR_0$) likelihood profile (change in the negative log-likelihood across a range of $lnR0$ values) and derived quantities for the retrospective -3 years model. Red line in the top left figure indicates the significance level in likelihood difference. Blue dot is the reference model value."
+#| fig-alt: "Values are provided in the likelihood profile folder on the GitHub repository."
+#| fig-pos: H
+
+knitr::include_graphics(
+  file.path(like_dir, "Retro3_like_diff.png")
+)
+
+```
+
+\newpage
+
+
 <!-- Fits to data -->
 
+## Model Fits to Data
+
 <!-- Lengths -->
+
+### Lengths
 
 ```{r} 
 #| label: fig-agg-len-fit
@@ -1297,6 +1379,8 @@ knitr::include_graphics(
 
 <!-- Ages -->
 
+### Ages
+
 
 ```{r} 
 #| label: fig-peasrson-resids-age-bt1
@@ -1443,7 +1527,7 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Mean age from conditional age-at-length data for the trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
+#| fig-cap: "Mean age from conditional age-at-length data for the bottom trawl fishery with 95% confidence intervals based on current samples sizes and data weighting."
 #| fig-alt: "The CompReport.sso contains the observed and expected values plotted in this figure."
 #| fig-pos: H
 
@@ -1818,6 +1902,8 @@ knitr::include_graphics(
 
 <!-- Indices of abundance -->
 
+### Indices of Abundance
+
 ```{r} 
 #| label: fig-index-tri
 #| echo: false 
@@ -1875,6 +1961,8 @@ knitr::include_graphics(
 ```
 
 <!-- Parameter estimates -->
+
+## Parameter Estimates
 
 ```{r} 
 #| label: fig-vbgf
@@ -1963,6 +2051,8 @@ knitr::include_graphics(
 ```
 
 <!-- Model outputs -->
+
+## Model Derived Outputs
 
 ```{r} 
 #| label: fig-spawnout
@@ -2055,40 +2145,9 @@ knitr::include_graphics(
 \pagebreak
 
 
-
-```{r} 
-#| label: fig-retro-so
-#| echo: false 
-#| warning: false 
-#| eval: true 
-#| fig-cap: "Change in the estimate of spawning output (quadrillions of eggs) when the five most recent years of data area removed sequentially."
-#| fig-alt: "Values are provided in the Report.sso file."
-#| fig-pos: H
-
-knitr::include_graphics(
-  file.path(retro_dir, "compare2_spawnbio_uncertainty.png")
-)
-
-```
-
-```{r} 
-#| label: fig-retro-status
-#| echo: false 
-#| warning: false 
-#| eval: true 
-#| fig-cap: "Change in the estimate of relative stock status (fraction unfished) when the five most recent years of data area removed sequentially."
-#| fig-alt: "Values are provided in the Report.sso file."
-#| fig-pos: H
-
-knitr::include_graphics(
-  file.path(retro_dir, "compare4_Bratio_uncertainty.png")
-)
-
-```
-
-\newpage
-
 <!-- Sensitivity Analyses and Retrospectives -->
+
+## Sensitivity Analyses
 
 ```{r}
 #| label: fig-sens_indices_spout
@@ -2276,10 +2335,10 @@ knitr::include_graphics(
 #| echo: false
 #| warning: false
 #| eval: true
-#| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high."
+#| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high, and the weight proportional to fecundity scenario, as it is on a different scale than the other models."
 #
 knitr::include_graphics(
-    file.path(sens_dir, "model_specs","compare1_spawnbio_MGrRepro.png")
+    file.path(sens_dir, "model_specs","compare1_spawnbio.png")
 )
 ```
 
@@ -2322,6 +2381,8 @@ knitr::include_graphics(
 \newpage
 
 <!-- Likelihood Profiles -->
+
+## Likelihood Profiles
 
 ```{r}
 #| label: fig-likeprof-lnR0-parm
@@ -2407,6 +2468,8 @@ knitr::include_graphics(
 )
 ```
 
+## States of Nature
+
 ```{r}
 #| label: fig-states-of-nature
 #| echo: false
@@ -2454,6 +2517,7 @@ knitr::include_graphics(
 
 <!-- Management -->
 
+## Management 
 
 ```{r} 
 #| label: fig-management-depletion

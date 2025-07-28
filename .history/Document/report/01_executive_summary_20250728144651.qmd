@@ -1,16 +1,16 @@
 # Executive Summary {-}
 
 ## Stock {-}
-This assessment reports the status of the Rougheye (*Sebastes aleutianus*) and Blackspotted (*Sebastes melanostictus*) Rockfishes that reside in the waters off California, Oregon, and Washington from the U.S.-Canadian border in the north to the U.S.-Mexico border in the south.
+This assessment reports the status of the Rougheye (*Sebastes aleutianus*) and Blackspotted (*Sebastes melanostictus*) rockfishes that reside in the waters off California, Oregon, and Washington from the U.S.-Canadian border in the north to the U.S.-Mexico border in the south.
 
-These two species are difficult to differentiate visually in the catch, thus they are commonly reported and treated as one management complex. Despite recent advances in genetic identification of Rougheye Rockfish and Blackspotted Rockfish, there is still little ability to reliably separate historical fishery data in order to differentiate these two species into two stocks. Therefore, this assessment maintains a species complex approach, though given Rougheye Rockfish tend to be encountered more than Blackspotted ROckfish off the U.S. West Coast, this may be considered more of a Rougheye than Blackspotted Rockfish stock assessment. While we treat these species as one stock complex, we recognize and are mindful of the above species distinctions as we conduct our analyses.
+These two species are difficult to differentiate visually in the catch, thus they are commonly reported and treated as one management complex of `r Spp` (RE/BS). Despite recent advances in genetic identification of Rougheye Rockfish and Blackspotted Rockfish, there is still little ability to reliably separate historical fishery data in order to differentiate these two species into two stocks. Therefore, this assessment maintains a species complex approach, though given Rougheye Rockfish tend to be encountered more often than Blackspotted Rockfish off the U.S. West Coast, this may be considered more of a Rougheye than Blackspotted Rockfish stock assessment. While we treat these species as one stock complex, we recognize and are mindful of the above species distinctions as we conduct our analyses.
 
 ## Catches {-}
-`r Spp` (RE/BS) are not targeted by a specific fishery, but are desirable and marketable, thus are typically retained when caught.
+`r Spp_short` are not targeted by a specific fishery, but are desirable and marketable, thus are typically retained when caught.
 
 The historical reconstruction of landings for `r Spp_short` suggests that non-trawl (largely hook-and-line gear) fisheries have caught `r Spp_short`  since the end of the 19th century. The bottom trawl fishery developed in the 1930s and 1940s, and trawl landings for `r Spp_short` first peaked in the 1960s and 1970s, when the foreign trawl fleet was targeting Pacific Ocean perch. The declaration of the Exclusive Economic Zone (established in 1977) resulted in the buildup of a domestic fleet and landings increased rapidly into the late 1980s and early 1990s (generally > 300 mt with a peak of 745mt in 1995).  Subsequently, landings declined in the late 1990s, with catches under 250 metric tons in the last two decades. The contribution of mid-water trawl catches gradually grew over the past 15 years, and now they represent the majority of the trawl removals.
 
-Since `r Spp_short` are a desirable market species, discarding has been low historically.  However, management restrictions (e.g., trip limits) resulted in increased discarding.  Trawl rationalization was introduced in 2011, and since then very little discarding of `r Spp_short` has occurred. 
+Since `r Spp_short` are marketable, discarding has been low historically.  However, management restrictions (e.g., trip limits) resulted in increased discarding.  Trawl rationalization was introduced in 2011, and since then very little discarding of `r Spp_short` has occurred. 
 
 `r Spp_short` also has long been bycaught in the fishery for the coastal population of Pacific Hake, which is almost exclusively conducted with mid-water trawl. 
 
@@ -73,12 +73,12 @@ The only previous `r Spp_short` benchmark stock assessment for the U.S. West Coa
 
 This 2025 assessment also uses Stock Synthesis, version 3.30.23.2. The modeling period begins in 1892, and the stock prior to that is assumed to be in an unfished equilibrium condition.
 
-`r Spp` fishery-dependent data in this assessment are divided among six fleets, treating discard catches separately from the retained fisheries. Following the 2013 assessment, it maintains the at-sea Hake fishery as its own fleet, and adds a mid-water fishery that has emerged in the last decade. This stock assessment adds 10+ years of additional length data, and several more years of age data (included as conditioned on length data). The same four surveys (the West Coast Groundfish Bottom Trawl Survey (WCGBTS), AFSC/NWFSC Triennial Shelf Survey, AFSC Slope Survey and NWFSC Slope Survey) as used in the last stock assessment are used here, with an extension to 2024 to the WCGBTS. The index standardization of all survey data uses the newer approach of applying spatiotemporal generalized linear mixed models. 
+`r Spp_short` fishery-dependent data in this assessment are divided among six fleets, treating discard catches separately from the retained fisheries. Following the 2013 assessment, it maintains the at-sea hake fishery as its own fleet, and adds a mid-water fishery that has emerged in the last decade. This stock assessment adds 10+ years of additional length data, and several more years of age data (included as conditioned on length data). The same four surveys (the West Coast Groundfish Bottom Trawl Survey (WCGBTS), AFSC/NWFSC Triennial Shelf Survey, AFSC Slope Survey, and NWFSC Slope Survey) as used in the last stock assessment are used here, with the WCGBTS data extended to 2024. The index standardization of all survey data uses the newer approach of applying spatiotemporal generalized linear mixed models. 
 
-This is a sex-specific model. Females and males have separate growth curves and sex-specific weight-at-length parameters. Growth is assumed to follow the von Bertalanffy growth model, and the assessment explicitly estimates all parameters describing somatic growth. The natural mortality for females is estimated in the assessment and natural mortality for males is fixed an the value generated from meta-analytical study.  Externally estimated life history parameters, including those defining the length-weight relationship, female fecundity and maturity schedule were revised for this assessment to incorporate new information. Recruitment dynamics are assumed to follow the Beverton-Holt stock-recruit function, and recruitment deviations are estimated. Stock-recruitment steepness is fixed at the value generated from a meta-analytical study on steepness in *Sebastes* species routinely used in West Coast groundfish assessments. The base model estimates parameters for length-based selectivity, and estimated selectivity curves are a mix of dome-shaped (for bottom trawl gears) and logistic (for mid-water trawl).
+This is a sex-specific model. Females and males have separate growth curves and sex-specific weight-at-length parameters. Growth is assumed to follow the von Bertalanffy growth model, and the assessment explicitly estimates all parameters describing somatic growth. The natural mortality for females is estimated in the assessment and natural mortality for males is fixed a the lowest value supported by the likelihood profile, and is consistent with values associated with a longevity of 150 years.  Externally estimated life history parameters, including those defining the length-weight relationship, female fecundity and maturity schedule were revised for this assessment to incorporate new information. Recruitment dynamics are assumed to follow the Beverton-Holt stock-recruit function, and recruitment deviations are estimated. Stock-recruitment steepness is fixed at the value generated from a meta-analytical study on steepness in *Sebastes* species routinely used in West Coast groundfish assessments. The base model estimates parameters for length-based selectivity, and estimated selectivity curves are a mix of dome-shaped (for bottom trawl gears) and logistic (for mid-water trawl).
 
 ## Stock Output and Dynamics {-}
-The model estimates that the stock complex currently is in a healthy state, well above management target (@fig-es-sb, @fig-es-depl). Approximate confidence intervals based on the asymptotic variance estimates show that the uncertainty in the estimated spawning output is high. Estimates of spawning output (in millions of eggs) in the most recent decade are shown in @tbl-es-sb. 
+The model estimates that the stock complex currently is in a healthy state, well above management target (@fig-es-sb, @fig-es-depl). Approximate confidence intervals based on the asymptotic variance estimates show that the uncertainty in the estimated spawning output is high. Estimates of spawning output (in trillions of eggs) in the most recent decade are shown in @tbl-es-sb. 
 
 The fraction unfished shows a slight decline between the 1940s and the 1960s, and also a gradual decline since the early-1980s, which correspond to the catch history.
 
@@ -120,7 +120,7 @@ ssb_es_table |>
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Estimated time series of spawning output (millions of eggs) for the base model."
+#| fig-cap: "Estimated time series of spawning output (trillions of eggs) for the base model."
 #| fig-alt: "See table 26 for values."
 #| fig-pos: H
 
@@ -258,7 +258,7 @@ Rockfishes are an important component of the California Current ecosystem along 
 Recruitment is one mechanism by which the ecosystem may directly impact the population dynamics of `r Spp_short`. The specific pathways through which environmental conditions exert influence on `r Spp_short` dynamics are unclear. However, changes in water temperature and currents, distribution of prey and predators, and the amount and timing of upwelling are all possible linkages.  Changes in the environment may also result in changes in age-at-maturity, fecundity, growth, and survival which can affect how the status of the stock and its susceptibility to fishing are determined.  Unfortunately, there are no data for `r Spp_short` that provide insights into these effects.
 
 ## Reference Points {-}
-Reference points (@tbl-ref-points-es) were calculated using the estimated fishery selectivity and removals in the most recent year of the model (2024). Reference points were based on the rockfish $\text{F}_{MSY\%}$ proxy ($\text{SPR}_{50\%}$), target relative biomass (40%), and estimated selectivity and catch for each fleet (@tbl-ref-points-es). The proxy MSY values of management quantities are by definition more conservative compared to the estimated MSY and MSY relative to 40% of unfished spawning output because of the assumed steepness value. Sustainable total yield, removals, using the proxy $\text{SPR}_{50\%}$ is `r round(model_output$derived_quants[model_output$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], 2)` mt. The spawning output equivalent to 40% of the unfished spawning output ($\text{SO}_{40\%}$) calculated using the $SPR$ target ($\text{SPR}_{50\%}$) was `r format(model_output$derived_quants[model_output$derived_quants$Label == 'SSB_SPR', 'Value'],scientific = F)` millions of eggs. 
+Reference points (@tbl-ref-points-es) were calculated using the estimated fishery selectivity and removals in the most recent year of the model (2024). Reference points were based on the rockfish $\text{F}_{MSY\%}$ proxy ($\text{SPR}_{50\%}$), target relative biomass (40%), and estimated selectivity and catch for each fleet (@tbl-ref-points-es). The proxy MSY values of management quantities are by definition more conservative compared to the estimated MSY and MSY relative to 40% of unfished spawning output because of the assumed steepness value. Sustainable total yield, removals, using the proxy $\text{SPR}_{50\%}$ is `r round(model_output$derived_quants[model_output$derived_quants$Label == 'Dead_Catch_SPR', 'Value'], 2)` mt. The spawning output equivalent to 40% of the unfished spawning output ($\text{SO}_{40\%}$) calculated using the $SPR$ target ($\text{SPR}_{50\%}$) was `r format(model_output$derived_quants[model_output$derived_quants$Label == 'SSB_SPR', 'Value'],scientific = F)` trillions of eggs. 
 
 The 2025 spawning output relative to unfished equilibrium spawning output, based on the 2024 fishing year, is `r 100*(round(model_output$derived_quants[model_output$derived_quants$Label == 'Bratio_2025', 'Value'], 2))`%, above the management target of 40% of unfished spawning output (@fig-es-depl). The fishing intensity, $1-SPR$, was below or just slightly above harvest rate limit ($SPR_{50\%}$) from the mid-1980s through the 1990s. Removals since 2000 have been below the point estimate of potential long-term yields calculated using an $\text{SPR}_{50\%}$ reference point (@tbl-ts and @fig-es-spr).
 
@@ -278,13 +278,13 @@ reference_points_table |>
   gt::gt() |>
   gt::fmt_number(
     columns = 2:4,
-    rows = c(2:4, 7, 10, 12, 15, 17, 20),
-    decimals = 3
+    rows = c(2:3, 10, 15, 20),
+    decimals = 0
   ) |>
   gt::fmt_number(
     columns = 2:4,
-    rows = 1,
-    decimals = 1
+    rows = c(1,4,7,12,17),
+    decimals = 3
   ) |>
   gt::fmt_number(
     columns = 2:4,
@@ -326,7 +326,7 @@ knitr::include_graphics(file.path(model_dir,"plots/SPR4_phase.png"))
 ```
 
 ## Management Performance {-}
-In the last ten years, total dead catches of `r Spp_short` have been below the annual catch limit. The last ten years of total dead catches for `r Spp_short` against the overfishing limits (OFLs), the acceptable biological catches (ABCs), the annual catch limits (ACLs) are shown in @tbl-es-management. 
+The last ten years of total dead catches for `r Spp_short` against the component overfishing limits (OFLs), the acceptable biological catches (ABCs), the annual catch limits (ACLs) are shown in @tbl-es-management. In the last ten years, total dead catches of `r Spp_short` have been below the component OFLs for most years, with exception of 2018 and 2019. However, exceeding component OFLs does not indicate overfishing, since the stock is managed as part of a complex. 
 
 \newpage
 
@@ -351,8 +351,8 @@ recent_management_table_es <- recent_management_table |>
          `ACL (mt)` = `ACL..mt.`) |>
   gt::gt() |>
   gt::fmt_number(
-    columns = `Catch (mt)`,
-    decimals = 1 
+    columns = c(`ABC (mt)`,`ACL (mt)`,`Catch (mt)`),
+    decimals = 0 
   ) |>
   gt::tab_options(
     table.font.size = 12,
@@ -367,15 +367,35 @@ recent_management_table_es
 ## Unresolved Problems and Major Uncertainties {-}
 The absolute size of `r Spp_short` populations are highly uncertain. Through extensive explorations, we found that stock scale is sensitive to assumptions about the shape of the selectivity curves, especially for the bottom trawl. In the previous assessment, selectivity for all fleets (except for the Triennial Survey) was assumed to be asymptotic. In this assessment, we provided flexibility for the bottom trawl and non-trawl fleets and bottom trawl surveys to estimate dome-shaped selectivity curves. Changes in selectivity assumptions enabled substantially improved fits to length and age composition data in fisheries and surveys, but also resulted in a substantial increase of stock scale.
 
-Stock scale was also sensitive to assumptions about natural mortality. `r Spp_short` is one of the longest lived species of rockfish on the West Coast, with maximum ages of 169 years in this assessment. Individuals as old as 205 years are reported in @munkMaximumAgesGroundfishes2001. It is therefore likely that natural mortality for `r Spp_short` is lower than for other rockfish species. With length and age data available only for years after 1994, there is limited ability to monitor the long-term changes of aging cohorts.  Therefore, estimates of natural mortality are uncertain.  This assessment attempts to capture uncertainty in this parameter and integrate it into the derived biomass estimates by estimating natural mortality for females, while fixing the male natural mortality at the lowest value still supported by the likelihood profile. 
+Stock scale was also sensitive to assumptions about natural mortality. `r Spp_short` is one of the longest lived species of rockfish on the West Coast, with maximum ages of 169 years in this assessment. An individual in Alaska was reported to be 205 years (@munkMaximumAgesGroundfishes2001), the oldest ever aged rockfish. It is therefore likely that natural mortality for `r Spp_short` is lower than for other rockfish species. With length and age data available only for years after 1994, there is limited ability to monitor the long-term changes of aging cohorts.  Therefore, estimates of natural mortality are uncertain.  This assessment attempts to capture uncertainty in this parameter and integrate it into the derived biomass estimates by estimating natural mortality for females, while fixing the male natural mortality at the lowest value still supported by the likelihood profile. 
 
 ## Scientific Uncertainty {-}
-The model estimated uncertainty ($\sigma$) around the 2025 spawning output is `r round(model_output$Pstar_sigma,2)`. The uncertainty around the OFL is `r round(model_output$OFL_sigma,2)`. These values underestimate the overall uncertainty as they do not incorporate the model structural uncertainty and do not account for any time-varying dynamics other than recruitment. The estimated uncertainty values are higher than the Category 1 default of 0.5, so all projections will use the estimated $\sigma$.
+The model estimated uncertainty ($\sigma$) around the 2025 spawning output is `r round(model_output$Pstar_sigma,2)`. The uncertainty around the OFL is `r round(model_output$OFL_sigma,2)`. These values underestimate the overall uncertainty as they do not incorporate the model structural uncertainty and do not account for any time-varying dynamics other than recruitment. The estimated uncertainty values are lower than the Category 2 default of 1, so all projections will use the Category 2 default.
 
-## Harvest Projections and Decision Tables {-}
+## Decision Table and Harvest Projections  {-}
+
+The primary axis of uncertainty used in the decision table is based on male natural mortality. Male natural mortality in the assessment model is fixed at the value informed by likelihood profile and based on a meta-analytical prior that corresponds to the maximum age of 150 years. The male natural mortality in the base model is $M = 0.036$.  The natural mortality value for the low state of nature is $M = 0.032$ and for high state of nature is $M = 0.039$.
+
+The male natural mortality value for the low state of nature was selected based in meta-analytic prior to correspond to maximum age of 169 years, which is oldest fish observed in the dataset used in the assessment.  The male natural mortality value for the high state of nature was selected based on likelihood profile to be higher than the value in the base model, but still reasonable; it corresponds to maximum age of 138 years based on meta-analytic prior.
+
+Twelve-year forecasts were calculated for each state of nature. The 2025 and 2026 catches are fixed at values provided by GMT. For the rest of the years, we used base model forecast catches calculated using the default harvest control rule P$^*$ = 0.45, and Category 2 default $\sigma = 1$. The alternative states of nature (Low, Base, and High) are provided in the columns of @tbl-es-decision-1, with Spawning Output and Fraction of unfished provided for each state.
+
 Projections of the overfishing limit, acceptable biological catch, and annual catch limit, all based on a $P^*$ of 0.45 and a log-space standard deviation of the overfishing limit ($\sigma$) of `r round(model_output$OFL_sigma,2)` (as estimated in this model) are included in @tbl-es-projections. Assumed catches for 2025 and 2026 for this projection were provided by the PFMC Groundfish Management Team, and catches from 2027 onward assume full attainment of the acceptable biological catch.
 
-No decision table is needed in draft assessments undergoing review.
+
+```{r, results = "asis"}
+#| label: tbl-es-decision-1
+#| warning: false
+#| echo: false
+#| tbl-cap: "Decision table with 12-year projections. The alternative states of nature ('Low', 'Base', and 'High' as discussed in the text) are provided in the columns, with Spawning Output ('Spawn', in trillions of eggs) and Fraction of unfished spawning output ('Frac') provided for each state."
+#| tbl-pos: H
+ table_decision(
+   list(mod_low_A, mod_base_A, mod_high_A)
+ )
+
+```
+
+\clearpage
 
 ```{r, results = "asis"}
 #| label: tbl-es-projections
@@ -417,25 +437,29 @@ cat("\n\\end{landscape}\n")
 
 ```
 
-
-
 ## Research and Data Needs {-}
 There are many areas of research that would benefit the understanding and assessment of `r Spp_short`.  Below, we identify several of them that we consider particularly important.
 
-*  Understanding the stock structure and biology of Rougheye and Blackspotted Rockfishes:  This assessment reports the status of `r Spp_short` as a pooled complex because it is extremely difficult to separate the catches of each species even in recent data, and attempting to do so would greatly increase the uncertainty in the predictions.  Because little is known about the respective biology and catch histories of the two species, it is unclear whether managing them as a complex may place one species at disproportionate risk of overfishing relative to the other.  Additional research that will provide insight into the distribution, life history, biological characteristics, and catch and discard profiles of the two species is recommended.  Such an endeavor would likely require the efforts of at-sea observers in all fleets, biologists aboard fishery-independent surveys, and port samplers along the entire West Coast, requiring broad, inter-agency collaboration.
+*  Continued research on distinguishing biology of Rougheye and Blackspotted rockfishes:  This assessment reports the status of `r Spp_short` as a pooled complex because it is extremely difficult to separate the catches of each species even in recent data, and attempting to do so would greatly increase the uncertainty in the predictions.  Because little is known about the respective biology and catch histories of the two species, it is unclear whether managing them as a complex may place one species at disproportionate risk of overfishing relative to the other. New research presented in this document shows potential differences in growth and maturity between th species. Additional research that will provide insight into the distribution, life history, biological characteristics, and catch and discard profiles of the two species is recommended.  Such an endeavor would likely require the efforts of at-sea observers in all fleets, biologists aboard fishery-independent surveys, and port samplers along the entire West Coast, requiring broad, inter-agency collaboration.
 
-*  Understanding of coastwide stock structure, connectivity, and distribution:  This is a stock assessment for `r Spp_short` off of the west coast of the U.S. and does not consider data from British Columbia or Alaska.  Further investigating and comparing the data and predictions from British Columbia and Alaska to determine if there are similarities with the U.S. West Coast observations would help to define the connectivity between Rougheye Rockfish north of the U.S.-Canada border.
+*  Understanding of coastwide stock structure, connectivity, and distribution:  This is a stock assessment for `r Spp_short` off of the west coast of the U.S. and does not consider data from British Columbia or Alaska. Further investigating and comparing the data and predictions from British Columbia and Alaska to determine if there are similarities with the U.S. West Coast observations would help to define the connectivity between Rougheye/Blackspotted Rockfishes north of the U.S.-Canada border.
 
-*	Natural mortality: Uncertainty in natural mortality translates into uncertain estimates of status and sustainable fishing levels for `r Spp_short`. The assessment model was able to estimate female natural mortality, consistent with maximum age based meta-analytical prior, but  male natural mortality was fixed in the model. The collection of additional age data and further research of the life-history of `r Spp_short` may improve our understanding of `r Spp_short` natural mortality.
+*	Natural mortality: Uncertainty in natural mortality translates into uncertain estimates of status and sustainable fishing levels for `r Spp_short`. The assessment model was able to estimate female natural mortality, consistent with maximum age based meta-analytical prior, but male natural mortality was fixed in the model. Given what seems to be a current population with a deep age structure, the collection of additional age data and further research of the life-history of `r Spp_short` may improve our understanding of `r Spp_short` natural mortality.
+
+* Increasing the number of ageing samples. This assessment increased the number of available aged samples by the thousands, but many more are needed to resolve the age structure, as well as add to our understanding of how the age structure has and is changing over time. This will include the consideration of improving the ageing error of these species, with a consideration towards decreasing the number of ageing error matrices needed, or improving the imprecision of some of the current ageing error matrices. This would necessitate the re-reading of otoliths (in addition to reading new otoliths).
+
+* Developing and applying new age determination techniques, such as Fourier Transform Near-Infrared spectroscopy (FT-NIR): In recent years, progress has been made in using FT-NIR approach for fish age determination. At present, FT-NIR ages for `r Spp_short` have low agreement with traditional age estimates, and further research is needed before they are incorporated into stock assessment. Given the longevity of these species, more age data is needed per year compared to other rockfishes in order to define the age structure. The longevity also makes ageing these species more difficult. More rapid ageing techniques may help achieve the numbers needed to track age structure changes.
 
 * Historical landings and discards, including investigation of fisheries selectivity:  Substantial progress has been made in reconstructing historical landings of rockfishes on the U.S. West Coast, including those for `r Spp_short`. This assessment highlighted the importance of understanding fishery selectivity assumptions associated with removals and how fishery selectivity changes throughout the years. Further understanding and discussion on likely selectivity forms over time would help reduce uncertainty in the estimated scale of the stock.
+
+* Otolith structure may prove to be a distinguishing feature to determine Rougheye from Blackspotted rockfishes [@harris_using_2019]. We encourage more research into this, to assist achieving species-specific identification into the future, and potentially into the past.
 
 \newpage
 
 ## Risk Table{-}
 To understand the impact of ecosystem and environmental conditions on `r Spp_short`, we evaluated recent trends in drivers of recruitment, predators, and prey, along with context from the climate vulnerability assessment (CVA) of @mcclure2023. We did not consider non-fisheries human activities during this evaluation.  In considering ecosystem and environmental conditions, we focus on recent trends over the last 5 years; we assume that long-term trends are implicitly represented in the stock assessment and do not represent notable changes that warrant inclusion in the risk table. 
 
-Overall we consider ecosystem and environmental conditions to be neutral (Level 2) with medium confidence based on high agreement among indicators and medium evidence, and no apparent concerns. We use this, plus information related to the stock assessment, to fill out the risk table in @tbl-risk, based on the framework outlined by the California Current Integrated Ecosystem Assessment (CCIEA) team [@Golden2024].
+Overall we consider ecosystem and environmental conditions to be neutral (Level 2) with medium confidence based on high agreement among indicators and medium evidence, and no apparent concerns. The assessment data inputs are also considered to be neutral (Level 2). Details for these scores can be found in @tbl-risk, based on the framework outlined by the California Current Integrated Ecosystem Assessment (CCIEA) team [@Golden2024].
 
 \newpage
 
@@ -443,7 +467,7 @@ Overall we consider ecosystem and environmental conditions to be neutral (Level 
 #| label: tbl-risk
 #| echo: false
 #| warning: false
-#| tbl-cap: "Risk Table for Rougheye/Blackspotted rockfishes to document ecosystem and environmental factors potentially affecting stock productivity and uncertainty or other concerns arising from the stock assessment (see text). Level 1 is a favorable ranking, Level 2 neutral, and Level 3 unfavorable."
+#| tbl-cap: "Risk Table for Rougheye/Blackspotted Rockfishes to document ecosystem and environmental factors potentially affecting stock productivity and uncertainty or other concerns arising from the stock assessment (see text). Level 1 is a favorable ranking, Level 2 neutral, and Level 3 unfavorable."
 
 
 risk <-read.csv(here::here("Document","report", "tables_4_doc", "RiskTable_20250618.csv"))

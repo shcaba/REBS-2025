@@ -1,7 +1,7 @@
 # Executive Summary {-}
 
 ## Stock {-}
-This assessment reports the status of the Rougheye (*Sebastes aleutianus*) and Blackspotted (*Sebastes melanostictus*) Rockfishes that reside in the waters off California, Oregon, and Washington from the U.S.-Canadian border in the north to the U.S.-Mexico border in the south.
+This assessment reports the status of the Rougheye (*Sebastes aleutianus*) and Blackspotted (*Sebastes melanostictus*) rockfishes that reside in the waters off California, Oregon, and Washington from the U.S.-Canadian border in the north to the U.S.-Mexico border in the south.
 
 These two species are difficult to differentiate visually in the catch, thus they are commonly reported and treated as one management complex of `r Spp` (RE/BS). Despite recent advances in genetic identification of Rougheye Rockfish and Blackspotted Rockfish, there is still little ability to reliably separate historical fishery data in order to differentiate these two species into two stocks. Therefore, this assessment maintains a species complex approach, though given Rougheye Rockfish tend to be encountered more often than Blackspotted Rockfish off the U.S. West Coast, this may be considered more of a Rougheye than Blackspotted Rockfish stock assessment. While we treat these species as one stock complex, we recognize and are mindful of the above species distinctions as we conduct our analyses.
 

@@ -17,7 +17,7 @@ These changes in scale and stock status, except for the large increase in scale 
 
 The large change in scale in runs when 3 to 5 years of data removed is affected by the presence of the recent block on non-trawl fleet selectivity that spans from 2020 forward and assumes a logistic form, as opposed to the dome-shaped selectivity that precedes it. As the retrospective peel removes data, this can complicate the interpretation of blocks that span the time series of the retrospective analysis. A additional retrospective run was conducted that extended that recent block in time, so it would start the logistic selectivity in 2011 instead of 2020. The model run with the recent block extended showed substantially degrading fits to composition data, but also did not have vast increase in scale in its retrospective runs when 3 to 5 years were removed.
 
-Overall, the retrospective analysis highlighted the importance of the recent data for the assessment as well as poorly informed higher estimates of scale when the population is at or above unfished levels, and the common sensitivity of retrospective analyses when newer blocks span the peels of the retrospective analysis.  
+Overall, the retrospective analysis highlighted the importance of the recent data for the assessment as well as uncertainty in the estimated scale and the sensitivity of retrospective analyses when newer blocks span the peels on the retrospective pattern.  
 
 ### Fits to the Data
 

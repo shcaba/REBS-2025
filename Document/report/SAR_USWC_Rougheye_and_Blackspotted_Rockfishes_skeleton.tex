@@ -441,10 +441,10 @@ the Department of Commerce.
 
 }
 
-\caption{\label{fig-data-changes}Comparison of time series of data
-sources used in the 2025 (current model, dark blue points) and the 2013
-(last benchmark assessment, light blue points) Rougheye/Blackspotted
-rockfishes stock assessments. Bubble sizes represent relative total
+\caption{\label{fig-data-changes}Comparison of time series of the data
+sources used in the 2025 Rougheye/Blackspotted rockfishes stock
+assessment (current model, dark blue points) and the 2013 benchmark
+assessment (light blue points). Bubble sizes represent relative total
 catch standardized by the maximum total catch, relative sample size of
 length data standardized by the maximum sample size of length data, and
 relative sample size of age data standardized by the maximum sample size
@@ -469,8 +469,9 @@ stock scale (color of the points). The gray envelope around the 2025
 model are the 95\% uncertainty intervals for stock status. The catch
 history (combined across fleets standardized to the largest value) is
 given to compare the stock trajectory to the catch history. The OFL
-sigma value from the stock assessment is 0.66, higher than the assumed
-category 1 values of 0.5.}
+sigma value from the stock assessment is 0.66, lower than the assumed
+category 2 values of 1.0, but higher than what a category 1 stock would
+be (0.5).}
 
 \end{figure}%
 
@@ -517,7 +518,7 @@ Recruitment estimation &  & Estimate fewer years & Up & Up \\
 \addcontentsline{toc}{subsection}{Stock}
 
 This assessment reports the status of the Rougheye (\emph{Sebastes
-aleutianus}) and Blackspotted (\emph{Sebastes melanostictus}) Rockfishes
+aleutianus}) and Blackspotted (\emph{Sebastes melanostictus}) rockfishes
 that reside in the waters off California, Oregon, and Washington from
 the U.S.-Canadian border in the north to the U.S.-Mexico border in the
 south.
@@ -627,7 +628,7 @@ to be in an unfished equilibrium condition.
 
 RE/BS fishery-dependent data in this assessment are divided among six
 fleets, treating discard catches separately from the retained fisheries.
-Following the 2013 assessment, it maintains the At-Sea Hake fishery as
+Following the 2013 assessment, it maintains the at-sea hake fishery as
 its own fleet, and adds a mid-water fishery that has emerged in the last
 decade. This stock assessment adds 10+ years of additional length data,
 and several more years of age data (included as conditioned on length
@@ -4128,20 +4129,28 @@ in data and selectivity assumptions, while also emphasizing key
 uncertainty in natural mortality. Specifically, there are many ways to
 make the reference model at a higher or lower scale and/or stock status
 (Table~\ref{tbl-uncertainty_summary}). In building states of nature and
-around this risk neutral reference model, the two key axes of
-uncertainty are based around the treatment of natural mortality and
-selectivity. The high state takes the estimation of selectivity
-(allowing dome-shaped if chosen) and adding the estimation of \(M\) for
-both sexes (Model specification sensitivity scenario \#1). The low state
-of nature assume the reference value of male \(M\) with an estimated
-female \(M\) and constraining the selectivity of bottom trawl and
-non-trawl fisheries to logistic (Model specification sensitivity
-scenario \#16). These produce a very wide set of uncertainties around
-both scale and stock status (Figure~\ref{fig-states-of-nature}). If
-these are treated as an ensemble, with high and low states of nature
-assuming a weight of 12.5\% and the reference model the remaining 75\%,
-the uncertainty range can be expressed as one model output
-(Figure~\ref{fig-ensemble} and Figure~\ref{fig-ensemble-violin}).
+around this risk neutral reference model, two key axes of uncertainty
+are based around the treatment of natural mortality and selectivity.
+Additionally, one could control states of nature via the \(lnR_0\)
+parameter, as it is a direct measure of scale, which is highly
+uncertain. When choosing among these option, modifying selectivities
+ultimately compromised fits to the data. By changing the \(lnR_0\), the
+model starts at a different stock scale, but uses the same productivity
+assumptions. When using different pre-specified male \(M\) values (while
+continuing to estimate female \(M\)), it changes both the scale, the
+stable age structure, and the productivity of the stock into the future.
+Given the multidimensional influence on the population by \(M\), we use
+the following male \(M\) values to define high and low states of nature.
+The high state uses 0.039 as the male \(M\) value (supported by the
+\(M\) profile) which provided a reasonable coverage of the high scale
+and stock status. For the low state of nature, the male \(M\) associated
+with the oldest aged (169) sampled male was used (\(M\) = 0.032). These
+produce a very wide set of uncertainties around both scale and stock
+status (Figure~\ref{fig-states-of-nature}). If these are treated as an
+ensemble, with high and low states of nature assuming a weight of 12.5\%
+and the reference model the remaining 75\%, the uncertainty range can be
+expressed as one model output (Figure~\ref{fig-ensemble} and
+Figure~\ref{fig-ensemble-violin}).
 
 \subsubsection{Unresolved Problems and Major
 Uncertainties}\label{unresolved-problems-and-major-uncertainties-1}
@@ -4157,15 +4166,35 @@ between periods of depletion, followed by recovery (a.k.a. ``two-way
 trips'') provide more about carrying capacity, the intrinsic growth rate
 as well as scale of the population.
 
+This assessment increased the number of available ages greatly, but
+given the deep age structure still existing in the population, the
+number of age samples needed to reduce uncertainty in estimated stock
+scale and status in much higher than most other groundfishes. Many more
+ages are needed in the currently examined years, as well as additional
+years, to reduce the inherent uncertainty in the stock assessment.
+Additionally, the simple fact that the current within model uncertainty
+includes population stocks status that may be at or exceed unfished
+levels greatly inflates the uncertainty in the estimate of stock scale.
+More ages may refine the estimate of stock scale, decreasing the chance
+of including an unfished stock within uncertainty intervals, and thus
+reducing over uncertainty in stock scale.
+
 Through extensive explorations, we found that stock scale is sensitive
 to assumptions about shape of the selectivity curves, especially for the
-bottom trawl. In the previous assessment all fleets (except for
-Triennial Survey) were assumed asymptotic. In this assessment, we
-provide flexibility for the bottom trawl and non-trawl fleets and bottom
-trawl surveys to estimate dome-shaped selectivity curves. Changes in
-selectivity assumptions enabled substantially improved fits to length
-and age composition data in fisheries and surveys, but also resulted in
-a substantial increase of stock scale.
+bottom trawl, as well as the choice of blocking selectivity. In the
+previous assessment all fleets (except for Triennial Survey) were
+assumed asymptotic. In this assessment, we provide flexibility for the
+bottom trawl and non-trawl fleets and bottom trawl surveys to estimate
+dome-shaped selectivity curves. Changes in selectivity assumptions
+enabled substantially improved fits to length and age composition data
+in fisheries and surveys, but also resulted in a substantial increase of
+stock scale. The most recent selectivity block for the non-trawl fishery
+also created aberrant retrospective patterns. Given the overall
+non-target, but still valuable, nature of these species, selectivity
+patterns may change for both regulatory and market reasons. This
+increases uncertainty of projections, as current projections assume the
+selectivity patterns in the final year of the model will hold for the
+entirety of the projection period.
 
 Stock scale is also sensitive to assumptions about natural mortality.
 RE/BS is one of the longest lived species of rockfish on the West Coast,
@@ -4237,20 +4266,23 @@ is managed as part of a complex.
 Projections}\label{decision-table-and-harvest-projections-1}
 
 The primary axis of uncertainty used in the decision table is based on
-male natural mortality. Male natural mortality in the assessment model
-is fixed at the value informed by likelihood profile and based on a
-meta-analytical prior that corresponds to the maximum age of 150 years.
-The male natural mortality in the base model is \(M = 0.036\). The
-natural mortality value for the low state of nature is \(M = 0.032\) and
-for high state of nature is \(M = 0.039\).
+male natural mortality (see Summary of Sources of Uncertainty and States
+of Nature section for more details). Male natural mortality in the
+assessment model is fixed at the value informed by likelihood profile
+and based on a meta-analytical prior that corresponds to the maximum age
+of 150 years. The male natural mortality in the base model is
+\(M = 0.036\). The natural mortality value for the low state of nature
+is \(M = 0.032\) and for high state of nature is \(M = 0.039\).
 
 The male natural mortality value for the low state of nature was
-selected based in meta-analytic prior to correspond to maximum age of
-169 years, which is oldest fish observed in the dataset used in the
-assessment. The male natural mortality value for the high state of
-nature was selected based on likelihood profile to be higher than the
-value in the base model, but still reasonable; it corresponds to maximum
-age of 138 years based on meta-analytic prior.
+selected based on the Hamel and Cope
+(\citeproc{ref-hamel_development_2022}{2022}) \(M\) estimator to
+correspond to maximum age of 169 years, which is oldest fish observed in
+the dataset used in the assessment. The male natural mortality value for
+the high state of nature was selected based on likelihood profile to be
+higher than the value in the base model, but still reasonable; it
+corresponds to maximum age of 138 years based on Hamel and Cope
+(\citeproc{ref-hamel_development_2022}{2022}) \(M\) estimator.
 
 Twelve-year forecasts were calculated for each state of nature. The 2025
 and 2026 catches are fixed at values provided by GMT. For the rest of

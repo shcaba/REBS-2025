@@ -1,3 +1,0 @@
-# Acknowledgements {#sec-acknowledgements}
-
-We thank all of the individuals over the many years covered in this stock assessment who have collected data. We thank all of those who have provided age reads for these VERY long-lived fishes. We are grateful to Melissa Head for provide an updated length-based functional maturity measure for both of these species, as well as age-based maturity. We thank the Isaac Kaplan, Abigail Golden, Megan Feddern, and others for assisting with the risk tables. 

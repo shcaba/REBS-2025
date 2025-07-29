@@ -1,13 +1,15 @@
 # Acknowledgements {#sec-acknowledgements}
 
-We thank all of the individuals over the many years covered in this stock assessment who have collected data. 
+We thank all of the individuals over the many years covered in this stock assessment who have collected the various data on which this stock assessment is built. 
 
 We thank all of those who have provided age reads for these VERY long-lived fishes: Tyler Johnson, Betty Kamikawa, Liz Ortiz, Nikki Paige, Sandy Rosenfield, Lance Sullivan, Mark Terwilliger, and Jenny Topping (if we forgot someone-- thank you too!). We also thank the Committee of Age Reading Experts who provided investigations into bias and imprecision in otolith ageing across labs that help bring perspective, improvement, and coordination in the reading of ageing structures. 
 
 We are grateful to Melissa Head for provide an updated length-based functional maturity measure for both of these species, as well as age-based maturity. 
 
+Jeff Lackey and Harrison Ibach, and Mike Retherford provided valuable information and detailed understanding of these species in regard to their interaction with the fisheries that greatly helped interpret the fisheries data.
+
 We thank Isaac Kaplan, Abigail Golden, Megan Feddern, Nick Tolimieri, Chris Harvey and others for discussing and assisting with the risk tables. 
 
 Samantha Schiano and Sophie Breitbart helped develop the quarto package "asar" we used to create this document, and offered much assistance as we found our way through it. Thank you for that help.
 
-Ian Taylor, John Field, and Todd Phillips all provided useful comments to improve the document.
+Ian Taylor, Owen Hamel, John Field, and Todd Phillips all provided useful comments to improve the document. We also thank the members of the STAR Panel (chaired by John Field and consisting of Matt Cieri, Chris Free, and Geoff Tingley) for their thoughtful consideration and feedback on this work. Whitney Roberts and Gerry Richter provided additional critical insight during the STAR panel discussions.

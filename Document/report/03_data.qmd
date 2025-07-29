@@ -130,7 +130,7 @@ The marginal age compositions were constructed, but only used in the model for e
 ## Fishery-independent data {#sec-surveys}
 Data from four fishery-independent surveys were used in this assessment: 
 
-* Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS; 20023-2024).
+* Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS; 2003-2024).
 * Survey 2: Triennial (every three years) Survey (1980-2004).
 * Survey 3: Alaska Fisheries Science Center (AFSC) Slope Survey (1997, 1999-2001).
 * Survey 4: Northwest Fisheries Science Center (NWFSC) Slope Survey (1999-2002).

@@ -91,7 +91,7 @@ We also split trawl fishery data into bottom trawl and mid-water trawl fleets. C
 
 As reported in @sec-surveys, the following surveys are included in the model:
 
-* Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS; 20023-2024).
+* Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS; 2003-2024).
 * Survey 2: Triennial (every three years) Survey (1980-2004).
 * Survey 3: Alaska Fisheries Science Center (AFSC) Slope Survey (1997, 1999-2001).
 * Survey 4: Northwest Fisheries Science Center (NWFSC) Slope Survey (1999-2002).

@@ -76,7 +76,7 @@ None of the sensitivities were found to be outside of the reference model uncert
  	14. Estimate from 1940 onward
 	15. Estimate from 1980 onward
 
-Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in @tbl-sensitivities-sel-rec_1 and @tbl-sensitivities-sel-rec_2. Comparison plots for the results relative to the reference model are in @fig-sensi-SelRec and @fig-sensi-RE-SelRec. Few (starting in 1980) or no recruitment deviation estimation leads to larger stock scale required to make up for the catch history and lack of recruitment compensation. There is a drop in stocks status when starting recruitment deviations in 1940, but more similar to the reference model. Stock status is steady in these scenarios and all uncertainty is included in the reference model uncertainty (@fig-sensi-RE-SelRec).
+Likelihood values and estimates of key parameters and derived quantities from each sensitivity are available in @tbl-sensitivities-sel-rec. Comparison plots for the results relative to the reference model are in @fig-sensi-SelRec and @fig-sensi-RE-SelRec. Few (starting in 1980) or no recruitment deviation estimation leads to larger stock scale required to make up for the catch history and lack of recruitment compensation. There is a drop in stocks status when starting recruitment deviations in 1940, but more similar to the reference model. Stock status is steady in these scenarios and all uncertainty is included in the reference model uncertainty (@fig-sensi-RE-SelRec).
 
 * Selectivity
 

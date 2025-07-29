@@ -2519,6 +2519,19 @@ knitr::include_graphics(
 )
 ```
 
+\newpage
+
+```{r}
+#| label: fig-uncert-decrease
+#| echo: false
+#| warning: false
+#| eval: true
+#| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for the reference model and models that decrease the pre-specified male natural mortality value. Note the decreasing uncertainty in scale as the population reduces the amount of expectation in stock status at or above unfished."
+#
+knitr::include_graphics(
+    file.path(sens_dir,"model_specs", "Reduced uncertainty comparison.png")
+)
+```
 
 \newpage
 

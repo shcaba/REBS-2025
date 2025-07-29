@@ -1104,7 +1104,7 @@ cat("\n\\end{landscape}\n")
 #| message: false
 #| warning: false
 #| results: "asis"
-#| tbl-cap: "Likelihood values and estimates of key parameters and derived quantities from each recruitment and selectivity sensitivity."
+#| tbl-cap: "Likelihood values and estimates of key parameters and derived quantities from each recruitment and selectivity sensitivity (recruitment deviations)."
 #| tbl-pos: H
 
 cat("\\begin{landscape}\n")
@@ -1180,7 +1180,7 @@ cat("\n\\end{landscape}\n")
 #| message: false
 #| warning: false
 #| results: "asis"
-#| tbl-cap: "Likelihood values and estimates of key parameters and derived quantities from each recruitment and selectivity sensitivity."
+#| tbl-cap: "Likelihood values and estimates of key parameters and derived quantities from each recruitment and selectivity sensitivity (recruitment deviations and fishery selectivity)."
 #| tbl-pos: H
 
 cat("\\begin{landscape}\n")

@@ -57,19 +57,19 @@ The historical discard information comes from @pikitch_evaluation_1988, often re
 There are no mid-water trawl records of `r Spp_short`in the @pikitch_evaluation_1988, and only few fish records of bottom trawl catches, based on which  discard rate (discard weight over total weight) for bottom trawl was just 0.09%. Therefore, no historical discard was assumed in the model.
 
 #### Recent Discards {#sec-recent_discard}
-With the introduction of trip limits for rockfish in early 2000, limited discard has been observed for `r Spp_short`in bottom trawl and non-trawl fisheries. 
+With the introduction of trip limits for rockfish in early 2000, limited discarding has been observed for `r Spp_short`in bottom trawl and non-trawl fisheries. 
 
 In 2002, the West Coast Groundfish Observer Program (WCGOP) was implemented on the West Coast of the United States, which began with gathering bycatch and discard information for the limited entry trawl and fixed gear fleets. Observer coverage has expanded to include the California halibut trawl, the nearshore fixed gear and pink shrimp trawl fisheries. Since 2011, trawl fisheries have been managed with catch shares under a system of annual individual fishing quotas (IFQs) for the shoreside sector (i.e., vessels delivering to shoreside processors) and harvest cooperatives for the at-sea hake sectors (catcher-processors who catch and process hake at sea; and motherships, factory processors that take delivery of hake from catcher vessels at sea). Constant monitoring of catch using observers or electronic monitoring (EM) is required to participate in the trawl catch share fishery. 
 
 The discard amounts of `r Spp_short` for the period between 2002 and 2023 were obtained from WCGOP by year and fleet (bottom trawl, mid-water trawl and non-trawl), for both the catch share and the non-catch share sector. The discarding amounts of `r Spp_short` within bottom trawl and non-trawl fleets were included in the model as separate fleets. 
 
-Mid-water trawl discard was not present in the non-catch share sector and was extremely minimal (virtually non-existing) in the catch-share sector, with discard amounts averaging to 10 kg per year. Therefore, in the model, no discard was assumed for mid-water trawl fleet. 
+Mid-water trawl discard was not present in the non-catch share sector and was extremely minimal (virtually non-existant) in the catch-share sector, with discard amounts averaging to 10 kg per year. Therefore, in the model, no discard was assumed for mid-water trawl fleet. 
 
 ##### Bottom Trawl Discards
 Bottom trawl discard amounts by year are provided in @tbl-landings and shown in @fig-landings. Prior to 2011, before the start of the IFQ program, the discard of `r Spp_short` ranged between 1 metric ton and 60 metric tons, averaging at 23 metric tons a year. After 2011, the discard has been very low, not exceeding 0.5 metric ton a year. No discard data were available for 2024, and we used the average discard amount for 2019 - 2023 period to approximate 2024 discards for bottom trawl discard fleet.
 
 ##### Non-Trawl Discard
-Non-trawl discard amounts by year are provided in are provided in @tbl-landings and shown in @fig-landings. Non-trawl discard of `r Spp_short` were made in both catch share and non-catch share sectors. Discard amounts in these sectors were combined by year to represent total discard within the fleet. The discards within this fleet ranged between 0.5 metric ton and 35 metric tons, with 10 metric tons as average per year. No discard data were available for 2024, and the 2023 discard amount was assumed for 2024 for non-trawl discard fleet.
+Non-trawl discard amounts by year are provided in are provided in @tbl-landings and shown in @fig-landings. Non-trawl discard of `r Spp_short` were made in both catch share and non-catch share sectors. Discard amounts in these sectors were combined by year to represent total discard within the fleet. The discards within this fleet ranged between 0.5 metric tons and 35 metric tons, with ten metric tons as average per year. No discard data were available for 2024, and the 2023 discard amount was assumed for 2024 for non-trawl discard fleet.
 
 ### Fishery Length and Age Data
 Length bins from 10 to 80 cm in 2 cm increments were used to summarize the length frequency of the catches in each year. The first length bin includes all observations less than 10 cm and the last bin includes all fish 80 cm and longer. Age distributions included bins from age 1 to age 100, with the last bin including all fish age 100 and above.

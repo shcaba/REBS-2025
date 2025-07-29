@@ -729,10 +729,6 @@ cat("\n\\end{landscape}\n")
 
  {{< pagebreak >}} 
 
-<!-- sensitivities-->
-
-## Sensitivity Analyses
-
 ```{r}
 #| label: tbl-sensitivities-like-indices
 #| echo: false

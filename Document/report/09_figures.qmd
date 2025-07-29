@@ -1046,8 +1046,8 @@ knitr::include_graphics(
 #| echo: false 
 #| warning: false 
 #| eval: true 
-#| fig-cap: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the model with the most recent block on non-trawl fleet selelctivity extended to start in 2011 (instead of 2020). Base model in this plot labels the model with modified block."
-#| fig-alt: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the model with the most recent block on non-trawl fleet selelctivity extended to start in 2011 (instead of 2020). Base model in this plot labels the model with modified block."
+#| fig-cap: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the model with the most recent block on non-trawl fleet selelctivity extended to start in 2011 (instead of 2020). Base model in this plot labels the model with modified block, not the assessment base model."
+#| fig-alt: "Change in the estimate of spawning output (trillions of eggs) when the five most recent years of data area removed sequentially in the model with the most recent block on non-trawl fleet selelctivity extended to start in 2011 (instead of 2020). Base model in this plot labels the model with modified block, not the assessment base model."
 
 knitr::include_graphics(
   file.path(plot_dir, "No_block_retro_compare1_spawnbio.png")

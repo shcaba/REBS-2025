@@ -437,7 +437,7 @@ the Department of Commerce.
 
 \centering{
 
-\includegraphics{plots_4_doc/data_comparison_2013_2025.png}
+\includegraphics[width=4in,height=\textheight]{plots_4_doc/data_comparison_2013_2025.png}
 
 }
 
@@ -458,7 +458,7 @@ of age data.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Comp_2013_2025.png}
+\includegraphics[width=2.2in,height=\textheight]{plots_4_doc/Comp_2013_2025.png}
 
 }
 
@@ -604,7 +604,7 @@ Year & Trawl & Trawl
 
 \centering{
 
-\includegraphics{ref_model/plots/catch2_landings_stacked.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/catch2_landings_stacked.png}
 
 }
 
@@ -708,7 +708,7 @@ Year & Spawning output (trillions of eggs) & Lower Interval (mt) & Upper Interva
 
 \centering{
 
-\includegraphics{ref_model/plots/ts7_Spawning_output_with_95_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts7_Spawning_output_with_95_intervals.png}
 
 }
 
@@ -721,7 +721,7 @@ Year & Spawning output (trillions of eggs) & Lower Interval (mt) & Upper Interva
 
 \centering{
 
-\includegraphics{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
 
 }
 
@@ -780,7 +780,7 @@ Year & Recruitment (1,000s) & Lower Interval (1,000s) & Upper Interval (1,000s) 
 
 \centering{
 
-\includegraphics{ref_model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
 
 }
 
@@ -793,7 +793,7 @@ for the base model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/recdevs2_withbars.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/recdevs2_withbars.png}
 
 }
 
@@ -860,7 +860,7 @@ Year & 1-SPR & Lower Interval (SPR) & Upper Interval (SPR) & Exploitation Rate &
 
 \centering{
 
-\includegraphics{ref_model/plots/SPR3_ratiointerval.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/SPR3_ratiointerval.png}
 
 }
 
@@ -976,7 +976,7 @@ MSY (mt) & 585 & <1 & 1,285 \\
 
 \centering{
 
-\includegraphics{ref_model/plots/SPR4_phase.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/SPR4_phase.png}
 
 }
 
@@ -2707,16 +2707,16 @@ combine sex value of a=0.0000096 and b=3.12 (Figure~\ref{fig-LW2}).
 
 Maturity for the Rougheye/Blackspotted Rockfish complex was estimated
 using 473 maturity samples collected from 2015 to 2024 by ODFW and WDFW,
-as well as by WCGBTS in California, Oregon, and Washington waters (pers.
-comm. M. Head, NWFSC). The samples included 194 samples genetically
-assigned as Rougheye Rockfish, 71 samples genetically assigned as
-Blackspotted Rockfish, and 208 samples with no genetic assignment. The
-maturity schedule was assumed to be length-based, as in the 2013
-benchmark assessment. This assessment used the functional classification
-of maturity to describe the maturity schedule, which not only identifies
-the individuals that are physiologically capable of producing yolk
-(those that are biologically mature), but also accounts for the
-occurrence of abortive maturation and skipped spawning, so the
+as well as by the WCGBTS in California, Oregon, and Washington waters
+(pers. comm. M. Head, NWFSC). The samples included 194 samples
+genetically assigned as Rougheye Rockfish, 71 samples genetically
+assigned as Blackspotted Rockfish, and 208 samples with no genetic
+assignment. The maturity schedule was assumed to be length-based, as in
+the 2013 benchmark assessment. This assessment used the functional
+classification of maturity to describe the maturity schedule, which not
+only identifies the individuals that are physiologically capable of
+producing yolk (those that are biologically mature), but also accounts
+for the occurrence of abortive maturation and skipped spawning, so the
 functional maturity classification is a more accurate representation of
 the individuals that may actually spawn in a given year. This is a
 difference from the 2013 benchmark assessment, which did not explicitly
@@ -2728,14 +2728,14 @@ separate models. Biological maturity and functional maturity status
 observations (0 = immature and 1 = mature) were fitted in a logistic
 regression model (glm R function, family = binomial, link = ``logit'').
 The estimated model parameters were used to calculate length at 50\%
-maturity (L50\%; Table~\ref{tbl-maturity_estimates}) and maturity ogives
+maturity (L50; Table~\ref{tbl-maturity_estimates}) and maturity ogives
 (Figure~\ref{fig-maturity_bio_fxn}). The delta method was used to
-calculate 95\% confidence intervals of L50\% estimates. The estimated
-L50\% (functional maturity; L50\%fxn) was 46.53 cm and the estimated
-slope of the maturity oogive was 0.25. Sensitivities were run using the
-estimate of biological maturity and the maturity estimate used in the
-2013 benchmark assessment. There was little evidence of skipped
-spawning, so we did not explore fitting the data with a spline model.
+calculate 95\% confidence intervals of L50 estimates. The estimated L50
+(functional maturity; L50 fxn) was 46.53 cm and the estimated slope of
+the maturity oogive was 0.25. Sensitivities were run using the estimate
+of biological maturity and the maturity estimate used in the 2013
+benchmark assessment. There was little evidence of skipped spawning, so
+we did not explore fitting the data with a spline model.
 
 Because there are known life history differences between Rougheye
 Rockfish and Blackspotted Rockfish, maturity was also estimated for each
@@ -2743,7 +2743,7 @@ species, using the samples that were genetically assigned to Rougheye
 Rockfish and Blackspotted Rockfish, respectively, using the same methods
 as above (Table~\ref{tbl-maturity_estimates} and
 Figure~\ref{fig-maturity_length_both}). Two sensitivities were run using
-the functional maturity L50\% (and slope) estimated for 1) Rougheye
+the functional maturity L50 (and slope) estimated for 1) Rougheye
 Rockfish and 2) Blackspotted Rockfish (which mature at larger sizes on
 average than Rougheye Rockfish).
 
@@ -3194,7 +3194,7 @@ included in the model:
 \tightlist
 \item
   Survey 1: West Coast Groundfish Bottom Trawl Survey (WCGBTS;
-  20023-2024).
+  2003-2024).
 \item
   Survey 2: Triennial (every three years) Survey (1980-2004).
 \item
@@ -4330,10 +4330,14 @@ biological catch.
 \subsection{Evaluation of Scientific Uncertainty}\label{sec-uncertainty}
 
 The model estimated uncertainty (\(\sigma\)) around the 2025 spawning
-output for is 0.68. The estimated uncertainty values are lower than the
-Category 2 default of 1, so all projections will use Category 2 default.
-The alternative states of nature used to bracket uncertainty in the
-decision table assist with encapsulating model structure uncertainty.
+output is 0.68. The uncertainty around the OFL is 0.66. These values
+underestimate the overall uncertainty as they do not incorporate the
+model structural uncertainty and do not account for any time-varying
+dynamics other than recruitment. The estimated uncertainty values are
+lower than the Category 2 default of 1, so all projections will use
+Category 2 default. The alternative states of nature used to bracket
+uncertainty in the decision table assist with encapsulating model
+structure uncertainty.
 
 \newpage{}
 
@@ -6712,8 +6716,6 @@ Year & Total Biomass (mt) & Spawning output & Total Biomass 26+ (mt) & Fraction 
 
 \newpage{}
 
-\subsection{Sensitivity Analyses}\label{sensitivity-analyses}
-
 \begin{landscape}
 \begingroup\fontsize{9}{11}\selectfont
 
@@ -6910,7 +6912,7 @@ Label & Base & - bottom trawl & - non-trawl & - mid-water trawl & - ASHOP & - WG
 \begingroup
 \fontsize{9.0pt}{10.8pt}\selectfont
 
-\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 187.50pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 202.50pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}>{\raggedright\arraybackslash}p{\dimexpr 56.25pt -2\tabcolsep-1.5\arrayrulewidth}}
 
 \caption{\label{tbl-sensitivities-data-weighting}Likelihood values and
 estimates of key parameters and derived quantities from each data
@@ -7974,7 +7976,7 @@ Year & Adopted OFL (mt) & Adopted ACL (mt) & Assumed Catch (mt) & OFL (mt) & Buf
 
 \centering{
 
-\includegraphics{plots_4_doc/cpue_map.png}
+\includegraphics[width=7in,height=\textheight]{plots_4_doc/cpue_map.png}
 
 }
 
@@ -7987,7 +7989,7 @@ WCGBTS CPUE map.}
 
 \centering{
 
-\includegraphics{plots_4_doc/SB_comps.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/SB_comps.png}
 
 }
 
@@ -8002,7 +8004,7 @@ Rougheye/Blackspotted rockfish complex from the two most recent Alaska
 
 \centering{
 
-\includegraphics{plots_4_doc/Status_comp.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/Status_comp.png}
 
 }
 
@@ -8022,7 +8024,7 @@ Rougheye/Blackspotted rockfish complex from the two most recent Alaska
 
 \centering{
 
-\includegraphics{ref_model/plots/data_plot.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/data_plot.png}
 
 }
 
@@ -8034,7 +8036,7 @@ Rougheye/Blackspotted rockfish complex from the two most recent Alaska
 
 \centering{
 
-\includegraphics{ref_model/plots/catch2_landings_stacked.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/catch2_landings_stacked.png}
 
 }
 
@@ -8046,7 +8048,7 @@ Rougheye/Blackspotted rockfish complex from the two most recent Alaska
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_comp_all.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/Catch_comp_all.png}
 
 }
 
@@ -8060,7 +8062,7 @@ updated landings for the 2025 stock assessment model.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_comp_CA.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/Catch_comp_CA.png}
 
 }
 
@@ -8074,7 +8076,7 @@ updated landings for the 2025 stock assessment model.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_comp_OR.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/Catch_comp_OR.png}
 
 }
 
@@ -8088,7 +8090,7 @@ updated landings for the 2025 stock assessment model.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_comp_WA.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/Catch_comp_WA.png}
 
 }
 
@@ -8102,7 +8104,7 @@ updated landings for the 2025 stock assessment model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt1mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt1mkt0_page1.png}
 
 }
 
@@ -8115,7 +8117,7 @@ trawl fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt1mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt1mkt0_page2.png}
 
 }
 
@@ -8128,7 +8130,7 @@ trawl fleet, continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt2mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt2mkt0.png}
 
 }
 
@@ -8141,7 +8143,7 @@ discard fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt3mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt3mkt0_page1.png}
 
 }
 
@@ -8154,7 +8156,7 @@ fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt3mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt3mkt0_page2.png}
 
 }
 
@@ -8167,7 +8169,7 @@ fleet, continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt4mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt4mkt0.png}
 
 }
 
@@ -8180,7 +8182,7 @@ discard fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt5mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt5mkt0.png}
 
 }
 
@@ -8193,7 +8195,7 @@ trawl fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt6mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt6mkt0.png}
 
 }
 
@@ -8206,7 +8208,7 @@ fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt10mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt10mkt0.png}
 
 }
 
@@ -8219,7 +8221,7 @@ Coast Groundfish Bottom Trawl Survey (WCGBTS).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt7mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt7mkt0.png}
 
 }
 
@@ -8232,7 +8234,7 @@ Survey.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lendat_flt8mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lendat_flt8mkt0.png}
 
 }
 
@@ -8245,7 +8247,7 @@ Survey.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt1mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt1mkt0_page1.png}
 
 }
 
@@ -8258,7 +8260,7 @@ fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt1mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt1mkt0_page2.png}
 
 }
 
@@ -8271,7 +8273,7 @@ fleet, continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt3mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt3mkt0_page1.png}
 
 }
 
@@ -8284,7 +8286,7 @@ data for non-trawl fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt3mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt3mkt0_page2.png}
 
 }
 
@@ -8297,7 +8299,7 @@ data for non-trawl fleet, continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt5mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt5mkt0.png}
 
 }
 
@@ -8310,7 +8312,7 @@ data for Midwater trawl fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt6mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt6mkt0_page1.png}
 
 }
 
@@ -8323,7 +8325,7 @@ data for at-sea hake fleet.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt6mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt6mkt0_page2.png}
 
 }
 
@@ -8336,7 +8338,7 @@ data for at-sea hake fleet, continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt10mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt10mkt0_page1.png}
 
 }
 
@@ -8349,7 +8351,7 @@ data for the West Coast Groundfish Bottom Trawl Survey (WCGBTS).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt10mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt10mkt0_page2.png}
 
 }
 
@@ -8363,7 +8365,7 @@ continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt10mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt10mkt0_page3.png}
 
 }
 
@@ -8377,7 +8379,7 @@ continued.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index9_standcpueall.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index9_standcpueall.png}
 
 }
 
@@ -8390,7 +8392,7 @@ assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/WCGBTS_comps.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/WCGBTS_comps.png}
 
 }
 
@@ -8405,7 +8407,7 @@ assessment (sdmTMB, lognormal distribution).}
 
 \centering{
 
-\includegraphics{ref_model/plots/index1_cpuedata_WCGBTS.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index1_cpuedata_WCGBTS.png}
 
 }
 
@@ -8418,7 +8420,7 @@ Survey (WCGBTS) index.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index1_cpuedata_TRIENNIAL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index1_cpuedata_TRIENNIAL.png}
 
 }
 
@@ -8430,7 +8432,7 @@ Survey (WCGBTS) index.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index1_cpuedata_AK_SLOPE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index1_cpuedata_AK_SLOPE.png}
 
 }
 
@@ -8442,7 +8444,7 @@ Survey (WCGBTS) index.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index1_cpuedata_NW_SLOPE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index1_cpuedata_NW_SLOPE.png}
 
 }
 
@@ -8454,7 +8456,7 @@ Survey (WCGBTS) index.}
 
 \centering{
 
-\includegraphics{plots_4_doc/compare1_spawnbio_updatedCt.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare1_spawnbio_updatedCt.png}
 
 }
 
@@ -8468,7 +8470,7 @@ updated/extended catches used in 2025 assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/compare3_Bratio_updatedCt.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare3_Bratio_updatedCt.png}
 
 }
 
@@ -8486,7 +8488,7 @@ updated/extended catches used in 2025 assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/1v2sex_spawnbio.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/1v2sex_spawnbio.png}
 
 }
 
@@ -8501,7 +8503,7 @@ double the biomass because it includes both females and males.}
 
 \centering{
 
-\includegraphics{plots_4_doc/1v2sex_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/1v2sex_Bratio_uncertainty.png}
 
 }
 
@@ -8515,7 +8517,7 @@ Rougheye/Blackspotted Rockfishes assessment data.}
 
 \centering{
 
-\includegraphics{plots_4_doc/M_values.png}
+\includegraphics[width=2.22in,height=\textheight]{plots_4_doc/M_values.png}
 
 }
 
@@ -8530,7 +8532,7 @@ ages using the equation from Hamel and Cope 2022.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_curve_plot_FM.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/Catch_curve_plot_FM.png}
 
 }
 
@@ -8546,7 +8548,7 @@ equal to the estimate of an aggregate total mortality (Z).}
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_curve_plot_FM_21_100.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/Catch_curve_plot_FM_21_100.png}
 
 }
 
@@ -8563,7 +8565,7 @@ linear model is equal to the estimate of an aggregate total mortality
 
 \centering{
 
-\includegraphics{plots_4_doc/Catch_curve_plot_FM_21_80.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/Catch_curve_plot_FM_21_80.png}
 
 }
 
@@ -8580,7 +8582,7 @@ linear model is equal to the estimate of an aggregate total mortality
 
 \centering{
 
-\includegraphics{plots_4_doc/Age_length_plot.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/Age_length_plot.png}
 
 }
 
@@ -8595,7 +8597,7 @@ provided.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Lt_age_CV_FM.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/Lt_age_CV_FM.png}
 
 }
 
@@ -8610,7 +8612,7 @@ also indicated by size of the point. The line is a smoothed loess
 
 \centering{
 
-\includegraphics{plots_4_doc/AE_matrix_plot.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/AE_matrix_plot.png}
 
 }
 
@@ -8625,7 +8627,7 @@ is a combination of all commercial fleets.}
 
 \centering{
 
-\includegraphics{plots_4_doc/AE_Bias.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/AE_Bias.png}
 
 }
 
@@ -8638,7 +8640,7 @@ ageing error matrices.}
 
 \centering{
 
-\includegraphics{plots_4_doc/AE_SD.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/AE_SD.png}
 
 }
 
@@ -8653,7 +8655,7 @@ deviation) used for each of the seven ageing error matrices.}
 
 \centering{
 
-\includegraphics{plots_4_doc/L_W_plots.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/L_W_plots.png}
 
 }
 
@@ -8666,7 +8668,7 @@ source. Lines are the power function fits by data source.}
 
 \centering{
 
-\includegraphics{plots_4_doc/F_M_ltwt_plot.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/F_M_ltwt_plot.png}
 
 }
 
@@ -8681,7 +8683,7 @@ female and male Rougheye/Blackspotted Rockfishes.}
 
 \centering{
 
-\includegraphics{plots_4_doc/bio_fxn_maturity.png}
+\includegraphics[width=1.85in,height=\textheight]{plots_4_doc/bio_fxn_maturity.png}
 
 }
 
@@ -8694,7 +8696,7 @@ when using biological versus functional maturity criteria.}
 
 \centering{
 
-\includegraphics{plots_4_doc/l50_both_species.png}
+\includegraphics[width=1.85in,height=\textheight]{plots_4_doc/l50_both_species.png}
 
 }
 
@@ -8707,7 +8709,7 @@ length for the Rougheye/Blackspotted rockfishes complex and by species.}
 
 \centering{
 
-\includegraphics{plots_4_doc/a50_both_species.png}
+\includegraphics[width=1.85in,height=\textheight]{plots_4_doc/a50_both_species.png}
 
 }
 
@@ -8722,7 +8724,7 @@ for the Rougheye/Blackspotted rockfishes complex and by species.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Bimodal_lengths_Peter_Frey.png}
+\includegraphics[width=6.73in,height=\textheight]{plots_4_doc/Bimodal_lengths_Peter_Frey.png}
 
 }
 
@@ -8738,7 +8740,7 @@ Rockfish and Blackspotted Rockfish identified to species using genetics
 
 \centering{
 
-\includegraphics{plots_4_doc/compare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare4_Bratio_uncertainty.png}
 
 }
 
@@ -8754,7 +8756,7 @@ compared to the using the same data in the newest version of SS3
 
 \centering{
 
-\includegraphics{plots_4_doc/compare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare2_spawnbio_uncertainty.png}
 
 }
 
@@ -8770,7 +8772,7 @@ denotes 95\% confidence intervals.}
 
 \centering{
 
-\includegraphics{plots_4_doc/compare1_spawnbio__discard_fleets.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare1_spawnbio__discard_fleets.png}
 
 }
 
@@ -8784,7 +8786,7 @@ Rockfishes assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/compare3_Bratio_discard_fleets.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/compare3_Bratio_discard_fleets.png}
 
 }
 
@@ -8798,7 +8800,7 @@ using the 2013 Rougheye/Blackspotted Rockfishes assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/bridging_compare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/bridging_compare2_spawnbio_uncertainty.png}
 
 }
 
@@ -8811,7 +8813,7 @@ using the 2013 Rougheye/Blackspotted Rockfishes assessment.}
 
 \centering{
 
-\includegraphics{plots_4_doc/bridging_compare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/bridging_compare4_Bratio_uncertainty.png}
 
 }
 
@@ -8824,7 +8826,7 @@ spawning output for bridging analysis.}
 
 \centering{
 
-\includegraphics{plots_4_doc/NT_length_vs_discard.png}
+\includegraphics[width=7in,height=\textheight]{plots_4_doc/NT_length_vs_discard.png}
 
 }
 
@@ -8838,7 +8840,7 @@ fleets, sexes combined.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Trawl_landings_discard_comparisons.png}
+\includegraphics[width=7in,height=\textheight]{plots_4_doc/Trawl_landings_discard_comparisons.png}
 
 }
 
@@ -8856,7 +8858,7 @@ sexes combined.}
 
 \centering{
 
-\includegraphics{plots_4_doc/piner_panel_NatM_uniform_Mal_GP_1.png}
+\includegraphics[width=7in,height=\textheight]{plots_4_doc/piner_panel_NatM_uniform_Mal_GP_1.png}
 
 }
 
@@ -8871,7 +8873,7 @@ likelihoods used to establish a fixed value for male natural mortality.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Sensi_logREplot_status_LAO.png}
+\includegraphics[width=4.22in,height=\textheight]{plots_4_doc/Sensi_logREplot_status_LAO.png}
 
 }
 
@@ -8890,7 +8892,7 @@ interval of the reference model.}
 
 \centering{
 
-\includegraphics{plots_4_doc/pairs_plot_fast.png}
+\includegraphics[width=2in,height=\textheight]{plots_4_doc/pairs_plot_fast.png}
 
 }
 
@@ -8906,7 +8908,7 @@ efficiency.}
 
 \centering{
 
-\includegraphics{ref_model/Jitter Results_0.01/jitterplot.png}
+\includegraphics[width=1.6in,height=\textheight]{ref_model/Jitter Results_0.01/jitterplot.png}
 
 }
 
@@ -8923,7 +8925,7 @@ better fit to the reference model was found.}
 
 \centering{
 
-\includegraphics{ref_model/Jitter Results_0.05/jitterplot.png}
+\includegraphics[width=1.6in,height=\textheight]{ref_model/Jitter Results_0.05/jitterplot.png}
 
 }
 
@@ -8944,7 +8946,7 @@ better fit to the reference model was found.}
 
 \centering{
 
-\includegraphics{Retros/compare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Retros/compare2_spawnbio_uncertainty.png}
 
 }
 
@@ -8958,7 +8960,7 @@ removed sequentially.}
 
 \centering{
 
-\includegraphics{Retros/compare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Retros/compare4_Bratio_uncertainty.png}
 
 }
 
@@ -8972,7 +8974,7 @@ area removed sequentially.}
 
 \centering{
 
-\includegraphics{Like_profiles/ref_model_retro_2_yr_peel/compare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Like_profiles/ref_model_retro_2_yr_peel/compare2_spawnbio_uncertainty.png}
 
 }
 
@@ -8987,7 +8989,7 @@ the reference model.}
 
 \centering{
 
-\includegraphics{Like_profiles/Retro3_like_diff.png}
+\includegraphics[width=2.2in,height=\textheight]{Like_profiles/Retro3_like_diff.png}
 
 }
 
@@ -9003,7 +9005,7 @@ level in likelihood difference. Blue dot is the reference model value.}
 
 \centering{
 
-\includegraphics{plots_4_doc/No_block_retro_compare1_spawnbio.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/No_block_retro_compare1_spawnbio.png}
 
 }
 
@@ -9026,7 +9028,7 @@ the assessment base model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit__aggregated_across_time.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit__aggregated_across_time.png}
 
 }
 
@@ -9039,7 +9041,7 @@ compositions over all years.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt1mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt1mkt0_page1.png}
 
 }
 
@@ -9056,7 +9058,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt1mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt1mkt0_page2.png}
 
 }
 
@@ -9073,7 +9075,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt2mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt2mkt0.png}
 
 }
 
@@ -9090,7 +9092,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt3mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt3mkt0_page1.png}
 
 }
 
@@ -9107,7 +9109,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt3mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt3mkt0_page2.png}
 
 }
 
@@ -9124,7 +9126,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt4mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt4mkt0.png}
 
 }
 
@@ -9140,7 +9142,7 @@ effective sample size used in the McAllister-Ianelli tuning method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt5mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt5mkt0.png}
 
 }
 
@@ -9157,7 +9159,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt6mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt6mkt0.png}
 
 }
 
@@ -9174,7 +9176,7 @@ method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt7mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt7mkt0.png}
 
 }
 
@@ -9191,7 +9193,7 @@ tuning method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt8mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt8mkt0.png}
 
 }
 
@@ -9208,7 +9210,7 @@ McAllister-Ianelli tuning method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_flt10mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_flt10mkt0.png}
 
 }
 
@@ -9225,7 +9227,7 @@ McAllister-Ianelli tuning method.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit__page1_multi-fleet_comparison.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit__page1_multi-fleet_comparison.png}
 
 }
 
@@ -9240,7 +9242,7 @@ residuals (observed \textless{} expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit__page2_multi-fleet_comparison.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit__page2_multi-fleet_comparison.png}
 
 }
 
@@ -9255,7 +9257,7 @@ fits for each survey. Closed bubble are positive residuals (observed
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL.png}
 
 }
 
@@ -9269,7 +9271,7 @@ and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL_DISCARD.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_BOTTOM_TRAWL_DISCARD.png}
 
 }
 
@@ -9283,7 +9285,7 @@ sample sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_NON_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_NON_TRAWL.png}
 
 }
 
@@ -9297,7 +9299,7 @@ data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_NON_TRAWL_DISCARD.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_NON_TRAWL_DISCARD.png}
 
 }
 
@@ -9311,7 +9313,7 @@ sample sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_MIDWATER_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_MIDWATER_TRAWL.png}
 
 }
 
@@ -9325,7 +9327,7 @@ and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_AT_SEA_HAKE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_AT_SEA_HAKE.png}
 
 }
 
@@ -9339,7 +9341,7 @@ sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_TRIENNIAL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_TRIENNIAL.png}
 
 }
 
@@ -9353,7 +9355,7 @@ data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_AK_SLOPE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_AK_SLOPE.png}
 
 }
 
@@ -9367,7 +9369,7 @@ sample sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_lenfit_data_weighting_TA1-8_WCGBTS.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_lenfit_data_weighting_TA1-8_WCGBTS.png}
 
 }
 
@@ -9385,7 +9387,7 @@ intervals based on sample sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt1mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt1mkt0_page1.png}
 
 }
 
@@ -9401,7 +9403,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALdat_bubflt1mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALdat_bubflt1mkt0_page2.png}
 
 }
 
@@ -9417,7 +9419,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt3mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt3mkt0_page1.png}
 
 }
 
@@ -9433,7 +9435,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt3mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt3mkt0_page2.png}
 
 }
 
@@ -9449,7 +9451,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt5mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt5mkt0.png}
 
 }
 
@@ -9464,7 +9466,7 @@ open bubbles are negative residuals (observed \textless{} expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt6mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt6mkt0_page1.png}
 
 }
 
@@ -9480,7 +9482,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt6mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt6mkt0_page2.png}
 
 }
 
@@ -9496,7 +9498,7 @@ expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt10mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt10mkt0_page1.png}
 
 }
 
@@ -9512,7 +9514,7 @@ negative residuals (observed \textless{} expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt10mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt10mkt0_page2.png}
 
 }
 
@@ -9528,7 +9530,7 @@ negative residuals (observed \textless{} expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_residsflt10mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_residsflt10mkt0_page3.png}
 
 }
 
@@ -9544,7 +9546,7 @@ negative residuals (observed \textless{} expected).}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeBOTTOM_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeBOTTOM_TRAWL.png}
 
 }
 
@@ -9558,7 +9560,7 @@ intervals based on current samples sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeNON_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeNON_TRAWL.png}
 
 }
 
@@ -9572,7 +9574,7 @@ intervals based on current samples sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeMIDWATER_TRAWL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeMIDWATER_TRAWL.png}
 
 }
 
@@ -9586,7 +9588,7 @@ intervals based on current samples sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeAT_SEA_HAKE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeAT_SEA_HAKE.png}
 
 }
 
@@ -9600,7 +9602,7 @@ intervals based on current samples sizes and data weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeWCGBTS.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_data_weighting_TA1-8_condAgeWCGBTS.png}
 
 }
 
@@ -9615,7 +9617,7 @@ weighting.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page1.png}
 
 }
 
@@ -9632,7 +9634,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page2.png}
 
 }
 
@@ -9649,7 +9651,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt1mkt0_page3.png}
 
 }
 
@@ -9666,7 +9668,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page1.png}
 
 }
 
@@ -9683,7 +9685,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page2.png}
 
 }
 
@@ -9700,7 +9702,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt3mkt0_page3.png}
 
 }
 
@@ -9717,7 +9719,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt5mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt5mkt0_page1.png}
 
 }
 
@@ -9734,7 +9736,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt5mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt5mkt0_page2.png}
 
 }
 
@@ -9751,7 +9753,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page1.png}
 
 }
 
@@ -9768,7 +9770,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page2.png}
 
 }
 
@@ -9785,7 +9787,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt6mkt0_page3.png}
 
 }
 
@@ -9802,7 +9804,7 @@ chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page1.png}
 
 }
 
@@ -9819,7 +9821,7 @@ panels and the standard error of mean age at length (obs. and exp.) with
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page2.png}
 
 }
 
@@ -9836,7 +9838,7 @@ panels and the standard error of mean age at length (obs. and exp.) with
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page3.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page3.png}
 
 }
 
@@ -9853,7 +9855,7 @@ panels and the standard error of mean age at length (obs. and exp.) with
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page4.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page4.png}
 
 }
 
@@ -9870,7 +9872,7 @@ panels and the standard error of mean age at length (obs. and exp.) with
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page5.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page5.png}
 
 }
 
@@ -9887,7 +9889,7 @@ panels and the standard error of mean age at length (obs. and exp.) with
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page6.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_condAALfit_Andre_plotsflt10mkt0_page6.png}
 
 }
 
@@ -9904,7 +9906,7 @@ on the chi-square distribution.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_gstagefit_flt1mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_gstagefit_flt1mkt0.png}
 
 }
 
@@ -9917,7 +9919,7 @@ composition data (density) for the bottom trawl fishery.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_gstagefit_flt3mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_gstagefit_flt3mkt0.png}
 
 }
 
@@ -9930,7 +9932,7 @@ composition data (density) for the non-trawl fishery.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_gstagefit_flt5mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_gstagefit_flt5mkt0.png}
 
 }
 
@@ -9943,7 +9945,7 @@ age composition data (density) for the midwater trawl fishery.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_gstagefit_flt6mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_gstagefit_flt6mkt0.png}
 
 }
 
@@ -9956,7 +9958,7 @@ age composition data (density) for the at-sea-hake fishery.}
 
 \centering{
 
-\includegraphics{ref_model/plots/comp_gstagefit_flt10mkt0.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/comp_gstagefit_flt10mkt0.png}
 
 }
 
@@ -9972,7 +9974,7 @@ Trawl survey.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index2_cpuefit_TRIENNIAL.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index2_cpuefit_TRIENNIAL.png}
 
 }
 
@@ -9986,7 +9988,7 @@ the assumption of lognormal error.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index2_cpuefit_AK_SLOPE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index2_cpuefit_AK_SLOPE.png}
 
 }
 
@@ -10000,7 +10002,7 @@ based on the assumption of lognormal error.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index2_cpuefit_NW_SLOPE.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index2_cpuefit_NW_SLOPE.png}
 
 }
 
@@ -10015,7 +10017,7 @@ error.}
 
 \centering{
 
-\includegraphics{ref_model/plots/index2_cpuefit_WCGBTS.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/index2_cpuefit_WCGBTS.png}
 
 }
 
@@ -10031,7 +10033,7 @@ around index values based on the assumption of lognormal error.}
 
 \centering{
 
-\includegraphics{plots_4_doc/Growth_curve_comparison.png}
+\includegraphics[width=3.3in,height=\textheight]{plots_4_doc/Growth_curve_comparison.png}
 
 }
 
@@ -10046,7 +10048,7 @@ curve from the 2013 model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/sel01_multiple_fleets_length1.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/sel01_multiple_fleets_length1.png}
 
 }
 
@@ -10059,7 +10061,7 @@ fishery and survey.}
 
 \centering{
 
-\includegraphics{plots_4_doc/selectivityPlot_fisheries.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/selectivityPlot_fisheries.png}
 
 }
 
@@ -10072,7 +10074,7 @@ fishery fleets with time blocks.}
 
 \centering{
 
-\includegraphics{plots_4_doc/selectivityPlot_surveys.png}
+\includegraphics[width=6.5in,height=\textheight]{plots_4_doc/selectivityPlot_surveys.png}
 
 }
 
@@ -10085,7 +10087,7 @@ with time blocks.}
 
 \centering{
 
-\includegraphics{ref_model/plots/sel02_multiple_fleets_age2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/sel02_multiple_fleets_age2.png}
 
 }
 
@@ -10098,7 +10100,7 @@ lengths for each fishery and survey.}
 
 \centering{
 
-\includegraphics{plots_4_doc/lnR0.png}
+\includegraphics[width=2.21in,height=\textheight]{plots_4_doc/lnR0.png}
 
 }
 
@@ -10113,7 +10115,7 @@ several assessed shelf and slope rockfishes.}
 
 \centering{
 
-\includegraphics{ref_model/plots/ts7_Spawning_output_with_95_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts7_Spawning_output_with_95_intervals.png}
 
 }
 
@@ -10126,7 +10128,7 @@ several assessed shelf and slope rockfishes.}
 
 \centering{
 
-\includegraphics{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
 
 }
 
@@ -10139,7 +10141,7 @@ spawning output for the reference model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/recdevs2_withbars.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/recdevs2_withbars.png}
 
 }
 
@@ -10152,7 +10154,7 @@ deviations for the reference model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/recruit_fit_bias_adjust.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/recruit_fit_bias_adjust.png}
 
 }
 
@@ -10166,7 +10168,7 @@ assumed variance of recruitment.}
 
 \centering{
 
-\includegraphics{ref_model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png}
 
 }
 
@@ -10179,7 +10181,7 @@ the reference model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/SR_curve2.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/SR_curve2.png}
 
 }
 
@@ -10192,13 +10194,13 @@ colors in showing later years.}
 
 \pagebreak
 
-\subsection{Sensitivity Analyses}\label{sensitivity-analyses-1}
+\subsection{Sensitivity Analyses}\label{sensitivity-analyses}
 
 \begin{figure}[H]
 
 \centering{
 
-\includegraphics{Sensis/output/indicescompare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/indicescompare2_spawnbio_uncertainty.png}
 
 }
 
@@ -10211,7 +10213,7 @@ eggs) across data removal sensitivities (indices).}
 
 \centering{
 
-\includegraphics{Sensis/output/indicescompare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/indicescompare4_Bratio_uncertainty.png}
 
 }
 
@@ -10224,7 +10226,7 @@ eggs) across data removal sensitivities (indices).}
 
 \centering{
 
-\includegraphics{Sensis/output/length_comps_fleetcompare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/length_comps_fleetcompare2_spawnbio_uncertainty.png}
 
 }
 
@@ -10237,7 +10239,7 @@ across data removal sensitivities (length compositions by fleet).}
 
 \centering{
 
-\includegraphics{Sensis/output/length_comps_fleetcompare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/length_comps_fleetcompare4_Bratio_uncertainty.png}
 
 }
 
@@ -10251,7 +10253,7 @@ fleet).}
 
 \centering{
 
-\includegraphics{Sensis/output/length_comps_allcompare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/length_comps_allcompare2_spawnbio_uncertainty.png}
 
 }
 
@@ -10264,7 +10266,7 @@ across data removal sensitivities (length compositions by source).}
 
 \centering{
 
-\includegraphics{Sensis/output/length_comps_allcompare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/length_comps_allcompare4_Bratio_uncertainty.png}
 
 }
 
@@ -10278,7 +10280,7 @@ source).}
 
 \centering{
 
-\includegraphics{Sensis/output/age_compscompare2_spawnbio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/age_compscompare2_spawnbio_uncertainty.png}
 
 }
 
@@ -10291,7 +10293,7 @@ across data removal sensitivities (age compositions by fleet).}
 
 \centering{
 
-\includegraphics{Sensis/output/age_compscompare4_Bratio_uncertainty.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/output/age_compscompare4_Bratio_uncertainty.png}
 
 }
 
@@ -10305,7 +10307,7 @@ fleet).}
 
 \centering{
 
-\includegraphics{Sensis/output/sens_summary.png}
+\includegraphics[width=6in,height=\textheight]{Sensis/output/sens_summary.png}
 
 }
 
@@ -10319,7 +10321,7 @@ sources).}
 
 \centering{
 
-\includegraphics{Sensis/data_sensitivities/Data weighting.png}
+\includegraphics[width=12in,height=\textheight]{Sensis/data_sensitivities/Data weighting.png}
 
 }
 
@@ -10334,7 +10336,7 @@ weighting scenarios. The reference model uses the Francis method.}
 
 \centering{
 
-\includegraphics{Sensis/data_sensitivities/Sensi_logREplot_SB_Dep_F_Yield_DataWt.png}
+\includegraphics[width=5.51in,height=\textheight]{Sensis/data_sensitivities/Sensi_logREplot_SB_Dep_F_Yield_DataWt.png}
 
 }
 
@@ -10350,7 +10352,7 @@ more details on each scenario.}
 
 \centering{
 
-\includegraphics{Sensis/data_sensitivities/Ageing error_uncertainty.png}
+\includegraphics[width=12in,height=\textheight]{Sensis/data_sensitivities/Ageing error_uncertainty.png}
 
 }
 
@@ -10366,7 +10368,7 @@ for all age sources.}
 
 \centering{
 
-\includegraphics{Sensis/data_sensitivities/Sensi_logREplot_SB_Dep_F_Yield_AE.png}
+\includegraphics[width=5.51in,height=\textheight]{Sensis/data_sensitivities/Sensi_logREplot_SB_Dep_F_Yield_AE.png}
 
 }
 
@@ -10382,7 +10384,7 @@ more details on each scenario.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/M_Gr_Reproduction.png}
+\includegraphics[width=12in,height=\textheight]{Sensis/model_specs/M_Gr_Reproduction.png}
 
 }
 
@@ -10397,7 +10399,7 @@ growth and reproductive biology scenarios.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/Sensi_logREplot_SB_Dep_F_Yield_MGrRep.png}
+\includegraphics[width=5.51in,height=\textheight]{Sensis/model_specs/Sensi_logREplot_SB_Dep_F_Yield_MGrRep.png}
 
 }
 
@@ -10413,7 +10415,7 @@ See `Sensitivity Analysis' section for more details on each scenario.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/compare1_spawnbio.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/model_specs/compare1_spawnbio.png}
 
 }
 
@@ -10430,7 +10432,7 @@ than the other models.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/Sel_Rec.png}
+\includegraphics[width=12in,height=\textheight]{Sensis/model_specs/Sel_Rec.png}
 
 }
 
@@ -10445,7 +10447,7 @@ recruitment and selectivity scenarios.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/Sensi_logREplot_SB_Dep_F_Yield_Sel_Rec.png}
+\includegraphics[width=5.51in,height=\textheight]{Sensis/model_specs/Sensi_logREplot_SB_Dep_F_Yield_Sel_Rec.png}
 
 }
 
@@ -10461,7 +10463,7 @@ Analysis' section for more details on each scenario.}
 
 \centering{
 
-\includegraphics{Sensis/model_specs/comp_lenfit__aggregated_across_time_logsel.png}
+\includegraphics[width=6.5in,height=\textheight]{Sensis/model_specs/comp_lenfit__aggregated_across_time_logsel.png}
 
 }
 
@@ -10479,7 +10481,7 @@ fisheries and time blocks.}
 
 \centering{
 
-\includegraphics{Like_profiles/lnR0/parameter_panel_SR_LN(R0).png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/lnR0/parameter_panel_SR_LN(R0).png}
 
 }
 
@@ -10494,7 +10496,7 @@ figure indicates the significance level in likelihood difference.}
 
 \centering{
 
-\includegraphics{Like_profiles/lnR0/piner_panel_SR_LN(R0).png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/lnR0/piner_panel_SR_LN(R0).png}
 
 }
 
@@ -10507,7 +10509,7 @@ figure indicates the significance level in likelihood difference.}
 
 \centering{
 
-\includegraphics{Like_profiles/Steepness/parameter_panel_SR_BH_steep.png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/Steepness/parameter_panel_SR_BH_steep.png}
 
 }
 
@@ -10522,7 +10524,7 @@ significance level in likelihood difference.}
 
 \centering{
 
-\includegraphics{Like_profiles/Steepness/piner_panel_SR_BH_steep.png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/Steepness/piner_panel_SR_BH_steep.png}
 
 }
 
@@ -10535,7 +10537,7 @@ profile for each of the likelihood components.}
 
 \centering{
 
-\includegraphics{Like_profiles/Male_M/parameter_panel_NatM_uniform_Mal_GP_1.png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/Male_M/parameter_panel_NatM_uniform_Mal_GP_1.png}
 
 }
 
@@ -10550,7 +10552,7 @@ figure indicates the significance level in likelihood difference.}
 
 \centering{
 
-\includegraphics{Like_profiles/Male_M/M_sex.png}
+\includegraphics[width=2.21in,height=\textheight]{Like_profiles/Male_M/M_sex.png}
 
 }
 
@@ -10563,7 +10565,7 @@ mortality (\(M\)) by sex.}
 
 \centering{
 
-\includegraphics{Like_profiles/Male_M/piner_panel_NatM_uniform_Mal_GP_1.png}
+\includegraphics[width=7in,height=\textheight]{Like_profiles/Male_M/piner_panel_NatM_uniform_Mal_GP_1.png}
 
 }
 
@@ -10578,7 +10580,7 @@ likelihood profile for each of the likelihood components.}
 
 \centering{
 
-\includegraphics{Sensis/statesofnature/StatesofNature.png}
+\includegraphics[width=12in,height=\textheight]{Sensis/statesofnature/StatesofNature.png}
 
 }
 
@@ -10595,7 +10597,7 @@ high and low states of nature.}
 
 \centering{
 
-\includegraphics{Sensis/statesofnature/Ensemble_Bratio.png}
+\includegraphics[width=20in,height=\textheight]{Sensis/statesofnature/Ensemble_Bratio.png}
 
 }
 
@@ -10608,7 +10610,7 @@ reference model and two states of nature.}
 
 \centering{
 
-\includegraphics{Sensis/statesofnature/Ensemble_comp_plots_RSS.png}
+\includegraphics[width=20in,height=\textheight]{Sensis/statesofnature/Ensemble_comp_plots_RSS.png}
 
 }
 
@@ -10627,7 +10629,7 @@ stock status for the reference model and two states of nature.}
 
 \centering{
 
-\includegraphics{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/ts9_Relative_spawning_output_intervals.png}
 
 }
 
@@ -10640,7 +10642,7 @@ fraction of unfished spawning output for the reference model.}
 
 \centering{
 
-\includegraphics{ref_model/plots/SPR3_ratiointerval.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/SPR3_ratiointerval.png}
 
 }
 
@@ -10657,7 +10659,7 @@ population).}
 
 \centering{
 
-\includegraphics{ref_model/plots/yield2_yield_curve_with_refpoints.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/yield2_yield_curve_with_refpoints.png}
 
 }
 
@@ -10671,7 +10673,7 @@ selectivities and retention curves and with steepness fixed at 0.72.}
 
 \centering{
 
-\includegraphics{ref_model/plots/SPR4_phase.png}
+\includegraphics[width=6.5in,height=\textheight]{ref_model/plots/SPR4_phase.png}
 
 }
 

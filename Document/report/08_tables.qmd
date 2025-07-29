@@ -912,7 +912,7 @@ df |>
   ) |>
   gt::cols_width(
     1 ~ px(75),       
-    2 ~ px(250),      # second column: WIDER for long text
+    2 ~ px(270),      # second column: WIDER for long text
     everything() ~ px(75)  
   ) |>
   gt::as_latex()

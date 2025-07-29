@@ -328,8 +328,6 @@ knitr::include_graphics(file.path(model_dir,"plots/SPR4_phase.png"))
 ## Management Performance {-}
 The last ten years of total dead catches for `r Spp_short` against the component overfishing limits (OFLs), the acceptable biological catches (ABCs), the annual catch limits (ACLs) are shown in @tbl-es-management. In the last ten years, total dead catches of `r Spp_short` have been below the component OFLs for most years, with exception of 2018 and 2019. However, exceeding component OFLs does not indicate overfishing, since the stock is managed as part of a complex. 
 
-\newpage
-
 ```{r, results = "asis"}
 #| label: tbl-es-management
 #| warning: false
@@ -456,7 +454,6 @@ There are many areas of research that would benefit the understanding and assess
 
 * Consider whether the International Pacific Halibut Commission survey may contribute biological samples and possibly an additional index to any future assessments.
 
-\newpage
 
 ## Risk Table{-}
 To understand the impact of ecosystem and environmental conditions on `r Spp_short`, we evaluated recent trends in drivers of recruitment, predators, and prey, along with context from the climate vulnerability assessment (CVA) of @mcclure2023. We did not consider non-fisheries human activities during this evaluation.  In considering ecosystem and environmental conditions, we focus on recent trends over the last 5 years; we assume that long-term trends are implicitly represented in the stock assessment and do not represent notable changes that warrant inclusion in the risk table. 

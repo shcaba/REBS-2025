@@ -144,8 +144,6 @@ The ability to estimate additional variance for indices was allowed to the model
 ## Model Selection and Key Assumptions
 The reference model for `r Spp_short` is developed to balance parsimony and realism, and the goal is to estimate a risk-neutral spawning output trajectory and relative stock status for the stocks of `r Spp_short` in state and federal waters off the U.S. West Coast. To achieve the above goals, the model uses different data types and sources to estimate reality, but relies on simplifying assumptions when the data are not informative to parameters. A series of investigative model runs were done to achieve the reference model. Constructing integrated models (i.e., those fitting many data types) takes considerable model exploration using different configurations of the following treatments:
 
-\newpage
-
 - Data types and weighting;
 - Parameter treatments: which parameter can, cannot and do not need to be estimated;
 - Phasing of parameter estimation; 

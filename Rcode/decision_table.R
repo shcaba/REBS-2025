@@ -1,7 +1,7 @@
 SS_decision_table_stuff2 <- function(
     replist,
     yrs = 2025:2036,
-    digits = c(0, 0, 3)
+    digits = c(1, 0, 3)
 ) {
   unfished <- replist[["derived_quants"]]["SSB_Virgin", "Value"]
   catchuse <- replist[["timeseries"]] |>
@@ -76,7 +76,7 @@ table_decision <- function(
     format = c("latex", "html"),
     caption = formals(kableExtra::kbl)$caption,
     label = formals(kableExtra::kbl)$label,
-    digits = c(0, 2, 3),
+    digits = c(1, 2, 3),
     tex = TRUE) {
   mods <- list(...)
   # make sure that the format input is good

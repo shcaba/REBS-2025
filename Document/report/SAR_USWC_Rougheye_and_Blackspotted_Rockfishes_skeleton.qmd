@@ -405,7 +405,7 @@ cat(a, sep = '\n')
 
 ```{r, results='asis'}
 #| label: 'appendix'
-#| eval: false
+#| eval: true
 #| echo: false
 #| warning: false
 a <- knitr::knit_child('11_appendix.qmd', quiet = TRUE)

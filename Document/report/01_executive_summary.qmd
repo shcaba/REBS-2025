@@ -456,33 +456,5 @@ There are many areas of research that would benefit the understanding and assess
 
 
 ## Risk Table{-}
-To understand the impact of ecosystem and environmental conditions on `r Spp_short`, we evaluated recent trends in drivers of recruitment, predators, and prey, along with context from the climate vulnerability assessment (CVA) of @mcclure2023. We did not consider non-fisheries human activities during this evaluation.  In considering ecosystem and environmental conditions, we focus on recent trends over the last 5 years; we assume that long-term trends are implicitly represented in the stock assessment and do not represent notable changes that warrant inclusion in the risk table. 
 
-Overall we consider ecosystem and environmental conditions to be neutral (Level 2) with medium confidence based on high agreement among indicators and medium evidence, and no apparent concerns. The assessment data inputs are also considered to be neutral (Level 2). Details for these scores can be found in @tbl-risk, based on the framework outlined by the California Current Integrated Ecosystem Assessment (CCIEA) team [@Golden2024].
-
-\newpage
-
-```{r, tbl-risk, results = "asis"}
-#| label: tbl-risk
-#| echo: false
-#| warning: false
-#| tbl-cap: "Risk Table for Rougheye/Blackspotted Rockfishes to document ecosystem and environmental factors potentially affecting stock productivity and uncertainty or other concerns arising from the stock assessment (see text). Level 1 is a favorable ranking, Level 2 neutral, and Level 3 unfavorable."
-
-
-risk <-read.csv(here::here("Document","report", "tables_4_doc", "RiskTable_20250618.csv"))
-risk|>
-  gt::gt() |>
-  gt::tab_options(
-    table.font.size = 12,
-    latex.use_longtable = TRUE
-  ) |>
-  gt::cols_label(
-    Ecosystem.and.environmental.conditions = "Ecosystem and environmental conditions",
-    Assessment.data.inputs = "Assessment data inputs",
-    Assessment.model.fits.and.structural.uncertainty = "Assessment model fits and structural uncertainty"
-  ) |>
-  gt::cols_width(
-    everything() ~ px(200)
-  ) |>
-  gt::as_latex()
-```
+A risk table was constructed using the Category 1 stock rubric, but is not included here given this stock assessment is considered Category 2. The risk table can be found in the Appendix.

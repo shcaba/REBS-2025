@@ -1,5 +1,5 @@
 #C file created using an r4ss function
-#C file write time: 2025-06-24  14:18:18
+#C file write time: 2025-09-03  16:12:34
 #
 1 #_benchmarks
 2 #_MSY
@@ -29,25 +29,24 @@
 0.1 #_BfornoF
 -1 #_Flimitfraction
  #_year fraction
-2025  1
-2026  1
-2027  0.874
-2028  0.865
-2029  0.857
-2030  0.849
-2031  0.841
-2032  0.833
-2033  0.826
-2034  0.818
-2035  0.81
-2036  0.803
-
+   2025    1.000
+   2026    1.000
+   2027    0.874
+   2028    0.865
+   2029    0.857
+   2030    0.849
+   2031    0.841
+   2032    0.833
+   2033    0.826
+   2034    0.818
+   2035    0.810
+   2036    0.803
 -9999 0
 3 #_N_forecast_loops
 3 #_First_forecast_loop_with_stochastic_recruitment
 0 #_fcast_rec_option
 1 #_fcast_rec_val
-0 #_Fcast_loop_control_5
+0 #_HCR_anchor
 2027 #_FirstYear_for_caps_and_allocations
 0 #_stddev_of_log_catch_ratio
 0 #_Do_West_Coast_gfish_rebuilder_output

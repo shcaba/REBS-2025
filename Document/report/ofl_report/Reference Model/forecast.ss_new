@@ -1,6 +1,6 @@
 #V3.30.23.2;_safe;_compile_date:_Apr 17 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 #C file created using an r4ss function
-#C file write time: 2025-06-24  14:18:18
+#C file write time: 2025-09-03  16:12:34
 # for all year entries except rebuilder; enter either: actual year, -999 for styr, 0 for endyr, neg number for rel. endyr
 1 # Benchmarks: 0=skip; 1=calc F_spr,F_btgt,F_msy; 2=calc F_spr,F0.1,F_msy; 3=add F_Blimit; 
 2 # Do_MSY: 1= set to F(SPR); 2=calc F(MSY); 3=set to F(Btgt) or F0.1; 4=set to F(endyr); 5=calc F(MEY) with MSY_unit options
@@ -40,16 +40,16 @@
 -1 # Buffer:  enter Control rule target as fraction of Flimit (e.g. 0.75), negative value invokes list of [year, scalar] with filling from year to YrMax 
  2025 1
  2026 1
- 2027 0.913
- 2028 0.908
- 2029 0.902
- 2030 0.896
- 2031 0.89
- 2032 0.885
- 2033 0.879
- 2034 0.874
- 2035 0.868
- 2036 0.863
+ 2027 0.874
+ 2028 0.865
+ 2029 0.857
+ 2030 0.849
+ 2031 0.841
+ 2032 0.833
+ 2033 0.826
+ 2034 0.818
+ 2035 0.81
+ 2036 0.803
  -9999 0
 #
 3 #_N forecast loops (1=OFL only; 2=ABC; 3=get F from forecast ABC catch with allocations applied)

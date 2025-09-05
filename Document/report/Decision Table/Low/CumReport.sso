@@ -1060,7 +1060,7 @@
 
 22 -logL: 7344.66 SSB(Vir_Start_End): 2.70508 2.70508 1.97807
 22 Files: 2025_rougheye_data.ss 2025_rougheye_control.ss Start_from_ss.par
-22 N_iter: 10 runtime(sec): 59 starttime: Fri Jul 18 09:31:13 2025
+22 N_iter: 864 runtime(sec): 3211 starttime: Fri Jul 18 09:20:10 2025
 22#V3.30.23.2;_safe;_compile_date:_Apr 17 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 22 F_Method: 3 Retro_YR: 2024 Forecast_Type: 1 MSY_Type: 2
 22 Comment S_1 #C file created using an r4ss function
@@ -1113,7 +1113,7 @@
 
 23 -logL: 7344.66 SSB(Vir_Start_End): 2.70508 2.70508 1.97807
 23 Files: 2025_rougheye_data.ss 2025_rougheye_control.ss Start_from_ss.par
-23 N_iter: 10 runtime(sec): 12 starttime: Thu Sep  4 10:30:19 2025
+23 N_iter: 864 runtime(sec): 3039 starttime: Thu Sep  4 17:15:19 2025
 23#V3.30.23.2;_safe;_compile_date:_Apr 17 2025;_Stock_Synthesis_by_Richard_Methot_(NOAA)_using_ADMB_13.2
 23 F_Method: 3 Retro_YR: 2024 Forecast_Type: 1 MSY_Type: 2
 23 Comment S_1 #C file created using an r4ss function

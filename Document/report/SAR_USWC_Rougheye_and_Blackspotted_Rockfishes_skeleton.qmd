@@ -219,7 +219,7 @@ Cope, J.M., V. Gertseva, R.C. Rosemond, A.D. Whitman, and F.P. Caltabellotta. (2
 \begin{tikzpicture}[remember picture, overlay]
     \node[inner sep=0pt, anchor=north west] 
     at (current page.north west) {
-        \includegraphics[width=8.5in, height=11in, alt={stock assessment summary graphic with figures total removals, spawning output and relative stock size time series. It also includes a table of projected catches and key takeaways.}]{plots_4_doc/AAG_page1.png}
+        \includegraphics[width=8.5in, height=11in, alt={Stock assessment summary graphic with figures total removals, spawning output and relative stock size time series. It also includes a table of projected catches and key takeaways.}]{plots_4_doc/AAG_page1.png}
     };
 \end{tikzpicture}
 \clearpage
@@ -302,7 +302,8 @@ cat(a, sep = '\n')
 \renewcommand{\thefigure}{\arabic{figure}}
 \setcounter{figure}{0}
 \renewcommand{\thetable}{\arabic{table}}
-\setcounter{table}{-1}
+\setcounter{table}{0}
+
 
 
 ```{r, results='asis'}

@@ -121,7 +121,7 @@ ssb_es_table |>
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of spawning output (trillions of eggs) for the base model."
-#| fig-alt: "See table 26 for values."
+#| fig-alt: "See table 22 for values."
 #| fig-pos: H
 
 knitr::include_graphics(file.path(model_dir,"plots/ts7_Spawning_output_with_95_intervals.png"))
@@ -134,7 +134,7 @@ knitr::include_graphics(file.path(model_dir,"plots/ts7_Spawning_output_with_95_i
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of fraction of unfished spawning output for the base model."
-#| fig-alt: ""
+#| fig-alt: "See table 22 for values."
 #| fig-pos: H
 
 knitr::include_graphics(file.path(model_dir,"plots/ts9_Relative_spawning_output_intervals.png"))
@@ -186,7 +186,7 @@ recr_es_table |>
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of age-0 recruits for the base model."
-#| fig-alt: ""
+#| fig-alt: "See table 22 for values."
 #| fig-pos: H
 
 knitr::include_graphics(file.path(model_dir,"plots/ts11_Age-0_recruits_(1000s)_with_95_asymptotic_intervals.png"))
@@ -199,7 +199,7 @@ knitr::include_graphics(file.path(model_dir,"plots/ts11_Age-0_recruits_(1000s)_w
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of recruitment deviations for the base model."
-#| fig-alt: ""
+#| fig-alt: "The Report.sso file contains the specific values for this plot."
 #| fig-pos: H
 
 knitr::include_graphics(file.path(model_dir,"plots/recdevs2_withbars.png"))

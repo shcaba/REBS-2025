@@ -921,6 +921,7 @@ knitr::include_graphics(
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in length and/or age only scenarios for relative stock status. Box indicates 95 percent confidence interval of the reference model."
+#| fig-alt: "This plot shows the relative difference in sensitivity values from the reference model. A table of the differences can be requested from the primary author."
 
 knitr::include_graphics(
   file.path(plot_dir, "Sensi_logREplot_status_LAO.png")
@@ -2166,6 +2167,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (indices)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","indicescompare2_spawnbio_uncertainty.png")
@@ -2179,6 +2181,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (indices)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","indicescompare4_Bratio_uncertainty.png")
@@ -2191,6 +2194,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (length compositions by fleet)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","length_comps_fleetcompare2_spawnbio_uncertainty.png")
@@ -2203,6 +2207,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (length compositions by fleet)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","length_comps_fleetcompare4_Bratio_uncertainty.png")
@@ -2215,6 +2220,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (length compositions by source)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","length_comps_allcompare2_spawnbio_uncertainty.png")
@@ -2227,6 +2233,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (length compositions by source)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","length_comps_allcompare4_Bratio_uncertainty.png")
@@ -2239,6 +2246,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Spawning output (trillions of eggs) across data removal sensitivities (age compositions by fleet)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","age_compscompare2_spawnbio_uncertainty.png")
@@ -2251,6 +2259,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Relative spawning output (fraction unfished) across data removal sensitivities (age compositions by fleet)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","age_compscompare4_Bratio_uncertainty.png")
@@ -2263,6 +2272,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Relative change in management quantities across models conducted as sensitivities (removal of data sources)."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "output","sens_summary.png")
@@ -2275,6 +2285,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different data weighting scenarios. The reference model uses the Francis method."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "data_sensitivities","Data weighting.png")
@@ -2287,6 +2298,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in data weighting treatment for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "data_sensitivities","Sensi_logREplot_SB_Dep_F_Yield_DataWt.png")
@@ -2299,6 +2311,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different ageing error scenarios. The reference model uses ageing error matrices for all age sources."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "data_sensitivities","Ageing error_uncertainty.png")
@@ -2311,6 +2324,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in ageing error scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "data_sensitivities","Sensi_logREplot_SB_Dep_F_Yield_AE.png")
@@ -2323,6 +2337,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different natural mortality, growth and reproductive biology scenarios."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","M_Gr_Reproduction.png")
@@ -2335,6 +2350,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in natural mortality, growth and reproductive biology scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","Sensi_logREplot_SB_Dep_F_Yield_MGrRep.png")
@@ -2347,6 +2363,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs) for models under different natural mortality, growth and reproductive biology scenarios. This comparison excludes the model estimating natural mortality, as the scale goes extremely high, and the weight proportional to fecundity scenario, as it is on a different scale than the other models."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","compare1_spawnbio.png")
@@ -2359,6 +2376,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for models under different recruitment and selectivity scenarios."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","Sel_Rec.png")
@@ -2371,6 +2389,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Log relative change (log((Model_sensi-Model_ref)/Model_ref)) in recruitment and selectivity scenarios for 5 derived quantities. Colored boxes indicate 95 percent confidence interval of the reference model. See 'Sensitivity Analysis' section for more details on each scenario."
+#| fig-alt: "Sensitivity results in tabluar form are available from the primary author."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","Sensi_logREplot_SB_Dep_F_Yield_Sel_Rec.png")
@@ -2383,6 +2402,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Aggregate fit to length compositions for the scenario that assume logistic selectivity for all fisheries and time blocks."
+#| fig-alt: "The CompReport.sso for this sensitivity model contains the observed and expected values plotted in this figure."
 #
 knitr::include_graphics(
     file.path(sens_dir, "model_specs","comp_lenfit__aggregated_across_time_logsel.png")
@@ -2401,6 +2421,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Initial recruitment ($lnR_0$) likelihood profile (change in the negative log-likelihood across a range of $ln(R0)$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"lnR0", "parameter_panel_SR_LN(R0).png")
@@ -2413,6 +2434,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Initial recruitment ($ln(R0)$) likelihood profile for each of the likelihood components."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"lnR0", "piner_panel_SR_LN(R0).png")
@@ -2425,6 +2447,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Steepness ($h$) likelihood profile (change in the negative log-likelihood across a range of $h$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"Steepness", "parameter_panel_SR_BH_steep.png")
@@ -2437,6 +2460,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Steepness ($h$) likelihood profile for each of the likelihood components."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"Steepness", "piner_panel_SR_BH_steep.png")
@@ -2449,6 +2473,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Male natural mortality ($M$) likelihood profile (change in the negative log-likelihood across a range of male $M$ values) and derived quantities. Red line in the top left figure indicates the significance level in likelihood difference."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"Male_M", "parameter_panel_NatM_uniform_Mal_GP_1.png")
@@ -2461,6 +2486,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Likelihood differences by natural mortality ($M$) by sex."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"Male_M", "M_sex.png")
@@ -2473,6 +2499,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Male natural mortality ($M$) likelihood profile for each of the likelihood components."
+#| fig-alt: "Likelihood profile model results can be explored using the Report.sso files for each of the models used in the likelihood profile."
 #
 knitr::include_graphics(
     file.path(like_dir,"Male_M", "piner_panel_NatM_uniform_Mal_GP_1.png")
@@ -2487,6 +2514,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for the reference model and high and low states of nature."
+#| fig-alt: "Each state of nature model result can be explored using the Report.sso files for each model."
 #
 knitr::include_graphics(
     file.path(sens_dir,"statesofnature", "StatesofNature.png")
@@ -2501,6 +2529,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Ensemble relative stock status for the reference model and two states of nature."
+#| fig-alt: "Each state of nature model result can be explored using the Report.sso files for each model."
 #
 knitr::include_graphics(
     file.path(sens_dir,"statesofnature", "Ensemble_Bratio.png")
@@ -2513,6 +2542,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Ensemble terminal year relative stock status for the reference model and two states of nature."
+#| fig-alt: "Each state of nature model result can be explored using the Report.sso files for each model."
 #
 knitr::include_graphics(
     file.path(sens_dir,"statesofnature", "Ensemble_comp_plots_RSS.png")
@@ -2527,6 +2557,7 @@ knitr::include_graphics(
 #| warning: false
 #| eval: true
 #| fig-cap: "Comparison of spawning output (trillions of eggs; left panel), relative stock status (middle panel) and recruitment estimation (right panel) for the reference model and models that decrease the pre-specified male natural mortality value. Note the decreasing uncertainty in scale as the population reduces the amount of expectation in stock status at or above unfished."
+#| fig-alt: "The Report.sso file for each model contains details for each of these comparisons."
 #
 knitr::include_graphics(
     file.path(sens_dir,"model_specs", "Reduced uncertainty comparison.png")
@@ -2549,6 +2580,8 @@ knitr::include_graphics(
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of fraction of unfished spawning output for the reference model."
+#| fig-alt: "The Report.sso file contains the specific values for this plot."
+
 #| fig-pos: H
 
 knitr::include_graphics(
@@ -2564,6 +2597,7 @@ knitr::include_graphics(
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Estimated time series of the fishing intensity (1 - SPR), where SPR is the spawning potential ratio, with approximate 95% asymptotic intervals. The horizontal line at 0.5 corresponds to SPR = 0.5, the management reference point. The horizontal line at 1.0 corresponds to SPR = 0 (all spawning fish removed from the population)."
+#| fig-alt: "The Report.sso file contains the specific values for this plot."
 #| fig-pos: H
 
 knitr::include_graphics(
@@ -2579,6 +2613,7 @@ knitr::include_graphics(
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Equilibrium yield curve for the reference model. Values are based on the most recent fishery selectivities and retention curves and with steepness fixed at 0.72."
+#| fig-alt: "The Report.sso file contains the specific values for this plot."
 #| fig-pos: H
 
 knitr::include_graphics(
@@ -2594,6 +2629,7 @@ knitr::include_graphics(
 #| warning: false 
 #| eval: true 
 #| fig-cap: "Phase plot of fishing intensity versus fraction unfished. Each point represents the biomass ratio at the start of the year and the relative fishing intensity in that same year. Cooler colors (purple) represent early years and warmer colors (yellow) represent recent years. Lines through the final point show 95% intervals based on the asymptotic uncertainty for each dimension. The shaded ellipse is a 95% region which accounts for the estimated correlation between the two quantities."
+#| fig-alt: "The Report.sso file contains the specific values for this plot."
 #| fig-pos: H
 
 knitr::include_graphics(

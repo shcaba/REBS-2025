@@ -43,7 +43,7 @@ cover: REBS.png
 pdf-engine: lualatex
 format: 
   pdf: 
-    documentclass: scrartcl
+    documentclass: article
     number-sections: true
     template-partials:
       - 'support_files/before-body.tex'
@@ -206,10 +206,32 @@ source(here::here('Rcode/decision_table.R'))
 
 Please cite this publication as: 
 
-Cope, J.M., V. Gertseva, R.C. Rosemond, A.D. Whitman, and F.P. Caltabellotta. (2025) Status of the Rougheye and Blackspotted rockfishes stock off the U.S. West Coast in 2025. Pacific Fishery Management Council. 347 pp.
+Cope, J.M., V. Gertseva, R.C. Rosemond, A.D. Whitman, and F.P. Caltabellotta. (2025) Status of the Rougheye and Blackspotted Rockfishes stock off the U.S. West Coast in 2025. Pacific Fishery Management Council. 356 pp.
 
  {{< pagebreak >}} 
- 
+
+
+ <!-- This includes the two-pagers at the top of the executive summary -->
+
+ \clearpage
+\thispagestyle{empty}
+\noindent
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, anchor=north west] 
+    at (current page.north west) {
+        \includegraphics[width=8.5in, height=11in, alt={stock assessment summary graphic with figures total removals, spawning output and relative stock size time series. It also includes a table of projected catches and key takeaways.}]{plots_4_doc/AAG_page1.png}
+    };
+\end{tikzpicture}
+\clearpage
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+    \node[inner sep=0pt, anchor=north west] 
+    at (current page.north west) {
+        \includegraphics[width=8.5in, height=11in, alt={Stock assessment summary graphic that contains a comparison of data sources and model outputs from the current stock assessment to the 2013 stock assessment.}]{plots_4_doc/AAG_page2.png}
+    };
+\end{tikzpicture}
+\clearpage
+
  
 ```{r, results='asis'}
 #| label: 'load_tables'
@@ -223,7 +245,7 @@ cat(a, sep = '\n')
 
 ```{r, results='asis'}
 #| label: 'disclaimer'
-#| eval: true
+#| eval: false
 #| echo: false
 #| warning: false
 a <- knitr::knit_child('00a_disclaimer.qmd', quiet = TRUE)
@@ -250,7 +272,7 @@ cat(a, sep = '\n')
 
 ```{r, results='asis'}
 #| label: 'visual_summary'
-#| eval: true
+#| eval: false
 #| echo: false
 #| warning: false
 a <- knitr::knit_child('003_visual_summary.qmd', quiet = TRUE)
